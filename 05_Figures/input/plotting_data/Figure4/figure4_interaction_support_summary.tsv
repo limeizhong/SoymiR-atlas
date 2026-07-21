@@ -1,0 +1,11 @@
+support_class	Conservation	interactions
+1	Conserved	1442
+1	Specific	4107
+2-5	Conserved	554
+2-5	Specific	846
+6-10	Conserved	247
+6-10	Specific	74
+10-20	Conserved	269
+10-20	Specific	53
+>20	Conserved	653
+>20	Specific	48

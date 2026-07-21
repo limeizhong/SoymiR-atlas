@@ -1,0 +1,2591 @@
+>Cluster 0
+0	24nt, >miR740_R7_L24... *
+>Cluster 1
+0	24nt, >miR983_R4_L24... *
+>Cluster 2
+0	24nt, >miR1320_R2_L24... *
+>Cluster 3
+0	21nt, >miR511_R14_L21... at +/100.00%
+1	22nt, >miR569_R12_L22... at +/95.45%
+2	22nt, >miR844_R6_L22... at +/90.91%
+3	24nt, >miR1491_R2_L24... *
+>Cluster 4
+0	24nt, >miR1498_R2_L24... *
+>Cluster 5
+0	22nt, >miR66_R283_L22... at +/95.45%
+1	23nt, >miR383_R25_L23... *
+2	21nt, >miR915_R5_L21... at -/80.95%
+3	21nt, >miR1104_R3_L21... at +/95.24%
+>Cluster 6
+0	21nt, >miR85_R222_L21... at +/90.48%
+1	21nt, >miR108_R161_L21... at +/85.71%
+2	21nt, >miR131_R130_L21... at +/95.24%
+3	21nt, >miR132_R129_L21... at +/80.95%
+4	21nt, >miR137_R124_L21... at +/80.95%
+5	22nt, >miR163_R99_L22... at +/95.45%
+6	21nt, >miR170_R95_L21... at +/95.24%
+7	20nt, >miR174_R90_L20... at +/95.00%
+8	21nt, >miR178_R88_L21... at +/90.48%
+9	21nt, >miR216_R64_L21... at +/85.71%
+10	21nt, >miR221_R62_L21... at +/90.48%
+11	21nt, >miR232_R58_L21... at -/85.71%
+12	20nt, >miR360_R27_L20... at +/95.00%
+13	22nt, >miR431_R20_L22... at +/86.36%
+14	23nt, >miR448_R18_L23... *
+15	22nt, >miR551_R12_L22... at +/86.36%
+16	22nt, >miR982_R4_L22... at +/90.91%
+17	20nt, >miR1181_R3_L20... at +/100.00%
+18	23nt, >miR1307_R2_L23... at +/91.30%
+19	21nt, >miR1308_R2_L21... at +/100.00%
+>Cluster 7
+0	21nt, >miR63_R300_L21... at -/80.95%
+1	22nt, >miR128_R135_L22... at +/100.00%
+2	21nt, >miR142_R121_L21... at -/85.71%
+3	22nt, >miR271_R44_L22... at -/86.36%
+4	21nt, >miR523_R13_L21... at -/90.48%
+5	20nt, >miR524_R13_L20... at -/90.00%
+6	23nt, >miR529_R13_L23... *
+>Cluster 8
+0	22nt, >miR18_R676_L22... at +/100.00%
+1	20nt, >miR861_R6_L20... at +/100.00%
+2	23nt, >miR1062_R4_L23... *
+3	21nt, >miR1560_R2_L21... at +/100.00%
+>Cluster 9
+0	23nt, >miR1222_R3_L23... *
+>Cluster 10
+0	23nt, >miR1368_R2_L23... *
+>Cluster 11
+0	22nt, >miR2_R756_L22... *
+1	22nt, >miR37_R447_L22... at +/86.36%
+2	21nt, >miR381_R25_L21... at +/100.00%
+3	21nt, >miR971_R4_L21... at +/85.71%
+>Cluster 12
+0	22nt, >miR3_R751_L22... *
+1	22nt, >miR42_R402_L22... at +/95.45%
+2	20nt, >miR294_R39_L20... at +/100.00%
+3	21nt, >miR762_R7_L21... at -/85.71%
+4	21nt, >miR797_R6_L21... at +/100.00%
+5	22nt, >miR1281_R2_L22... at +/95.45%
+>Cluster 13
+0	22nt, >miR9_R713_L22... *
+1	22nt, >miR51_R340_L22... at +/81.82%
+2	21nt, >miR201_R72_L21... at +/100.00%
+3	21nt, >miR596_R11_L21... at -/80.95%
+>Cluster 14
+0	22nt, >miR15_R694_L22... *
+1	21nt, >miR804_R6_L21... at +/100.00%
+2	21nt, >miR1557_R2_L21... at -/80.95%
+>Cluster 15
+0	21nt, >miR16_R686_L21... at +/100.00%
+1	22nt, >miR23_R599_L22... *
+2	20nt, >miR27_R544_L20... at +/90.00%
+3	21nt, >miR52_R336_L21... at +/80.95%
+4	21nt, >miR73_R274_L21... at +/90.48%
+5	21nt, >miR114_R155_L21... at +/85.71%
+6	21nt, >miR127_R137_L21... at +/90.48%
+7	21nt, >miR145_R119_L21... at +/85.71%
+8	20nt, >miR189_R77_L20... at +/95.00%
+9	22nt, >miR210_R68_L22... at +/86.36%
+10	20nt, >miR420_R21_L20... at +/85.00%
+11	22nt, >miR487_R15_L22... at +/81.82%
+12	20nt, >miR522_R13_L20... at +/85.00%
+13	22nt, >miR580_R11_L22... at +/90.91%
+14	20nt, >miR634_R9_L20... at +/80.00%
+15	21nt, >miR679_R8_L21... at +/95.24%
+16	21nt, >miR698_R8_L21... at +/80.95%
+17	21nt, >miR726_R7_L21... at +/95.24%
+18	21nt, >miR750_R7_L21... at +/80.95%
+19	21nt, >miR820_R6_L21... at +/85.71%
+20	21nt, >miR921_R5_L21... at +/80.95%
+21	21nt, >miR1169_R3_L21... at +/85.71%
+22	22nt, >miR1263_R2_L22... at +/95.45%
+23	22nt, >miR1390_R2_L22... at +/86.36%
+24	20nt, >miR1391_R2_L20... at +/90.00%
+>Cluster 16
+0	22nt, >miR36_R451_L22... *
+1	21nt, >miR215_R64_L21... at +/100.00%
+>Cluster 17
+0	22nt, >miR38_R445_L22... *
+1	22nt, >miR579_R11_L22... at +/95.45%
+>Cluster 18
+0	21nt, >miR1_R795_L21... at +/90.48%
+1	21nt, >miR17_R685_L21... at +/95.24%
+2	22nt, >miR39_R433_L22... *
+3	22nt, >miR87_R214_L22... at +/95.45%
+4	21nt, >miR126_R138_L21... at +/100.00%
+5	21nt, >miR138_R123_L21... at +/95.24%
+6	21nt, >miR198_R73_L21... at +/95.24%
+7	21nt, >miR256_R49_L21... at +/95.24%
+8	21nt, >miR290_R40_L21... at +/95.24%
+9	22nt, >miR344_R29_L22... at +/95.45%
+10	21nt, >miR734_R7_L21... at +/95.24%
+11	22nt, >miR815_R6_L22... at +/95.45%
+12	21nt, >miR976_R4_L21... at +/90.48%
+13	21nt, >miR1327_R2_L21... at +/85.71%
+14	22nt, >miR1397_R2_L22... at +/95.45%
+15	21nt, >miR1415_R2_L21... at +/90.48%
+>Cluster 19
+0	22nt, >miR59_R318_L22... *
+1	21nt, >miR532_R13_L21... at -/90.48%
+2	22nt, >miR723_R7_L22... at +/95.45%
+3	22nt, >miR1111_R3_L22... at +/95.45%
+>Cluster 20
+0	22nt, >miR60_R317_L22... *
+1	22nt, >miR769_R7_L22... at +/95.45%
+>Cluster 21
+0	22nt, >miR80_R246_L22... *
+>Cluster 22
+0	22nt, >miR82_R243_L22... *
+>Cluster 23
+0	22nt, >miR84_R223_L22... *
+1	22nt, >miR86_R220_L22... at +/95.45%
+2	22nt, >miR95_R196_L22... at +/95.45%
+3	21nt, >miR122_R145_L21... at +/100.00%
+4	21nt, >miR191_R76_L21... at -/85.71%
+5	21nt, >miR555_R12_L21... at -/90.48%
+6	21nt, >miR794_R6_L21... at +/95.24%
+7	21nt, >miR818_R6_L21... at -/90.48%
+8	20nt, >miR1333_R2_L20... at +/100.00%
+9	21nt, >miR1460_R2_L21... at -/85.71%
+>Cluster 24
+0	22nt, >miR91_R209_L22... *
+1	20nt, >miR1110_R3_L20... at +/100.00%
+2	21nt, >miR1575_R2_L21... at +/80.95%
+>Cluster 25
+0	22nt, >miR92_R206_L22... *
+1	22nt, >miR619_R10_L22... at +/95.45%
+>Cluster 26
+0	22nt, >miR93_R204_L22... *
+1	22nt, >miR177_R88_L22... at +/86.36%
+2	22nt, >miR512_R14_L22... at +/81.82%
+3	21nt, >miR618_R10_L21... at +/100.00%
+>Cluster 27
+0	22nt, >miR98_R193_L22... *
+1	22nt, >miR361_R27_L22... at +/95.45%
+>Cluster 28
+0	22nt, >miR101_R187_L22... *
+>Cluster 29
+0	21nt, >miR26_R556_L21... at +/100.00%
+1	21nt, >miR45_R376_L21... at +/90.48%
+2	22nt, >miR102_R187_L22... *
+3	20nt, >miR712_R8_L20... at +/100.00%
+>Cluster 30
+0	22nt, >miR104_R174_L22... *
+>Cluster 31
+0	22nt, >miR110_R159_L22... *
+1	21nt, >miR563_R12_L21... at +/100.00%
+2	20nt, >miR738_R7_L20... at +/100.00%
+>Cluster 32
+0	22nt, >miR116_R154_L22... *
+1	21nt, >miR240_R55_L21... at -/85.71%
+2	22nt, >miR1429_R2_L22... at -/81.82%
+>Cluster 33
+0	21nt, >miR19_R676_L21... at +/95.24%
+1	21nt, >miR46_R371_L21... at +/100.00%
+2	21nt, >miR47_R363_L21... at +/95.24%
+3	20nt, >miR83_R242_L20... at +/100.00%
+4	22nt, >miR117_R153_L22... *
+5	21nt, >miR371_R27_L21... at -/85.71%
+6	21nt, >miR460_R17_L21... at +/95.24%
+7	22nt, >miR669_R9_L22... at +/95.45%
+8	20nt, >miR852_R6_L20... at -/85.00%
+9	20nt, >miR907_R5_L20... at -/85.00%
+10	21nt, >miR1183_R3_L21... at -/85.71%
+>Cluster 34
+0	22nt, >miR123_R145_L22... *
+1	22nt, >miR444_R19_L22... at +/81.82%
+2	22nt, >miR774_R7_L22... at +/90.91%
+3	22nt, >miR871_R5_L22... at +/95.45%
+>Cluster 35
+0	22nt, >miR133_R128_L22... *
+>Cluster 36
+0	22nt, >miR136_R125_L22... *
+1	21nt, >miR1085_R3_L21... at +/80.95%
+>Cluster 37
+0	22nt, >miR140_R123_L22... *
+1	22nt, >miR1364_R2_L22... at +/95.45%
+2	22nt, >miR1454_R2_L22... at +/86.36%
+>Cluster 38
+0	22nt, >miR144_R120_L22... *
+>Cluster 39
+0	22nt, >miR148_R115_L22... *
+1	21nt, >miR405_R23_L21... at +/100.00%
+2	22nt, >miR648_R9_L22... at +/86.36%
+3	22nt, >miR1207_R3_L22... at +/90.91%
+>Cluster 40
+0	22nt, >miR149_R111_L22... *
+>Cluster 41
+0	22nt, >miR152_R106_L22... *
+>Cluster 42
+0	22nt, >miR157_R103_L22... *
+1	21nt, >miR1190_R3_L21... at +/100.00%
+2	21nt, >miR1467_R2_L21... at +/90.48%
+>Cluster 43
+0	20nt, >miR10_R708_L20... at -/90.00%
+1	22nt, >miR161_R100_L22... *
+2	21nt, >miR204_R71_L21... at -/80.95%
+3	21nt, >miR219_R63_L21... at -/80.95%
+4	22nt, >miR298_R39_L22... at +/90.91%
+5	21nt, >miR310_R35_L21... at -/85.71%
+6	22nt, >miR312_R35_L22... at +/81.82%
+7	21nt, >miR313_R35_L21... at +/95.24%
+8	22nt, >miR446_R19_L22... at +/90.91%
+9	22nt, >miR517_R14_L22... at -/81.82%
+10	21nt, >miR572_R12_L21... at -/95.24%
+11	21nt, >miR690_R8_L21... at +/90.48%
+12	21nt, >miR755_R7_L21... at -/80.95%
+13	20nt, >miR1105_R3_L20... at -/85.00%
+14	20nt, >miR1559_R2_L20... at -/95.00%
+>Cluster 44
+0	22nt, >miR165_R98_L22... *
+1	22nt, >miR729_R7_L22... at +/95.45%
+>Cluster 45
+0	21nt, >miR33_R465_L21... at -/80.95%
+1	22nt, >miR169_R96_L22... *
+2	21nt, >miR228_R60_L21... at +/90.48%
+3	21nt, >miR269_R45_L21... at +/95.24%
+4	21nt, >miR275_R43_L21... at +/80.95%
+5	21nt, >miR329_R32_L21... at -/80.95%
+6	22nt, >miR528_R13_L22... at +/95.45%
+7	21nt, >miR620_R10_L21... at +/100.00%
+8	22nt, >miR904_R5_L22... at +/90.91%
+9	20nt, >miR1012_R4_L20... at -/85.00%
+10	21nt, >miR1142_R3_L21... at +/95.24%
+11	20nt, >miR1271_R2_L20... at -/85.00%
+12	22nt, >miR1562_R2_L22... at +/86.36%
+>Cluster 46
+0	22nt, >miR171_R95_L22... *
+>Cluster 47
+0	22nt, >miR173_R90_L22... *
+>Cluster 48
+0	22nt, >miR179_R88_L22... *
+>Cluster 49
+0	22nt, >miR181_R86_L22... *
+>Cluster 50
+0	21nt, >miR50_R343_L21... at +/95.24%
+1	21nt, >miR130_R134_L21... at +/100.00%
+2	21nt, >miR147_R118_L21... at +/90.48%
+3	22nt, >miR182_R86_L22... *
+4	21nt, >miR203_R71_L21... at +/95.24%
+5	21nt, >miR872_R5_L21... at +/85.71%
+6	22nt, >miR946_R5_L22... at +/90.91%
+>Cluster 51
+0	22nt, >miR184_R84_L22... *
+>Cluster 52
+0	22nt, >miR185_R84_L22... *
+1	22nt, >miR428_R20_L22... at +/95.45%
+>Cluster 53
+0	22nt, >miR186_R83_L22... *
+>Cluster 54
+0	22nt, >miR187_R82_L22... *
+>Cluster 55
+0	22nt, >miR188_R81_L22... *
+1	21nt, >miR792_R6_L21... at +/100.00%
+>Cluster 56
+0	22nt, >miR192_R75_L22... *
+>Cluster 57
+0	22nt, >miR194_R74_L22... *
+>Cluster 58
+0	22nt, >miR199_R73_L22... *
+1	22nt, >miR222_R62_L22... at +/81.82%
+2	22nt, >miR608_R11_L22... at -/81.82%
+>Cluster 59
+0	22nt, >miR206_R69_L22... *
+>Cluster 60
+0	22nt, >miR212_R67_L22... *
+1	21nt, >miR349_R28_L21... at +/100.00%
+>Cluster 61
+0	22nt, >miR213_R67_L22... *
+1	21nt, >miR759_R7_L21... at -/80.95%
+>Cluster 62
+0	22nt, >miR217_R64_L22... *
+1	22nt, >miR474_R17_L22... at +/86.36%
+2	22nt, >miR1096_R3_L22... at +/95.45%
+>Cluster 63
+0	22nt, >miR225_R61_L22... *
+1	21nt, >miR1287_R2_L21... at +/95.24%
+>Cluster 64
+0	22nt, >miR227_R60_L22... *
+1	21nt, >miR706_R8_L21... at +/100.00%
+>Cluster 65
+0	22nt, >miR229_R60_L22... *
+>Cluster 66
+0	22nt, >miR231_R58_L22... *
+1	20nt, >miR1066_R4_L20... at +/100.00%
+>Cluster 67
+0	22nt, >miR235_R57_L22... *
+1	22nt, >miR1122_R3_L22... at +/95.45%
+>Cluster 68
+0	21nt, >miR4_R751_L21... at -/80.95%
+1	21nt, >miR72_R275_L21... at +/100.00%
+2	22nt, >miR237_R56_L22... *
+>Cluster 69
+0	22nt, >miR239_R56_L22... *
+1	22nt, >miR314_R34_L22... at +/95.45%
+>Cluster 70
+0	22nt, >miR243_R54_L22... *
+1	22nt, >miR430_R20_L22... at +/95.45%
+>Cluster 71
+0	22nt, >miR245_R53_L22... *
+>Cluster 72
+0	22nt, >miR247_R53_L22... *
+>Cluster 73
+0	22nt, >miR249_R52_L22... *
+>Cluster 74
+0	22nt, >miR254_R50_L22... *
+>Cluster 75
+0	22nt, >miR257_R49_L22... *
+1	21nt, >miR824_R6_L21... at +/100.00%
+>Cluster 76
+0	22nt, >miR259_R49_L22... *
+>Cluster 77
+0	22nt, >miR268_R45_L22... *
+1	22nt, >miR717_R8_L22... at +/95.45%
+2	21nt, >miR743_R7_L21... at +/95.24%
+3	22nt, >miR1424_R2_L22... at -/81.82%
+>Cluster 78
+0	21nt, >miR49_R362_L21... at +/100.00%
+1	22nt, >miR272_R44_L22... *
+>Cluster 79
+0	22nt, >miR274_R43_L22... *
+>Cluster 80
+0	22nt, >miR276_R43_L22... *
+1	22nt, >miR510_R14_L22... at -/90.91%
+>Cluster 81
+0	22nt, >miR278_R42_L22... *
+>Cluster 82
+0	22nt, >miR279_R42_L22... *
+>Cluster 83
+0	22nt, >miR280_R42_L22... *
+>Cluster 84
+0	22nt, >miR282_R42_L22... *
+1	20nt, >miR404_R23_L20... at -/80.00%
+>Cluster 85
+0	22nt, >miR286_R41_L22... *
+>Cluster 86
+0	22nt, >miR293_R40_L22... *
+>Cluster 87
+0	22nt, >miR308_R36_L22... *
+>Cluster 88
+0	22nt, >miR311_R35_L22... *
+1	22nt, >miR351_R28_L22... at +/95.45%
+2	22nt, >miR836_R6_L22... at +/90.91%
+>Cluster 89
+0	22nt, >miR315_R34_L22... *
+>Cluster 90
+0	22nt, >miR316_R34_L22... *
+>Cluster 91
+0	22nt, >miR318_R33_L22... *
+1	22nt, >miR674_R8_L22... at +/95.45%
+>Cluster 92
+0	22nt, >miR323_R32_L22... *
+>Cluster 93
+0	22nt, >miR326_R32_L22... *
+>Cluster 94
+0	22nt, >miR334_R31_L22... *
+1	21nt, >miR908_R5_L21... at +/100.00%
+>Cluster 95
+0	22nt, >miR340_R30_L22... *
+1	22nt, >miR704_R8_L22... at +/95.45%
+>Cluster 96
+0	22nt, >miR341_R30_L22... *
+1	21nt, >miR1028_R4_L21... at +/100.00%
+2	20nt, >miR1182_R3_L20... at -/80.00%
+>Cluster 97
+0	22nt, >miR342_R30_L22... *
+1	22nt, >miR1036_R4_L22... at +/95.45%
+>Cluster 98
+0	22nt, >miR343_R30_L22... *
+>Cluster 99
+0	22nt, >miR346_R29_L22... *
+>Cluster 100
+0	22nt, >miR347_R29_L22... *
+>Cluster 101
+0	22nt, >miR353_R28_L22... *
+>Cluster 102
+0	22nt, >miR356_R28_L22... *
+>Cluster 103
+0	22nt, >miR363_R27_L22... *
+1	20nt, >miR647_R9_L20... at +/100.00%
+>Cluster 104
+0	22nt, >miR364_R27_L22... *
+>Cluster 105
+0	21nt, >miR24_R598_L21... at +/100.00%
+1	22nt, >miR365_R27_L22... *
+2	20nt, >miR589_R11_L20... at +/80.00%
+3	20nt, >miR880_R5_L20... at +/100.00%
+>Cluster 106
+0	22nt, >miR366_R27_L22... *
+>Cluster 107
+0	21nt, >miR61_R311_L21... at -/85.71%
+1	21nt, >miR153_R105_L21... at -/90.48%
+2	21nt, >miR168_R96_L21... at +/100.00%
+3	22nt, >miR367_R27_L22... *
+>Cluster 108
+0	21nt, >miR14_R704_L21... at +/100.00%
+1	22nt, >miR369_R27_L22... *
+2	21nt, >miR379_R26_L21... at -/80.95%
+3	21nt, >miR508_R14_L21... at +/100.00%
+4	20nt, >miR812_R6_L20... at +/100.00%
+5	22nt, >miR1587_R2_L22... at +/95.45%
+>Cluster 109
+0	21nt, >miR32_R482_L21... at +/100.00%
+1	22nt, >miR370_R27_L22... *
+2	21nt, >miR534_R13_L21... at -/95.24%
+3	20nt, >miR562_R12_L20... at +/100.00%
+4	21nt, >miR1130_R3_L21... at +/95.24%
+5	20nt, >miR1338_R2_L20... at +/80.00%
+6	20nt, >miR1583_R2_L20... at +/100.00%
+>Cluster 110
+0	20nt, >miR68_R282_L20... at -/80.00%
+1	21nt, >miR336_R31_L21... at +/100.00%
+2	22nt, >miR372_R27_L22... *
+3	21nt, >miR414_R22_L21... at +/85.71%
+4	21nt, >miR472_R17_L21... at +/80.95%
+5	21nt, >miR495_R15_L21... at +/85.71%
+6	22nt, >miR575_R12_L22... at +/86.36%
+7	22nt, >miR780_R7_L22... at +/86.36%
+>Cluster 111
+0	22nt, >miR373_R26_L22... *
+1	22nt, >miR728_R7_L22... at +/95.45%
+>Cluster 112
+0	22nt, >miR374_R26_L22... *
+1	22nt, >miR515_R14_L22... at +/95.45%
+2	22nt, >miR549_R12_L22... at +/90.91%
+>Cluster 113
+0	21nt, >miR44_R383_L21... at -/80.95%
+1	21nt, >miR167_R96_L21... at -/80.95%
+2	21nt, >miR214_R66_L21... at -/80.95%
+3	21nt, >miR319_R33_L21... at -/80.95%
+4	21nt, >miR331_R31_L21... at -/85.71%
+5	22nt, >miR375_R26_L22... *
+6	21nt, >miR449_R18_L21... at -/80.95%
+7	21nt, >miR644_R9_L21... at +/85.71%
+8	22nt, >miR1138_R3_L22... at +/86.36%
+9	21nt, >miR1166_R3_L21... at +/80.95%
+>Cluster 114
+0	22nt, >miR377_R26_L22... *
+>Cluster 115
+0	22nt, >miR378_R26_L22... *
+1	22nt, >miR1185_R3_L22... at +/95.45%
+>Cluster 116
+0	21nt, >miR62_R307_L21... at +/85.71%
+1	21nt, >miR345_R29_L21... at +/100.00%
+2	22nt, >miR384_R25_L22... *
+3	21nt, >miR385_R25_L21... at +/100.00%
+4	22nt, >miR1243_R3_L22... at +/81.82%
+5	22nt, >miR1373_R2_L22... at +/81.82%
+>Cluster 117
+0	22nt, >miR388_R25_L22... *
+1	21nt, >miR928_R5_L21... at +/100.00%
+>Cluster 118
+0	22nt, >miR389_R25_L22... *
+>Cluster 119
+0	22nt, >miR390_R25_L22... *
+>Cluster 120
+0	21nt, >miR29_R528_L21... at +/100.00%
+1	21nt, >miR96_R196_L21... at +/95.24%
+2	22nt, >miR392_R25_L22... *
+3	20nt, >miR539_R13_L20... at +/100.00%
+4	22nt, >miR714_R8_L22... at +/95.45%
+5	21nt, >miR1558_R2_L21... at +/100.00%
+>Cluster 121
+0	22nt, >miR394_R24_L22... *
+>Cluster 122
+0	22nt, >miR395_R24_L22... *
+1	22nt, >miR1388_R2_L22... at +/81.82%
+>Cluster 123
+0	22nt, >miR398_R24_L22... *
+>Cluster 124
+0	22nt, >miR400_R24_L22... *
+>Cluster 125
+0	22nt, >miR407_R23_L22... *
+1	21nt, >miR439_R19_L21... at -/80.95%
+2	21nt, >miR504_R14_L21... at +/90.48%
+3	22nt, >miR671_R9_L22... at +/81.82%
+4	21nt, >miR1099_R3_L21... at -/80.95%
+5	21nt, >miR1195_R3_L21... at +/80.95%
+>Cluster 126
+0	22nt, >miR416_R22_L22... *
+>Cluster 127
+0	22nt, >miR417_R21_L22... *
+>Cluster 128
+0	22nt, >miR419_R21_L22... *
+>Cluster 129
+0	22nt, >miR422_R21_L22... *
+>Cluster 130
+0	22nt, >miR434_R20_L22... *
+>Cluster 131
+0	22nt, >miR436_R20_L22... *
+1	21nt, >miR1332_R2_L21... at -/80.95%
+>Cluster 132
+0	22nt, >miR437_R19_L22... *
+>Cluster 133
+0	21nt, >miR175_R89_L21... at +/100.00%
+1	21nt, >miR223_R61_L21... at -/80.95%
+2	21nt, >miR250_R51_L21... at +/85.71%
+3	22nt, >miR438_R19_L22... *
+4	21nt, >miR1149_R3_L21... at +/90.48%
+5	20nt, >miR1411_R2_L20... at -/80.00%
+>Cluster 134
+0	22nt, >miR441_R19_L22... *
+1	22nt, >miR829_R6_L22... at +/95.45%
+2	22nt, >miR903_R5_L22... at +/95.45%
+>Cluster 135
+0	22nt, >miR443_R19_L22... *
+1	22nt, >miR1444_R2_L22... at +/95.45%
+>Cluster 136
+0	21nt, >miR317_R33_L21... at +/100.00%
+1	22nt, >miR445_R19_L22... *
+>Cluster 137
+0	21nt, >miR202_R71_L21... at +/100.00%
+1	22nt, >miR452_R18_L22... *
+>Cluster 138
+0	22nt, >miR454_R18_L22... *
+>Cluster 139
+0	22nt, >miR457_R18_L22... *
+>Cluster 140
+0	22nt, >miR461_R17_L22... *
+1	22nt, >miR779_R7_L22... at +/90.91%
+>Cluster 141
+0	22nt, >miR463_R17_L22... *
+1	21nt, >miR1361_R2_L21... at +/95.24%
+>Cluster 142
+0	22nt, >miR465_R17_L22... *
+>Cluster 143
+0	22nt, >miR468_R17_L22... *
+1	21nt, >miR1340_R2_L21... at +/100.00%
+>Cluster 144
+0	22nt, >miR469_R17_L22... *
+>Cluster 145
+0	21nt, >miR58_R319_L21... at +/100.00%
+1	22nt, >miR471_R17_L22... *
+2	22nt, >miR483_R15_L22... at +/95.45%
+3	22nt, >miR1080_R3_L22... at +/86.36%
+>Cluster 146
+0	22nt, >miR479_R16_L22... *
+>Cluster 147
+0	21nt, >miR71_R276_L21... at +/100.00%
+1	21nt, >miR150_R108_L21... at -/90.48%
+2	20nt, >miR426_R20_L20... at +/100.00%
+3	22nt, >miR481_R16_L22... *
+>Cluster 148
+0	22nt, >miR482_R15_L22... *
+1	21nt, >miR1259_R2_L21... at +/85.71%
+>Cluster 149
+0	22nt, >miR485_R15_L22... *
+>Cluster 150
+0	21nt, >miR41_R414_L21... at +/85.71%
+1	21nt, >miR90_R211_L21... at +/100.00%
+2	22nt, >miR490_R15_L22... *
+3	21nt, >miR1177_R3_L21... at +/95.24%
+>Cluster 151
+0	22nt, >miR497_R14_L22... *
+>Cluster 152
+0	22nt, >miR498_R14_L22... *
+>Cluster 153
+0	22nt, >miR499_R14_L22... *
+1	22nt, >miR888_R5_L22... at +/95.45%
+>Cluster 154
+0	22nt, >miR500_R14_L22... *
+>Cluster 155
+0	22nt, >miR502_R14_L22... *
+1	22nt, >miR590_R11_L22... at +/86.36%
+>Cluster 156
+0	22nt, >miR506_R14_L22... *
+1	22nt, >miR828_R6_L22... at -/81.82%
+>Cluster 157
+0	22nt, >miR514_R14_L22... *
+>Cluster 158
+0	22nt, >miR520_R13_L22... *
+1	20nt, >miR1125_R3_L20... at +/80.00%
+>Cluster 159
+0	22nt, >miR521_R13_L22... *
+>Cluster 160
+0	21nt, >miR408_R22_L21... at +/100.00%
+1	22nt, >miR525_R13_L22... *
+2	20nt, >miR708_R8_L20... at +/100.00%
+>Cluster 161
+0	22nt, >miR530_R13_L22... *
+1	22nt, >miR1188_R3_L22... at +/95.45%
+>Cluster 162
+0	22nt, >miR531_R13_L22... *
+>Cluster 163
+0	22nt, >miR533_R13_L22... *
+>Cluster 164
+0	22nt, >miR535_R13_L22... *
+>Cluster 165
+0	22nt, >miR536_R13_L22... *
+>Cluster 166
+0	22nt, >miR540_R13_L22... *
+>Cluster 167
+0	21nt, >miR7_R735_L21... at +/85.71%
+1	21nt, >miR35_R452_L21... at +/85.71%
+2	21nt, >miR382_R25_L21... at +/85.71%
+3	21nt, >miR433_R20_L21... at +/100.00%
+4	22nt, >miR541_R13_L22... *
+>Cluster 168
+0	22nt, >miR543_R12_L22... *
+>Cluster 169
+0	22nt, >miR547_R12_L22... *
+>Cluster 170
+0	22nt, >miR554_R12_L22... *
+>Cluster 171
+0	22nt, >miR558_R12_L22... *
+>Cluster 172
+0	22nt, >miR560_R12_L22... *
+1	22nt, >miR913_R5_L22... at +/90.91%
+>Cluster 173
+0	22nt, >miR561_R12_L22... *
+1	22nt, >miR1123_R3_L22... at +/95.45%
+2	22nt, >miR1416_R2_L22... at +/95.45%
+>Cluster 174
+0	22nt, >miR567_R12_L22... *
+>Cluster 175
+0	22nt, >miR568_R12_L22... *
+1	21nt, >miR860_R6_L21... at +/100.00%
+2	22nt, >miR1350_R2_L22... at +/95.45%
+>Cluster 176
+0	21nt, >miR397_R24_L21... at -/80.95%
+1	22nt, >miR570_R12_L22... *
+>Cluster 177
+0	22nt, >miR574_R12_L22... *
+1	22nt, >miR606_R11_L22... at +/86.36%
+2	20nt, >miR953_R5_L20... at +/85.00%
+3	21nt, >miR1019_R4_L21... at -/80.95%
+4	21nt, >miR1227_R3_L21... at +/90.48%
+>Cluster 178
+0	22nt, >miR577_R12_L22... *
+>Cluster 179
+0	22nt, >miR583_R11_L22... *
+>Cluster 180
+0	22nt, >miR586_R11_L22... *
+>Cluster 181
+0	22nt, >miR592_R11_L22... *
+>Cluster 182
+0	22nt, >miR593_R11_L22... *
+>Cluster 183
+0	22nt, >miR594_R11_L22... *
+1	21nt, >miR1379_R2_L21... at +/100.00%
+>Cluster 184
+0	22nt, >miR595_R11_L22... *
+1	21nt, >miR1516_R2_L21... at +/100.00%
+>Cluster 185
+0	22nt, >miR597_R11_L22... *
+>Cluster 186
+0	22nt, >miR598_R11_L22... *
+1	22nt, >miR1519_R2_L22... at +/90.91%
+>Cluster 187
+0	22nt, >miR600_R11_L22... *
+1	22nt, >miR950_R5_L22... at -/95.45%
+>Cluster 188
+0	22nt, >miR601_R11_L22... *
+>Cluster 189
+0	22nt, >miR602_R11_L22... *
+1	22nt, >miR1514_R2_L22... at -/86.36%
+>Cluster 190
+0	22nt, >miR603_R11_L22... *
+>Cluster 191
+0	21nt, >miR43_R396_L21... at +/90.48%
+1	22nt, >miR607_R11_L22... *
+>Cluster 192
+0	22nt, >miR613_R10_L22... *
+>Cluster 193
+0	22nt, >miR614_R10_L22... *
+>Cluster 194
+0	22nt, >miR616_R10_L22... *
+>Cluster 195
+0	22nt, >miR617_R10_L22... *
+>Cluster 196
+0	22nt, >miR625_R10_L22... *
+>Cluster 197
+0	22nt, >miR627_R10_L22... *
+1	20nt, >miR1354_R2_L20... at +/100.00%
+2	21nt, >miR1362_R2_L21... at +/100.00%
+>Cluster 198
+0	22nt, >miR632_R10_L22... *
+>Cluster 199
+0	22nt, >miR635_R9_L22... *
+1	22nt, >miR1218_R3_L22... at +/90.91%
+2	21nt, >miR1266_R2_L21... at +/80.95%
+3	22nt, >miR1270_R2_L22... at +/95.45%
+>Cluster 200
+0	22nt, >miR636_R9_L22... *
+>Cluster 201
+0	22nt, >miR637_R9_L22... *
+1	22nt, >miR1088_R3_L22... at +/95.45%
+>Cluster 202
+0	22nt, >miR642_R9_L22... *
+>Cluster 203
+0	22nt, >miR649_R9_L22... *
+>Cluster 204
+0	22nt, >miR650_R9_L22... *
+>Cluster 205
+0	22nt, >miR651_R9_L22... *
+>Cluster 206
+0	22nt, >miR652_R9_L22... *
+>Cluster 207
+0	21nt, >miR503_R14_L21... at +/100.00%
+1	22nt, >miR653_R9_L22... *
+>Cluster 208
+0	22nt, >miR655_R9_L22... *
+>Cluster 209
+0	22nt, >miR656_R9_L22... *
+>Cluster 210
+0	22nt, >miR658_R9_L22... *
+>Cluster 211
+0	22nt, >miR660_R9_L22... *
+>Cluster 212
+0	22nt, >miR662_R9_L22... *
+>Cluster 213
+0	22nt, >miR663_R9_L22... *
+>Cluster 214
+0	22nt, >miR665_R9_L22... *
+>Cluster 215
+0	22nt, >miR666_R9_L22... *
+>Cluster 216
+0	22nt, >miR670_R9_L22... *
+1	21nt, >miR773_R7_L21... at +/100.00%
+>Cluster 217
+0	22nt, >miR673_R8_L22... *
+>Cluster 218
+0	22nt, >miR675_R8_L22... *
+>Cluster 219
+0	22nt, >miR678_R8_L22... *
+>Cluster 220
+0	22nt, >miR682_R8_L22... *
+>Cluster 221
+0	22nt, >miR683_R8_L22... *
+1	20nt, >miR1160_R3_L20... at +/80.00%
+>Cluster 222
+0	22nt, >miR685_R8_L22... *
+>Cluster 223
+0	22nt, >miR692_R8_L22... *
+>Cluster 224
+0	22nt, >miR693_R8_L22... *
+1	20nt, >miR1389_R2_L20... at +/80.00%
+>Cluster 225
+0	22nt, >miR694_R8_L22... *
+>Cluster 226
+0	22nt, >miR695_R8_L22... *
+>Cluster 227
+0	20nt, >miR211_R68_L20... at +/80.00%
+1	22nt, >miR701_R8_L22... *
+>Cluster 228
+0	22nt, >miR702_R8_L22... *
+>Cluster 229
+0	22nt, >miR707_R8_L22... *
+>Cluster 230
+0	22nt, >miR710_R8_L22... *
+>Cluster 231
+0	22nt, >miR711_R8_L22... *
+1	21nt, >miR1081_R3_L21... at +/100.00%
+>Cluster 232
+0	22nt, >miR713_R8_L22... *
+>Cluster 233
+0	22nt, >miR716_R8_L22... *
+>Cluster 234
+0	21nt, >miR120_R147_L21... at +/95.24%
+1	21nt, >miR162_R100_L21... at +/100.00%
+2	21nt, >miR322_R33_L21... at +/80.95%
+3	22nt, >miR718_R8_L22... *
+4	22nt, >miR865_R6_L22... at +/81.82%
+5	21nt, >miR1536_R2_L21... at +/80.95%
+>Cluster 235
+0	21nt, >miR99_R193_L21... at +/100.00%
+1	21nt, >miR355_R28_L21... at +/100.00%
+2	22nt, >miR719_R8_L22... *
+3	20nt, >miR739_R7_L20... at +/100.00%
+>Cluster 236
+0	22nt, >miR720_R7_L22... *
+>Cluster 237
+0	22nt, >miR721_R7_L22... *
+>Cluster 238
+0	22nt, >miR722_R7_L22... *
+>Cluster 239
+0	22nt, >miR725_R7_L22... *
+>Cluster 240
+0	22nt, >miR727_R7_L22... *
+>Cluster 241
+0	22nt, >miR730_R7_L22... *
+1	21nt, >miR978_R4_L21... at +/95.24%
+>Cluster 242
+0	22nt, >miR731_R7_L22... *
+>Cluster 243
+0	22nt, >miR732_R7_L22... *
+>Cluster 244
+0	22nt, >miR733_R7_L22... *
+1	21nt, >miR1486_R2_L21... at +/100.00%
+>Cluster 245
+0	22nt, >miR735_R7_L22... *
+>Cluster 246
+0	21nt, >miR193_R74_L21... at +/80.95%
+1	22nt, >miR741_R7_L22... *
+2	22nt, >miR1276_R2_L22... at +/95.45%
+>Cluster 247
+0	22nt, >miR742_R7_L22... *
+>Cluster 248
+0	22nt, >miR745_R7_L22... *
+>Cluster 249
+0	22nt, >miR747_R7_L22... *
+>Cluster 250
+0	21nt, >miR77_R258_L21... at +/100.00%
+1	22nt, >miR748_R7_L22... *
+>Cluster 251
+0	22nt, >miR749_R7_L22... *
+>Cluster 252
+0	22nt, >miR756_R7_L22... *
+>Cluster 253
+0	22nt, >miR757_R7_L22... *
+>Cluster 254
+0	22nt, >miR765_R7_L22... *
+1	21nt, >miR1298_R2_L21... at +/90.48%
+>Cluster 255
+0	22nt, >miR772_R7_L22... *
+>Cluster 256
+0	21nt, >miR709_R8_L21... at +/90.48%
+1	22nt, >miR782_R6_L22... *
+>Cluster 257
+0	22nt, >miR785_R6_L22... *
+>Cluster 258
+0	22nt, >miR787_R6_L22... *
+>Cluster 259
+0	20nt, >miR657_R9_L20... at -/85.00%
+1	22nt, >miR788_R6_L22... *
+2	22nt, >miR1282_R2_L22... at +/81.82%
+>Cluster 260
+0	22nt, >miR790_R6_L22... *
+>Cluster 261
+0	22nt, >miR805_R6_L22... *
+>Cluster 262
+0	21nt, >miR253_R50_L21... at +/90.48%
+1	22nt, >miR809_R6_L22... *
+2	22nt, >miR1118_R3_L22... at +/90.91%
+>Cluster 263
+0	22nt, >miR811_R6_L22... *
+>Cluster 264
+0	22nt, >miR813_R6_L22... *
+1	21nt, >miR838_R6_L21... at +/100.00%
+>Cluster 265
+0	22nt, >miR814_R6_L22... *
+>Cluster 266
+0	22nt, >miR819_R6_L22... *
+1	21nt, >miR1196_R3_L21... at +/90.48%
+>Cluster 267
+0	22nt, >miR826_R6_L22... *
+1	21nt, >miR1420_R2_L21... at +/100.00%
+>Cluster 268
+0	21nt, >miR300_R38_L21... at +/80.95%
+1	22nt, >miR833_R6_L22... *
+>Cluster 269
+0	22nt, >miR837_R6_L22... *
+1	20nt, >miR1584_R2_L20... at +/100.00%
+>Cluster 270
+0	22nt, >miR842_R6_L22... *
+>Cluster 271
+0	22nt, >miR846_R6_L22... *
+>Cluster 272
+0	22nt, >miR848_R6_L22... *
+1	21nt, >miR864_R6_L21... at +/100.00%
+2	22nt, >miR1016_R4_L22... at +/86.36%
+>Cluster 273
+0	22nt, >miR850_R6_L22... *
+>Cluster 274
+0	22nt, >miR853_R6_L22... *
+>Cluster 275
+0	22nt, >miR857_R6_L22... *
+>Cluster 276
+0	21nt, >miR262_R48_L21... at -/90.48%
+1	21nt, >miR301_R38_L21... at -/85.71%
+2	22nt, >miR859_R6_L22... *
+>Cluster 277
+0	21nt, >miR605_R11_L21... at +/100.00%
+1	22nt, >miR863_R6_L22... *
+>Cluster 278
+0	22nt, >miR866_R6_L22... *
+1	21nt, >miR1075_R3_L21... at +/100.00%
+>Cluster 279
+0	22nt, >miR867_R6_L22... *
+>Cluster 280
+0	22nt, >miR869_R5_L22... *
+1	22nt, >miR1503_R2_L22... at +/95.45%
+>Cluster 281
+0	22nt, >miR870_R5_L22... *
+1	22nt, >miR892_R5_L22... at -/95.45%
+2	22nt, >miR1043_R4_L22... at +/81.82%
+>Cluster 282
+0	22nt, >miR874_R5_L22... *
+>Cluster 283
+0	21nt, >miR501_R14_L21... at +/95.24%
+1	21nt, >miR849_R6_L21... at +/80.95%
+2	22nt, >miR878_R5_L22... *
+>Cluster 284
+0	22nt, >miR881_R5_L22... *
+>Cluster 285
+0	22nt, >miR882_R5_L22... *
+>Cluster 286
+0	22nt, >miR883_R5_L22... *
+>Cluster 287
+0	22nt, >miR887_R5_L22... *
+>Cluster 288
+0	22nt, >miR893_R5_L22... *
+1	22nt, >miR1400_R2_L22... at +/95.45%
+>Cluster 289
+0	22nt, >miR895_R5_L22... *
+>Cluster 290
+0	22nt, >miR896_R5_L22... *
+>Cluster 291
+0	22nt, >miR910_R5_L22... *
+>Cluster 292
+0	22nt, >miR911_R5_L22... *
+>Cluster 293
+0	22nt, >miR916_R5_L22... *
+>Cluster 294
+0	22nt, >miR918_R5_L22... *
+>Cluster 295
+0	21nt, >miR654_R9_L21... at +/100.00%
+1	22nt, >miR919_R5_L22... *
+2	22nt, >miR1497_R2_L22... at -/90.91%
+>Cluster 296
+0	22nt, >miR922_R5_L22... *
+>Cluster 297
+0	22nt, >miR924_R5_L22... *
+>Cluster 298
+0	21nt, >miR476_R16_L21... at +/80.95%
+1	22nt, >miR926_R5_L22... *
+>Cluster 299
+0	22nt, >miR932_R5_L22... *
+1	22nt, >miR998_R4_L22... at +/95.45%
+2	22nt, >miR1131_R3_L22... at +/90.91%
+>Cluster 300
+0	22nt, >miR935_R5_L22... *
+>Cluster 301
+0	22nt, >miR939_R5_L22... *
+>Cluster 302
+0	22nt, >miR944_R5_L22... *
+>Cluster 303
+0	22nt, >miR947_R5_L22... *
+>Cluster 304
+0	22nt, >miR948_R5_L22... *
+>Cluster 305
+0	22nt, >miR949_R5_L22... *
+>Cluster 306
+0	22nt, >miR951_R5_L22... *
+1	20nt, >miR1001_R4_L20... at +/100.00%
+2	21nt, >miR1203_R3_L21... at +/100.00%
+>Cluster 307
+0	22nt, >miR952_R5_L22... *
+>Cluster 308
+0	22nt, >miR956_R5_L22... *
+>Cluster 309
+0	22nt, >miR958_R4_L22... *
+>Cluster 310
+0	21nt, >miR48_R362_L21... at +/100.00%
+1	20nt, >miR94_R198_L20... at +/80.00%
+2	22nt, >miR960_R4_L22... *
+>Cluster 311
+0	22nt, >miR968_R4_L22... *
+>Cluster 312
+0	22nt, >miR970_R4_L22... *
+>Cluster 313
+0	22nt, >miR973_R4_L22... *
+>Cluster 314
+0	22nt, >miR985_R4_L22... *
+1	22nt, >miR1072_R4_L22... at +/90.91%
+>Cluster 315
+0	22nt, >miR986_R4_L22... *
+>Cluster 316
+0	22nt, >miR988_R4_L22... *
+>Cluster 317
+0	22nt, >miR989_R4_L22... *
+1	21nt, >miR1409_R2_L21... at -/90.48%
+>Cluster 318
+0	22nt, >miR990_R4_L22... *
+>Cluster 319
+0	22nt, >miR991_R4_L22... *
+>Cluster 320
+0	22nt, >miR995_R4_L22... *
+>Cluster 321
+0	21nt, >miR76_R271_L21... at +/100.00%
+1	21nt, >miR297_R39_L21... at +/100.00%
+2	22nt, >miR996_R4_L22... *
+>Cluster 322
+0	20nt, >miR450_R18_L20... at +/80.00%
+1	22nt, >miR997_R4_L22... *
+>Cluster 323
+0	22nt, >miR999_R4_L22... *
+>Cluster 324
+0	22nt, >miR1010_R4_L22... *
+>Cluster 325
+0	21nt, >miR111_R157_L21... at -/80.95%
+1	22nt, >miR1011_R4_L22... *
+2	22nt, >miR1220_R3_L22... at +/95.45%
+>Cluster 326
+0	22nt, >miR1017_R4_L22... *
+>Cluster 327
+0	22nt, >miR1018_R4_L22... *
+>Cluster 328
+0	22nt, >miR1022_R4_L22... *
+>Cluster 329
+0	22nt, >miR1023_R4_L22... *
+>Cluster 330
+0	22nt, >miR1030_R4_L22... *
+>Cluster 331
+0	20nt, >miR399_R24_L20... at +/80.00%
+1	22nt, >miR1033_R4_L22... *
+2	20nt, >miR1493_R2_L20... at +/85.00%
+>Cluster 332
+0	22nt, >miR1038_R4_L22... *
+>Cluster 333
+0	22nt, >miR1039_R4_L22... *
+>Cluster 334
+0	20nt, >miR763_R7_L20... at +/100.00%
+1	22nt, >miR1041_R4_L22... *
+>Cluster 335
+0	22nt, >miR1044_R4_L22... *
+>Cluster 336
+0	21nt, >miR391_R25_L21... at +/100.00%
+1	21nt, >miR1029_R4_L21... at +/100.00%
+2	22nt, >miR1045_R4_L22... *
+>Cluster 337
+0	22nt, >miR1047_R4_L22... *
+1	22nt, >miR1370_R2_L22... at +/86.36%
+>Cluster 338
+0	22nt, >miR1048_R4_L22... *
+>Cluster 339
+0	22nt, >miR1050_R4_L22... *
+>Cluster 340
+0	22nt, >miR1057_R4_L22... *
+>Cluster 341
+0	22nt, >miR1059_R4_L22... *
+>Cluster 342
+0	22nt, >miR1060_R4_L22... *
+>Cluster 343
+0	21nt, >miR34_R456_L21... at -/80.95%
+1	20nt, >miR53_R333_L20... at -/80.00%
+2	21nt, >miR241_R55_L21... at +/90.48%
+3	22nt, >miR1063_R4_L22... *
+>Cluster 344
+0	22nt, >miR1069_R4_L22... *
+>Cluster 345
+0	21nt, >miR516_R14_L21... at +/100.00%
+1	22nt, >miR1070_R4_L22... *
+>Cluster 346
+0	21nt, >miR263_R48_L21... at +/100.00%
+1	22nt, >miR1071_R4_L22... *
+>Cluster 347
+0	22nt, >miR1074_R3_L22... *
+>Cluster 348
+0	22nt, >miR1076_R3_L22... *
+1	21nt, >miR1530_R2_L21... at +/90.48%
+>Cluster 349
+0	22nt, >miR1078_R3_L22... *
+>Cluster 350
+0	21nt, >miR40_R422_L21... at +/80.95%
+1	21nt, >miR54_R329_L21... at +/80.95%
+2	21nt, >miR273_R43_L21... at +/85.71%
+3	22nt, >miR1084_R3_L22... *
+4	21nt, >miR1304_R2_L21... at +/85.71%
+>Cluster 351
+0	22nt, >miR1090_R3_L22... *
+>Cluster 352
+0	22nt, >miR1091_R3_L22... *
+>Cluster 353
+0	22nt, >miR1095_R3_L22... *
+>Cluster 354
+0	22nt, >miR1100_R3_L22... *
+>Cluster 355
+0	22nt, >miR1101_R3_L22... *
+>Cluster 356
+0	22nt, >miR1102_R3_L22... *
+>Cluster 357
+0	22nt, >miR1108_R3_L22... *
+>Cluster 358
+0	22nt, >miR1114_R3_L22... *
+>Cluster 359
+0	22nt, >miR1120_R3_L22... *
+>Cluster 360
+0	21nt, >miR1051_R4_L21... at +/100.00%
+1	22nt, >miR1121_R3_L22... *
+2	21nt, >miR1221_R3_L21... at +/80.95%
+>Cluster 361
+0	22nt, >miR1126_R3_L22... *
+>Cluster 362
+0	22nt, >miR1129_R3_L22... *
+>Cluster 363
+0	22nt, >miR1132_R3_L22... *
+1	22nt, >miR1569_R2_L22... at +/90.91%
+>Cluster 364
+0	22nt, >miR1137_R3_L22... *
+>Cluster 365
+0	22nt, >miR1139_R3_L22... *
+>Cluster 366
+0	22nt, >miR1145_R3_L22... *
+>Cluster 367
+0	22nt, >miR1147_R3_L22... *
+>Cluster 368
+0	22nt, >miR1150_R3_L22... *
+>Cluster 369
+0	22nt, >miR1151_R3_L22... *
+>Cluster 370
+0	22nt, >miR1153_R3_L22... *
+>Cluster 371
+0	22nt, >miR1154_R3_L22... *
+>Cluster 372
+0	22nt, >miR1155_R3_L22... *
+>Cluster 373
+0	22nt, >miR1156_R3_L22... *
+>Cluster 374
+0	22nt, >miR1158_R3_L22... *
+>Cluster 375
+0	22nt, >miR1159_R3_L22... *
+>Cluster 376
+0	22nt, >miR1175_R3_L22... *
+>Cluster 377
+0	22nt, >miR1187_R3_L22... *
+>Cluster 378
+0	22nt, >miR1189_R3_L22... *
+>Cluster 379
+0	22nt, >miR1191_R3_L22... *
+>Cluster 380
+0	22nt, >miR1194_R3_L22... *
+>Cluster 381
+0	22nt, >miR1197_R3_L22... *
+>Cluster 382
+0	22nt, >miR1198_R3_L22... *
+>Cluster 383
+0	22nt, >miR1199_R3_L22... *
+>Cluster 384
+0	22nt, >miR1201_R3_L22... *
+>Cluster 385
+0	22nt, >miR1209_R3_L22... *
+>Cluster 386
+0	22nt, >miR1210_R3_L22... *
+>Cluster 387
+0	22nt, >miR1214_R3_L22... *
+>Cluster 388
+0	22nt, >miR1215_R3_L22... *
+1	22nt, >miR1504_R2_L22... at +/95.45%
+>Cluster 389
+0	22nt, >miR1217_R3_L22... *
+>Cluster 390
+0	22nt, >miR1224_R3_L22... *
+>Cluster 391
+0	21nt, >miR847_R6_L21... at +/100.00%
+1	22nt, >miR1228_R3_L22... *
+>Cluster 392
+0	22nt, >miR1229_R3_L22... *
+>Cluster 393
+0	21nt, >miR791_R6_L21... at +/90.48%
+1	22nt, >miR1231_R3_L22... *
+>Cluster 394
+0	22nt, >miR1233_R3_L22... *
+>Cluster 395
+0	22nt, >miR1234_R3_L22... *
+>Cluster 396
+0	22nt, >miR1236_R3_L22... *
+>Cluster 397
+0	21nt, >miR166_R97_L21... at +/100.00%
+1	21nt, >miR544_R12_L21... at +/95.24%
+2	22nt, >miR1237_R3_L22... *
+3	22nt, >miR1520_R2_L22... at +/95.45%
+>Cluster 398
+0	22nt, >miR1238_R3_L22... *
+>Cluster 399
+0	21nt, >miR447_R19_L21... at +/80.95%
+1	22nt, >miR1240_R3_L22... *
+>Cluster 400
+0	22nt, >miR1244_R2_L22... *
+>Cluster 401
+0	22nt, >miR1247_R2_L22... *
+1	21nt, >miR1248_R2_L21... at +/100.00%
+>Cluster 402
+0	22nt, >miR1250_R2_L22... *
+>Cluster 403
+0	22nt, >miR1253_R2_L22... *
+>Cluster 404
+0	22nt, >miR1254_R2_L22... *
+>Cluster 405
+0	22nt, >miR1260_R2_L22... *
+>Cluster 406
+0	22nt, >miR1261_R2_L22... *
+>Cluster 407
+0	21nt, >miR8_R731_L21... at +/80.95%
+1	20nt, >miR584_R11_L20... at +/80.00%
+2	22nt, >miR1264_R2_L22... *
+>Cluster 408
+0	22nt, >miR1269_R2_L22... *
+>Cluster 409
+0	22nt, >miR1272_R2_L22... *
+>Cluster 410
+0	22nt, >miR1275_R2_L22... *
+>Cluster 411
+0	22nt, >miR1278_R2_L22... *
+>Cluster 412
+0	22nt, >miR1279_R2_L22... *
+>Cluster 413
+0	22nt, >miR1280_R2_L22... *
+>Cluster 414
+0	22nt, >miR1288_R2_L22... *
+>Cluster 415
+0	22nt, >miR1289_R2_L22... *
+>Cluster 416
+0	22nt, >miR1291_R2_L22... *
+>Cluster 417
+0	20nt, >miR432_R20_L20... at +/85.00%
+1	21nt, >miR480_R16_L21... at +/80.95%
+2	22nt, >miR1295_R2_L22... *
+>Cluster 418
+0	22nt, >miR1297_R2_L22... *
+>Cluster 419
+0	22nt, >miR1300_R2_L22... *
+>Cluster 420
+0	22nt, >miR1302_R2_L22... *
+>Cluster 421
+0	21nt, >miR11_R707_L21... at +/100.00%
+1	21nt, >miR264_R47_L21... at -/80.95%
+2	22nt, >miR1310_R2_L22... *
+3	20nt, >miR1311_R2_L20... at +/100.00%
+>Cluster 422
+0	22nt, >miR1312_R2_L22... *
+>Cluster 423
+0	22nt, >miR1314_R2_L22... *
+>Cluster 424
+0	22nt, >miR1316_R2_L22... *
+>Cluster 425
+0	22nt, >miR1318_R2_L22... *
+>Cluster 426
+0	22nt, >miR1321_R2_L22... *
+1	21nt, >miR1392_R2_L21... at +/100.00%
+>Cluster 427
+0	22nt, >miR1323_R2_L22... *
+>Cluster 428
+0	22nt, >miR1328_R2_L22... *
+>Cluster 429
+0	20nt, >miR1329_R2_L20... at +/80.00%
+1	22nt, >miR1330_R2_L22... *
+>Cluster 430
+0	22nt, >miR1331_R2_L22... *
+>Cluster 431
+0	22nt, >miR1334_R2_L22... *
+1	21nt, >miR1345_R2_L21... at +/80.95%
+>Cluster 432
+0	22nt, >miR1335_R2_L22... *
+>Cluster 433
+0	22nt, >miR1351_R2_L22... *
+>Cluster 434
+0	22nt, >miR1353_R2_L22... *
+>Cluster 435
+0	22nt, >miR1358_R2_L22... *
+>Cluster 436
+0	22nt, >miR1365_R2_L22... *
+>Cluster 437
+0	22nt, >miR1367_R2_L22... *
+>Cluster 438
+0	22nt, >miR1387_R2_L22... *
+>Cluster 439
+0	22nt, >miR1394_R2_L22... *
+>Cluster 440
+0	21nt, >miR21_R644_L21... at +/100.00%
+1	21nt, >miR352_R28_L21... at -/80.95%
+2	22nt, >miR1402_R2_L22... *
+>Cluster 441
+0	22nt, >miR1407_R2_L22... *
+>Cluster 442
+0	22nt, >miR1410_R2_L22... *
+>Cluster 443
+0	22nt, >miR1412_R2_L22... *
+>Cluster 444
+0	22nt, >miR1418_R2_L22... *
+>Cluster 445
+0	22nt, >miR1421_R2_L22... *
+>Cluster 446
+0	22nt, >miR1422_R2_L22... *
+>Cluster 447
+0	22nt, >miR1423_R2_L22... *
+>Cluster 448
+0	22nt, >miR1426_R2_L22... *
+>Cluster 449
+0	22nt, >miR1428_R2_L22... *
+>Cluster 450
+0	22nt, >miR1430_R2_L22... *
+>Cluster 451
+0	22nt, >miR1432_R2_L22... *
+>Cluster 452
+0	22nt, >miR1434_R2_L22... *
+>Cluster 453
+0	22nt, >miR1435_R2_L22... *
+>Cluster 454
+0	22nt, >miR1436_R2_L22... *
+>Cluster 455
+0	22nt, >miR1437_R2_L22... *
+>Cluster 456
+0	22nt, >miR1439_R2_L22... *
+>Cluster 457
+0	20nt, >miR155_R104_L20... at +/95.00%
+1	21nt, >miR309_R36_L21... at +/95.24%
+2	22nt, >miR1443_R2_L22... *
+>Cluster 458
+0	22nt, >miR1448_R2_L22... *
+>Cluster 459
+0	22nt, >miR1453_R2_L22... *
+>Cluster 460
+0	22nt, >miR1457_R2_L22... *
+1	22nt, >miR1533_R2_L22... at +/86.36%
+>Cluster 461
+0	22nt, >miR1471_R2_L22... *
+>Cluster 462
+0	22nt, >miR1484_R2_L22... *
+>Cluster 463
+0	20nt, >miR1466_R2_L20... at +/80.00%
+1	22nt, >miR1488_R2_L22... *
+>Cluster 464
+0	22nt, >miR1489_R2_L22... *
+>Cluster 465
+0	22nt, >miR1492_R2_L22... *
+>Cluster 466
+0	22nt, >miR1505_R2_L22... *
+>Cluster 467
+0	22nt, >miR1507_R2_L22... *
+>Cluster 468
+0	22nt, >miR1508_R2_L22... *
+>Cluster 469
+0	22nt, >miR1512_R2_L22... *
+>Cluster 470
+0	22nt, >miR1517_R2_L22... *
+>Cluster 471
+0	22nt, >miR1521_R2_L22... *
+>Cluster 472
+0	22nt, >miR1522_R2_L22... *
+>Cluster 473
+0	22nt, >miR1523_R2_L22... *
+>Cluster 474
+0	21nt, >miR806_R6_L21... at -/100.00%
+1	22nt, >miR1524_R2_L22... *
+>Cluster 475
+0	22nt, >miR1525_R2_L22... *
+>Cluster 476
+0	21nt, >miR981_R4_L21... at +/80.95%
+1	22nt, >miR1527_R2_L22... *
+>Cluster 477
+0	22nt, >miR1528_R2_L22... *
+>Cluster 478
+0	22nt, >miR1529_R2_L22... *
+>Cluster 479
+0	21nt, >miR459_R17_L21... at +/90.48%
+1	22nt, >miR1532_R2_L22... *
+>Cluster 480
+0	22nt, >miR1535_R2_L22... *
+>Cluster 481
+0	22nt, >miR1537_R2_L22... *
+>Cluster 482
+0	22nt, >miR1538_R2_L22... *
+>Cluster 483
+0	21nt, >miR486_R15_L21... at +/90.48%
+1	22nt, >miR1541_R2_L22... *
+>Cluster 484
+0	22nt, >miR1542_R2_L22... *
+>Cluster 485
+0	22nt, >miR1548_R2_L22... *
+>Cluster 486
+0	22nt, >miR1549_R2_L22... *
+>Cluster 487
+0	22nt, >miR1550_R2_L22... *
+>Cluster 488
+0	22nt, >miR1551_R2_L22... *
+>Cluster 489
+0	22nt, >miR1552_R2_L22... *
+>Cluster 490
+0	22nt, >miR1553_R2_L22... *
+>Cluster 491
+0	22nt, >miR1554_R2_L22... *
+>Cluster 492
+0	22nt, >miR1555_R2_L22... *
+>Cluster 493
+0	22nt, >miR1566_R2_L22... *
+>Cluster 494
+0	22nt, >miR1568_R2_L22... *
+>Cluster 495
+0	22nt, >miR1570_R2_L22... *
+>Cluster 496
+0	22nt, >miR1573_R2_L22... *
+>Cluster 497
+0	22nt, >miR1576_R2_L22... *
+>Cluster 498
+0	22nt, >miR1577_R2_L22... *
+>Cluster 499
+0	22nt, >miR1578_R2_L22... *
+>Cluster 500
+0	22nt, >miR1580_R2_L22... *
+>Cluster 501
+0	22nt, >miR1581_R2_L22... *
+>Cluster 502
+0	21nt, >miR1262_R2_L21... at -/80.95%
+1	22nt, >miR1582_R2_L22... *
+>Cluster 503
+0	21nt, >miR628_R10_L21... at +/100.00%
+1	22nt, >miR1586_R2_L22... *
+>Cluster 504
+0	21nt, >miR5_R745_L21... *
+1	21nt, >miR484_R15_L21... at +/95.24%
+>Cluster 505
+0	21nt, >miR6_R742_L21... *
+1	21nt, >miR81_R244_L21... at +/95.24%
+2	21nt, >miR251_R51_L21... at -/80.95%
+3	20nt, >miR1034_R4_L20... at +/100.00%
+>Cluster 506
+0	21nt, >miR13_R705_L21... *
+1	21nt, >miR121_R146_L21... at +/95.24%
+2	21nt, >miR477_R16_L21... at +/85.71%
+3	21nt, >miR645_R9_L21... at +/95.24%
+4	21nt, >miR902_R5_L21... at +/80.95%
+5	21nt, >miR1372_R2_L21... at +/85.71%
+>Cluster 507
+0	21nt, >miR20_R668_L21... *
+1	21nt, >miR28_R539_L21... at +/95.24%
+2	21nt, >miR67_R283_L21... at -/80.95%
+3	20nt, >miR89_R212_L20... at +/100.00%
+4	21nt, >miR124_R144_L21... at -/80.95%
+5	21nt, >miR248_R52_L21... at +/90.48%
+6	21nt, >miR302_R37_L21... at -/80.95%
+>Cluster 508
+0	21nt, >miR25_R563_L21... *
+1	21nt, >miR164_R98_L21... at +/95.24%
+2	21nt, >miR207_R69_L21... at +/95.24%
+3	20nt, >miR325_R32_L20... at +/100.00%
+4	21nt, >miR350_R28_L21... at +/95.24%
+5	21nt, >miR440_R19_L21... at -/80.95%
+6	20nt, >miR1098_R3_L20... at +/95.00%
+>Cluster 509
+0	21nt, >miR30_R527_L21... *
+1	20nt, >miR238_R56_L20... at +/100.00%
+2	21nt, >miR624_R10_L21... at +/90.48%
+>Cluster 510
+0	21nt, >miR31_R494_L21... *
+>Cluster 511
+0	21nt, >miR55_R326_L21... *
+1	21nt, >miR103_R177_L21... at +/85.71%
+2	21nt, >miR418_R21_L21... at +/90.48%
+3	20nt, >miR612_R10_L20... at +/80.00%
+4	21nt, >miR1342_R2_L21... at +/95.24%
+>Cluster 512
+0	21nt, >miR56_R325_L21... *
+1	21nt, >miR115_R154_L21... at +/90.48%
+2	21nt, >miR283_R41_L21... at -/80.95%
+3	21nt, >miR359_R27_L21... at -/80.95%
+4	21nt, >miR386_R25_L21... at -/80.95%
+5	20nt, >miR527_R13_L20... at -/85.00%
+6	21nt, >miR737_R7_L21... at +/95.24%
+7	21nt, >miR817_R6_L21... at -/80.95%
+8	21nt, >miR1003_R4_L21... at +/90.48%
+>Cluster 513
+0	21nt, >miR57_R322_L21... *
+1	20nt, >miR638_R9_L20... at +/100.00%
+>Cluster 514
+0	21nt, >miR64_R292_L21... *
+>Cluster 515
+0	21nt, >miR65_R287_L21... *
+1	21nt, >miR79_R247_L21... at +/95.24%
+2	21nt, >miR180_R87_L21... at +/95.24%
+3	21nt, >miR183_R85_L21... at +/95.24%
+4	21nt, >miR190_R76_L21... at +/85.71%
+5	21nt, >miR287_R40_L21... at +/95.24%
+6	21nt, >miR306_R36_L21... at +/90.48%
+7	21nt, >miR327_R32_L21... at +/85.71%
+8	20nt, >miR332_R31_L20... at +/100.00%
+9	21nt, >miR1037_R4_L21... at +/90.48%
+10	20nt, >miR1107_R3_L20... at +/95.00%
+11	21nt, >miR1273_R2_L21... at +/90.48%
+>Cluster 516
+0	21nt, >miR69_R279_L21... *
+>Cluster 517
+0	21nt, >miR70_R279_L21... *
+>Cluster 518
+0	21nt, >miR74_R274_L21... *
+>Cluster 519
+0	21nt, >miR75_R271_L21... *
+>Cluster 520
+0	21nt, >miR78_R251_L21... *
+>Cluster 521
+0	21nt, >miR88_R214_L21... *
+1	21nt, >miR493_R15_L21... at +/85.71%
+>Cluster 522
+0	21nt, >miR97_R195_L21... *
+>Cluster 523
+0	21nt, >miR105_R172_L21... *
+1	21nt, >miR972_R4_L21... at +/95.24%
+>Cluster 524
+0	21nt, >miR106_R169_L21... *
+1	21nt, >miR134_R126_L21... at +/90.48%
+2	21nt, >miR289_R40_L21... at +/80.95%
+3	20nt, >miR751_R7_L20... at +/100.00%
+>Cluster 525
+0	21nt, >miR107_R164_L21... *
+1	21nt, >miR176_R89_L21... at +/90.48%
+>Cluster 526
+0	21nt, >miR109_R160_L21... *
+1	21nt, >miR156_R103_L21... at +/90.48%
+2	21nt, >miR687_R8_L21... at +/85.71%
+3	20nt, >miR697_R8_L20... at +/85.00%
+4	21nt, >miR835_R6_L21... at +/85.71%
+5	21nt, >miR1133_R3_L21... at +/85.71%
+6	20nt, >miR1352_R2_L20... at +/80.00%
+>Cluster 527
+0	21nt, >miR112_R157_L21... *
+>Cluster 528
+0	21nt, >miR113_R156_L21... *
+1	21nt, >miR197_R73_L21... at +/95.24%
+2	21nt, >miR292_R40_L21... at -/80.95%
+>Cluster 529
+0	20nt, >miR12_R706_L20... at -/80.00%
+1	21nt, >miR118_R150_L21... *
+>Cluster 530
+0	21nt, >miR119_R149_L21... *
+>Cluster 531
+0	21nt, >miR125_R140_L21... *
+1	20nt, >miR252_R51_L20... at +/100.00%
+2	21nt, >miR354_R28_L21... at +/95.24%
+>Cluster 532
+0	21nt, >miR129_R135_L21... *
+>Cluster 533
+0	21nt, >miR135_R125_L21... *
+>Cluster 534
+0	21nt, >miR139_R123_L21... *
+1	21nt, >miR209_R69_L21... at +/95.24%
+2	20nt, >miR1006_R4_L20... at +/95.00%
+>Cluster 535
+0	21nt, >miR141_R122_L21... *
+>Cluster 536
+0	21nt, >miR143_R120_L21... *
+1	20nt, >miR299_R38_L20... at +/100.00%
+2	21nt, >miR415_R22_L21... at +/80.95%
+>Cluster 537
+0	21nt, >miR146_R119_L21... *
+>Cluster 538
+0	21nt, >miR151_R107_L21... *
+>Cluster 539
+0	21nt, >miR154_R104_L21... *
+>Cluster 540
+0	21nt, >miR158_R102_L21... *
+1	21nt, >miR224_R61_L21... at +/95.24%
+2	20nt, >miR1005_R4_L20... at +/100.00%
+3	21nt, >miR1296_R2_L21... at +/95.24%
+>Cluster 541
+0	20nt, >miR100_R191_L20... at +/100.00%
+1	21nt, >miR159_R101_L21... *
+2	21nt, >miR462_R17_L21... at +/95.24%
+3	20nt, >miR1417_R2_L20... at +/95.00%
+>Cluster 542
+0	21nt, >miR160_R100_L21... *
+>Cluster 543
+0	21nt, >miR172_R92_L21... *
+1	20nt, >miR1140_R3_L20... at +/85.00%
+>Cluster 544
+0	21nt, >miR195_R74_L21... *
+>Cluster 545
+0	21nt, >miR196_R74_L21... *
+1	20nt, >miR1496_R2_L20... at +/100.00%
+>Cluster 546
+0	21nt, >miR200_R73_L21... *
+>Cluster 547
+0	21nt, >miR205_R70_L21... *
+1	21nt, >miR758_R7_L21... at +/85.71%
+2	21nt, >miR1472_R2_L21... at +/80.95%
+>Cluster 548
+0	21nt, >miR208_R69_L21... *
+1	21nt, >miR320_R33_L21... at +/95.24%
+2	21nt, >miR641_R9_L21... at +/80.95%
+3	21nt, >miR789_R6_L21... at +/90.48%
+>Cluster 549
+0	21nt, >miR218_R64_L21... *
+>Cluster 550
+0	21nt, >miR220_R62_L21... *
+1	21nt, >miR1014_R4_L21... at +/80.95%
+>Cluster 551
+0	21nt, >miR226_R60_L21... *
+>Cluster 552
+0	21nt, >miR230_R59_L21... *
+>Cluster 553
+0	21nt, >miR233_R58_L21... *
+>Cluster 554
+0	21nt, >miR234_R58_L21... *
+1	21nt, >miR284_R41_L21... at +/85.71%
+2	21nt, >miR1299_R2_L21... at +/85.71%
+3	21nt, >miR1564_R2_L21... at +/95.24%
+>Cluster 555
+0	21nt, >miR236_R56_L21... *
+>Cluster 556
+0	21nt, >miR242_R54_L21... *
+>Cluster 557
+0	21nt, >miR244_R53_L21... *
+>Cluster 558
+0	21nt, >miR246_R53_L21... *
+>Cluster 559
+0	21nt, >miR258_R49_L21... *
+1	21nt, >miR876_R5_L21... at +/95.24%
+>Cluster 560
+0	21nt, >miR260_R48_L21... *
+>Cluster 561
+0	21nt, >miR261_R48_L21... *
+>Cluster 562
+0	21nt, >miR265_R47_L21... *
+1	21nt, >miR473_R17_L21... at +/95.24%
+>Cluster 563
+0	21nt, >miR266_R46_L21... *
+>Cluster 564
+0	21nt, >miR267_R46_L21... *
+>Cluster 565
+0	21nt, >miR270_R45_L21... *
+>Cluster 566
+0	21nt, >miR277_R43_L21... *
+1	21nt, >miR668_R9_L21... at +/80.95%
+>Cluster 567
+0	21nt, >miR281_R42_L21... *
+>Cluster 568
+0	21nt, >miR285_R41_L21... *
+1	21nt, >miR1465_R2_L21... at +/95.24%
+>Cluster 569
+0	21nt, >miR288_R40_L21... *
+1	21nt, >miR800_R6_L21... at +/95.24%
+>Cluster 570
+0	21nt, >miR291_R40_L21... *
+>Cluster 571
+0	21nt, >miR295_R39_L21... *
+>Cluster 572
+0	21nt, >miR296_R39_L21... *
+>Cluster 573
+0	21nt, >miR303_R37_L21... *
+1	20nt, >miR689_R8_L20... at +/100.00%
+>Cluster 574
+0	21nt, >miR305_R36_L21... *
+1	21nt, >miR1480_R2_L21... at -/85.71%
+>Cluster 575
+0	21nt, >miR307_R36_L21... *
+>Cluster 576
+0	21nt, >miR321_R33_L21... *
+>Cluster 577
+0	21nt, >miR328_R32_L21... *
+1	21nt, >miR403_R23_L21... at -/80.95%
+>Cluster 578
+0	21nt, >miR330_R32_L21... *
+>Cluster 579
+0	21nt, >miR333_R31_L21... *
+1	20nt, >miR585_R11_L20... at +/100.00%
+2	20nt, >miR1136_R3_L20... at +/100.00%
+>Cluster 580
+0	21nt, >miR338_R31_L21... *
+1	20nt, >miR1588_R2_L20... at +/100.00%
+>Cluster 581
+0	21nt, >miR339_R31_L21... *
+1	21nt, >miR1242_R3_L21... at +/85.71%
+2	21nt, >miR1386_R2_L21... at -/80.95%
+>Cluster 582
+0	21nt, >miR348_R29_L21... *
+1	21nt, >miR494_R15_L21... at +/85.71%
+2	21nt, >miR1026_R4_L21... at +/80.95%
+>Cluster 583
+0	21nt, >miR357_R28_L21... *
+1	21nt, >miR1393_R2_L21... at -/80.95%
+>Cluster 584
+0	21nt, >miR358_R27_L21... *
+>Cluster 585
+0	21nt, >miR362_R27_L21... *
+>Cluster 586
+0	21nt, >miR376_R26_L21... *
+>Cluster 587
+0	20nt, >miR337_R31_L20... at +/100.00%
+1	21nt, >miR380_R26_L21... *
+>Cluster 588
+0	21nt, >miR387_R25_L21... *
+1	21nt, >miR639_R9_L21... at +/80.95%
+>Cluster 589
+0	21nt, >miR396_R24_L21... *
+1	21nt, >miR1290_R2_L21... at +/80.95%
+>Cluster 590
+0	21nt, >miR401_R23_L21... *
+>Cluster 591
+0	21nt, >miR402_R23_L21... *
+>Cluster 592
+0	21nt, >miR406_R23_L21... *
+1	21nt, >miR581_R11_L21... at +/95.24%
+2	21nt, >miR786_R6_L21... at +/90.48%
+3	21nt, >miR879_R5_L21... at +/90.48%
+4	21nt, >miR1305_R2_L21... at -/80.95%
+5	21nt, >miR1458_R2_L21... at -/85.71%
+>Cluster 593
+0	21nt, >miR409_R22_L21... *
+>Cluster 594
+0	21nt, >miR411_R22_L21... *
+1	21nt, >miR1381_R2_L21... at +/95.24%
+>Cluster 595
+0	21nt, >miR412_R22_L21... *
+>Cluster 596
+0	21nt, >miR413_R22_L21... *
+>Cluster 597
+0	21nt, >miR423_R21_L21... *
+>Cluster 598
+0	21nt, >miR424_R21_L21... *
+1	21nt, >miR526_R13_L21... at +/95.24%
+>Cluster 599
+0	21nt, >miR425_R21_L21... *
+>Cluster 600
+0	21nt, >miR427_R20_L21... *
+>Cluster 601
+0	21nt, >miR429_R20_L21... *
+>Cluster 602
+0	21nt, >miR435_R20_L21... *
+>Cluster 603
+0	21nt, >miR442_R19_L21... *
+>Cluster 604
+0	21nt, >miR451_R18_L21... *
+1	21nt, >miR453_R18_L21... at +/85.71%
+>Cluster 605
+0	21nt, >miR455_R18_L21... *
+1	21nt, >miR548_R12_L21... at +/85.71%
+>Cluster 606
+0	21nt, >miR458_R17_L21... *
+>Cluster 607
+0	20nt, >miR456_R18_L20... at +/100.00%
+1	21nt, >miR464_R17_L21... *
+2	21nt, >miR938_R5_L21... at +/95.24%
+>Cluster 608
+0	21nt, >miR467_R17_L21... *
+>Cluster 609
+0	21nt, >miR470_R17_L21... *
+>Cluster 610
+0	21nt, >miR478_R16_L21... *
+1	21nt, >miR1020_R4_L21... at +/95.24%
+>Cluster 611
+0	21nt, >miR488_R15_L21... *
+>Cluster 612
+0	21nt, >miR489_R15_L21... *
+>Cluster 613
+0	21nt, >miR491_R15_L21... *
+>Cluster 614
+0	21nt, >miR492_R15_L21... *
+>Cluster 615
+0	21nt, >miR496_R15_L21... *
+>Cluster 616
+0	21nt, >miR505_R14_L21... *
+>Cluster 617
+0	21nt, >miR507_R14_L21... *
+>Cluster 618
+0	21nt, >miR509_R14_L21... *
+>Cluster 619
+0	21nt, >miR513_R14_L21... *
+>Cluster 620
+0	21nt, >miR537_R13_L21... *
+>Cluster 621
+0	21nt, >miR538_R13_L21... *
+>Cluster 622
+0	21nt, >miR542_R13_L21... *
+1	20nt, >miR1241_R3_L20... at +/100.00%
+>Cluster 623
+0	21nt, >miR545_R12_L21... *
+>Cluster 624
+0	21nt, >miR546_R12_L21... *
+>Cluster 625
+0	21nt, >miR552_R12_L21... *
+>Cluster 626
+0	21nt, >miR553_R12_L21... *
+1	20nt, >miR1002_R4_L20... at +/100.00%
+>Cluster 627
+0	21nt, >miR556_R12_L21... *
+>Cluster 628
+0	21nt, >miR564_R12_L21... *
+>Cluster 629
+0	21nt, >miR565_R12_L21... *
+>Cluster 630
+0	21nt, >miR566_R12_L21... *
+1	21nt, >miR1167_R3_L21... at -/90.48%
+2	20nt, >miR1479_R2_L20... at -/90.00%
+>Cluster 631
+0	21nt, >miR571_R12_L21... *
+1	20nt, >miR1510_R2_L20... at -/80.00%
+>Cluster 632
+0	21nt, >miR573_R12_L21... *
+>Cluster 633
+0	20nt, >miR519_R14_L20... at +/100.00%
+1	21nt, >miR576_R12_L21... *
+>Cluster 634
+0	21nt, >miR578_R11_L21... *
+>Cluster 635
+0	21nt, >miR582_R11_L21... *
+>Cluster 636
+0	21nt, >miR587_R11_L21... *
+>Cluster 637
+0	21nt, >miR588_R11_L21... *
+>Cluster 638
+0	21nt, >miR591_R11_L21... *
+>Cluster 639
+0	21nt, >miR599_R11_L21... *
+>Cluster 640
+0	21nt, >miR604_R11_L21... *
+1	21nt, >miR1032_R4_L21... at +/95.24%
+>Cluster 641
+0	21nt, >miR609_R10_L21... *
+>Cluster 642
+0	21nt, >miR610_R10_L21... *
+>Cluster 643
+0	21nt, >miR611_R10_L21... *
+>Cluster 644
+0	21nt, >miR615_R10_L21... *
+>Cluster 645
+0	21nt, >miR621_R10_L21... *
+>Cluster 646
+0	21nt, >miR622_R10_L21... *
+>Cluster 647
+0	21nt, >miR623_R10_L21... *
+>Cluster 648
+0	21nt, >miR626_R10_L21... *
+1	20nt, >miR1073_R3_L20... at +/100.00%
+2	20nt, >miR1442_R2_L20... at +/100.00%
+3	21nt, >miR1481_R2_L21... at +/95.24%
+>Cluster 649
+0	21nt, >miR629_R10_L21... *
+>Cluster 650
+0	21nt, >miR630_R10_L21... *
+>Cluster 651
+0	21nt, >miR631_R10_L21... *
+>Cluster 652
+0	21nt, >miR633_R9_L21... *
+>Cluster 653
+0	21nt, >miR640_R9_L21... *
+>Cluster 654
+0	21nt, >miR646_R9_L21... *
+>Cluster 655
+0	21nt, >miR659_R9_L21... *
+>Cluster 656
+0	21nt, >miR661_R9_L21... *
+>Cluster 657
+0	21nt, >miR664_R9_L21... *
+1	21nt, >miR1040_R4_L21... at -/95.24%
+>Cluster 658
+0	21nt, >miR667_R9_L21... *
+1	21nt, >miR936_R5_L21... at +/95.24%
+>Cluster 659
+0	20nt, >miR475_R17_L20... at +/100.00%
+1	21nt, >miR672_R9_L21... *
+>Cluster 660
+0	21nt, >miR676_R8_L21... *
+1	21nt, >miR831_R6_L21... at +/80.95%
+2	21nt, >miR1164_R3_L21... at -/90.48%
+3	21nt, >miR1544_R2_L21... at -/95.24%
+>Cluster 661
+0	21nt, >miR680_R8_L21... *
+>Cluster 662
+0	21nt, >miR681_R8_L21... *
+>Cluster 663
+0	21nt, >miR684_R8_L21... *
+>Cluster 664
+0	21nt, >miR686_R8_L21... *
+>Cluster 665
+0	21nt, >miR688_R8_L21... *
+>Cluster 666
+0	21nt, >miR691_R8_L21... *
+>Cluster 667
+0	21nt, >miR696_R8_L21... *
+>Cluster 668
+0	21nt, >miR699_R8_L21... *
+>Cluster 669
+0	21nt, >miR700_R8_L21... *
+>Cluster 670
+0	21nt, >miR703_R8_L21... *
+>Cluster 671
+0	21nt, >miR705_R8_L21... *
+1	21nt, >miR992_R4_L21... at +/80.95%
+2	21nt, >miR1285_R2_L21... at +/80.95%
+3	21nt, >miR1476_R2_L21... at -/80.95%
+4	21nt, >miR1572_R2_L21... at -/85.71%
+>Cluster 672
+0	21nt, >miR724_R7_L21... *
+>Cluster 673
+0	20nt, >miR466_R17_L20... at +/100.00%
+1	21nt, >miR736_R7_L21... *
+>Cluster 674
+0	21nt, >miR744_R7_L21... *
+>Cluster 675
+0	21nt, >miR746_R7_L21... *
+>Cluster 676
+0	21nt, >miR752_R7_L21... *
+>Cluster 677
+0	21nt, >miR753_R7_L21... *
+>Cluster 678
+0	21nt, >miR754_R7_L21... *
+>Cluster 679
+0	21nt, >miR760_R7_L21... *
+1	21nt, >miR1179_R3_L21... at +/80.95%
+>Cluster 680
+0	21nt, >miR761_R7_L21... *
+>Cluster 681
+0	21nt, >miR764_R7_L21... *
+>Cluster 682
+0	21nt, >miR766_R7_L21... *
+>Cluster 683
+0	21nt, >miR767_R7_L21... *
+>Cluster 684
+0	21nt, >miR768_R7_L21... *
+>Cluster 685
+0	21nt, >miR770_R7_L21... *
+>Cluster 686
+0	21nt, >miR771_R7_L21... *
+>Cluster 687
+0	21nt, >miR775_R7_L21... *
+>Cluster 688
+0	21nt, >miR776_R7_L21... *
+>Cluster 689
+0	21nt, >miR777_R7_L21... *
+>Cluster 690
+0	21nt, >miR778_R7_L21... *
+1	21nt, >miR1004_R4_L21... at +/95.24%
+>Cluster 691
+0	21nt, >miR781_R6_L21... *
+>Cluster 692
+0	21nt, >miR783_R6_L21... *
+>Cluster 693
+0	21nt, >miR784_R6_L21... *
+>Cluster 694
+0	21nt, >miR793_R6_L21... *
+>Cluster 695
+0	21nt, >miR795_R6_L21... *
+>Cluster 696
+0	21nt, >miR796_R6_L21... *
+>Cluster 697
+0	21nt, >miR798_R6_L21... *
+>Cluster 698
+0	21nt, >miR799_R6_L21... *
+>Cluster 699
+0	21nt, >miR801_R6_L21... *
+>Cluster 700
+0	21nt, >miR802_R6_L21... *
+>Cluster 701
+0	21nt, >miR803_R6_L21... *
+>Cluster 702
+0	21nt, >miR807_R6_L21... *
+>Cluster 703
+0	21nt, >miR808_R6_L21... *
+>Cluster 704
+0	21nt, >miR810_R6_L21... *
+>Cluster 705
+0	21nt, >miR816_R6_L21... *
+1	20nt, >miR890_R5_L20... at +/100.00%
+>Cluster 706
+0	21nt, >miR822_R6_L21... *
+>Cluster 707
+0	21nt, >miR823_R6_L21... *
+>Cluster 708
+0	21nt, >miR825_R6_L21... *
+>Cluster 709
+0	21nt, >miR830_R6_L21... *
+>Cluster 710
+0	21nt, >miR832_R6_L21... *
+>Cluster 711
+0	21nt, >miR834_R6_L21... *
+>Cluster 712
+0	21nt, >miR839_R6_L21... *
+>Cluster 713
+0	21nt, >miR840_R6_L21... *
+>Cluster 714
+0	21nt, >miR841_R6_L21... *
+>Cluster 715
+0	21nt, >miR843_R6_L21... *
+>Cluster 716
+0	21nt, >miR845_R6_L21... *
+1	20nt, >miR1117_R3_L20... at +/95.00%
+>Cluster 717
+0	21nt, >miR854_R6_L21... *
+1	21nt, >miR1546_R2_L21... at +/90.48%
+2	21nt, >miR1567_R2_L21... at +/80.95%
+>Cluster 718
+0	21nt, >miR856_R6_L21... *
+>Cluster 719
+0	21nt, >miR858_R6_L21... *
+1	20nt, >miR1585_R2_L20... at -/85.00%
+>Cluster 720
+0	21nt, >miR862_R6_L21... *
+1	21nt, >miR1513_R2_L21... at +/95.24%
+>Cluster 721
+0	21nt, >miR868_R6_L21... *
+>Cluster 722
+0	21nt, >miR873_R5_L21... *
+>Cluster 723
+0	21nt, >miR875_R5_L21... *
+>Cluster 724
+0	21nt, >miR877_R5_L21... *
+>Cluster 725
+0	21nt, >miR884_R5_L21... *
+>Cluster 726
+0	21nt, >miR885_R5_L21... *
+>Cluster 727
+0	21nt, >miR886_R5_L21... *
+>Cluster 728
+0	21nt, >miR889_R5_L21... *
+>Cluster 729
+0	21nt, >miR894_R5_L21... *
+>Cluster 730
+0	21nt, >miR897_R5_L21... *
+>Cluster 731
+0	21nt, >miR898_R5_L21... *
+>Cluster 732
+0	21nt, >miR899_R5_L21... *
+>Cluster 733
+0	21nt, >miR900_R5_L21... *
+>Cluster 734
+0	21nt, >miR901_R5_L21... *
+1	20nt, >miR1292_R2_L20... at +/80.00%
+>Cluster 735
+0	21nt, >miR905_R5_L21... *
+1	21nt, >miR1324_R2_L21... at -/80.95%
+>Cluster 736
+0	21nt, >miR906_R5_L21... *
+1	20nt, >miR1205_R3_L20... at +/100.00%
+>Cluster 737
+0	21nt, >miR909_R5_L21... *
+1	21nt, >miR974_R4_L21... at +/85.71%
+>Cluster 738
+0	21nt, >miR914_R5_L21... *
+>Cluster 739
+0	21nt, >miR917_R5_L21... *
+>Cluster 740
+0	21nt, >miR920_R5_L21... *
+>Cluster 741
+0	21nt, >miR923_R5_L21... *
+>Cluster 742
+0	21nt, >miR925_R5_L21... *
+>Cluster 743
+0	21nt, >miR927_R5_L21... *
+>Cluster 744
+0	20nt, >miR421_R21_L20... at +/85.00%
+1	21nt, >miR929_R5_L21... *
+2	21nt, >miR1469_R2_L21... at +/80.95%
+>Cluster 745
+0	21nt, >miR931_R5_L21... *
+>Cluster 746
+0	21nt, >miR933_R5_L21... *
+>Cluster 747
+0	21nt, >miR934_R5_L21... *
+>Cluster 748
+0	21nt, >miR937_R5_L21... *
+>Cluster 749
+0	21nt, >miR940_R5_L21... *
+>Cluster 750
+0	21nt, >miR941_R5_L21... *
+>Cluster 751
+0	21nt, >miR943_R5_L21... *
+>Cluster 752
+0	21nt, >miR945_R5_L21... *
+>Cluster 753
+0	21nt, >miR954_R5_L21... *
+>Cluster 754
+0	21nt, >miR957_R4_L21... *
+>Cluster 755
+0	20nt, >miR22_R605_L20... at +/100.00%
+1	21nt, >miR959_R4_L21... *
+>Cluster 756
+0	21nt, >miR961_R4_L21... *
+>Cluster 757
+0	21nt, >miR962_R4_L21... *
+>Cluster 758
+0	21nt, >miR963_R4_L21... *
+>Cluster 759
+0	21nt, >miR964_R4_L21... *
+>Cluster 760
+0	21nt, >miR965_R4_L21... *
+>Cluster 761
+0	21nt, >miR966_R4_L21... *
+>Cluster 762
+0	21nt, >miR967_R4_L21... *
+>Cluster 763
+0	21nt, >miR969_R4_L21... *
+>Cluster 764
+0	21nt, >miR975_R4_L21... *
+>Cluster 765
+0	21nt, >miR977_R4_L21... *
+>Cluster 766
+0	21nt, >miR979_R4_L21... *
+>Cluster 767
+0	20nt, >miR942_R5_L20... at +/100.00%
+1	21nt, >miR980_R4_L21... *
+>Cluster 768
+0	21nt, >miR984_R4_L21... *
+1	21nt, >miR1106_R3_L21... at +/85.71%
+>Cluster 769
+0	21nt, >miR987_R4_L21... *
+>Cluster 770
+0	21nt, >miR993_R4_L21... *
+>Cluster 771
+0	21nt, >miR994_R4_L21... *
+>Cluster 772
+0	21nt, >miR1007_R4_L21... *
+>Cluster 773
+0	21nt, >miR1008_R4_L21... *
+>Cluster 774
+0	21nt, >miR1013_R4_L21... *
+>Cluster 775
+0	21nt, >miR1015_R4_L21... *
+>Cluster 776
+0	21nt, >miR1021_R4_L21... *
+>Cluster 777
+0	21nt, >miR1024_R4_L21... *
+>Cluster 778
+0	21nt, >miR1025_R4_L21... *
+>Cluster 779
+0	21nt, >miR1027_R4_L21... *
+>Cluster 780
+0	21nt, >miR1031_R4_L21... *
+1	21nt, >miR1404_R2_L21... at -/80.95%
+>Cluster 781
+0	21nt, >miR1035_R4_L21... *
+>Cluster 782
+0	21nt, >miR1042_R4_L21... *
+>Cluster 783
+0	21nt, >miR1046_R4_L21... *
+1	21nt, >miR1208_R3_L21... at +/80.95%
+>Cluster 784
+0	21nt, >miR1049_R4_L21... *
+>Cluster 785
+0	21nt, >miR1052_R4_L21... *
+>Cluster 786
+0	21nt, >miR1053_R4_L21... *
+>Cluster 787
+0	21nt, >miR1054_R4_L21... *
+>Cluster 788
+0	21nt, >miR1055_R4_L21... *
+>Cluster 789
+0	21nt, >miR1056_R4_L21... *
+1	21nt, >miR1204_R3_L21... at +/95.24%
+>Cluster 790
+0	21nt, >miR1058_R4_L21... *
+>Cluster 791
+0	21nt, >miR1061_R4_L21... *
+>Cluster 792
+0	21nt, >miR1065_R4_L21... *
+>Cluster 793
+0	21nt, >miR1077_R3_L21... *
+>Cluster 794
+0	21nt, >miR1079_R3_L21... *
+1	21nt, >miR1252_R2_L21... at +/90.48%
+>Cluster 795
+0	21nt, >miR1082_R3_L21... *
+>Cluster 796
+0	21nt, >miR1083_R3_L21... *
+>Cluster 797
+0	21nt, >miR1086_R3_L21... *
+>Cluster 798
+0	21nt, >miR1087_R3_L21... *
+>Cluster 799
+0	21nt, >miR1089_R3_L21... *
+>Cluster 800
+0	21nt, >miR1092_R3_L21... *
+>Cluster 801
+0	21nt, >miR1093_R3_L21... *
+>Cluster 802
+0	21nt, >miR1094_R3_L21... *
+>Cluster 803
+0	21nt, >miR1097_R3_L21... *
+>Cluster 804
+0	21nt, >miR1109_R3_L21... *
+>Cluster 805
+0	21nt, >miR1115_R3_L21... *
+>Cluster 806
+0	21nt, >miR1116_R3_L21... *
+>Cluster 807
+0	21nt, >miR1119_R3_L21... *
+>Cluster 808
+0	21nt, >miR1124_R3_L21... *
+>Cluster 809
+0	21nt, >miR1127_R3_L21... *
+>Cluster 810
+0	21nt, >miR1128_R3_L21... *
+1	21nt, >miR1487_R2_L21... at +/95.24%
+>Cluster 811
+0	21nt, >miR1134_R3_L21... *
+>Cluster 812
+0	21nt, >miR1135_R3_L21... *
+>Cluster 813
+0	21nt, >miR1157_R3_L21... *
+>Cluster 814
+0	21nt, >miR1161_R3_L21... *
+>Cluster 815
+0	21nt, >miR1168_R3_L21... *
+>Cluster 816
+0	21nt, >miR1170_R3_L21... *
+>Cluster 817
+0	21nt, >miR1172_R3_L21... *
+>Cluster 818
+0	21nt, >miR1173_R3_L21... *
+>Cluster 819
+0	21nt, >miR1174_R3_L21... *
+>Cluster 820
+0	21nt, >miR1178_R3_L21... *
+>Cluster 821
+0	21nt, >miR1180_R3_L21... *
+>Cluster 822
+0	21nt, >miR1186_R3_L21... *
+>Cluster 823
+0	21nt, >miR1192_R3_L21... *
+>Cluster 824
+0	21nt, >miR1193_R3_L21... *
+>Cluster 825
+0	21nt, >miR1200_R3_L21... *
+>Cluster 826
+0	21nt, >miR1202_R3_L21... *
+>Cluster 827
+0	21nt, >miR1206_R3_L21... *
+>Cluster 828
+0	21nt, >miR1211_R3_L21... *
+>Cluster 829
+0	21nt, >miR1212_R3_L21... *
+>Cluster 830
+0	21nt, >miR1213_R3_L21... *
+>Cluster 831
+0	21nt, >miR1216_R3_L21... *
+1	21nt, >miR1539_R2_L21... at +/85.71%
+>Cluster 832
+0	21nt, >miR1219_R3_L21... *
+>Cluster 833
+0	21nt, >miR1225_R3_L21... *
+>Cluster 834
+0	21nt, >miR1226_R3_L21... *
+>Cluster 835
+0	21nt, >miR1230_R3_L21... *
+>Cluster 836
+0	21nt, >miR1235_R3_L21... *
+>Cluster 837
+0	20nt, >miR518_R14_L20... at +/100.00%
+1	21nt, >miR1239_R3_L21... *
+>Cluster 838
+0	21nt, >miR1245_R2_L21... *
+>Cluster 839
+0	21nt, >miR1246_R2_L21... *
+>Cluster 840
+0	21nt, >miR1249_R2_L21... *
+1	21nt, >miR1277_R2_L21... at +/85.71%
+>Cluster 841
+0	21nt, >miR1251_R2_L21... *
+>Cluster 842
+0	21nt, >miR1256_R2_L21... *
+>Cluster 843
+0	21nt, >miR1257_R2_L21... *
+>Cluster 844
+0	21nt, >miR1258_R2_L21... *
+>Cluster 845
+0	21nt, >miR1265_R2_L21... *
+>Cluster 846
+0	21nt, >miR1267_R2_L21... *
+>Cluster 847
+0	21nt, >miR1268_R2_L21... *
+>Cluster 848
+0	21nt, >miR1274_R2_L21... *
+>Cluster 849
+0	21nt, >miR1283_R2_L21... *
+>Cluster 850
+0	21nt, >miR1284_R2_L21... *
+>Cluster 851
+0	21nt, >miR1286_R2_L21... *
+>Cluster 852
+0	21nt, >miR1293_R2_L21... *
+>Cluster 853
+0	21nt, >miR1294_R2_L21... *
+>Cluster 854
+0	21nt, >miR1301_R2_L21... *
+>Cluster 855
+0	21nt, >miR1303_R2_L21... *
+>Cluster 856
+0	21nt, >miR1306_R2_L21... *
+>Cluster 857
+0	21nt, >miR1309_R2_L21... *
+>Cluster 858
+0	21nt, >miR1313_R2_L21... *
+>Cluster 859
+0	21nt, >miR1315_R2_L21... *
+>Cluster 860
+0	21nt, >miR1317_R2_L21... *
+>Cluster 861
+0	21nt, >miR1319_R2_L21... *
+>Cluster 862
+0	21nt, >miR1322_R2_L21... *
+>Cluster 863
+0	21nt, >miR1325_R2_L21... *
+>Cluster 864
+0	21nt, >miR1336_R2_L21... *
+>Cluster 865
+0	21nt, >miR1337_R2_L21... *
+>Cluster 866
+0	21nt, >miR1339_R2_L21... *
+>Cluster 867
+0	21nt, >miR1341_R2_L21... *
+>Cluster 868
+0	21nt, >miR1343_R2_L21... *
+>Cluster 869
+0	21nt, >miR1344_R2_L21... *
+>Cluster 870
+0	21nt, >miR1346_R2_L21... *
+>Cluster 871
+0	21nt, >miR1347_R2_L21... *
+1	21nt, >miR1446_R2_L21... at -/80.95%
+>Cluster 872
+0	21nt, >miR1348_R2_L21... *
+1	21nt, >miR1349_R2_L21... at +/85.71%
+>Cluster 873
+0	21nt, >miR1355_R2_L21... *
+>Cluster 874
+0	21nt, >miR1357_R2_L21... *
+>Cluster 875
+0	21nt, >miR1359_R2_L21... *
+>Cluster 876
+0	21nt, >miR1360_R2_L21... *
+>Cluster 877
+0	21nt, >miR1366_R2_L21... *
+>Cluster 878
+0	21nt, >miR1374_R2_L21... *
+>Cluster 879
+0	21nt, >miR1375_R2_L21... *
+>Cluster 880
+0	21nt, >miR1376_R2_L21... *
+>Cluster 881
+0	21nt, >miR1378_R2_L21... *
+>Cluster 882
+0	21nt, >miR1380_R2_L21... *
+>Cluster 883
+0	21nt, >miR1382_R2_L21... *
+>Cluster 884
+0	21nt, >miR1384_R2_L21... *
+>Cluster 885
+0	21nt, >miR1385_R2_L21... *
+>Cluster 886
+0	21nt, >miR1395_R2_L21... *
+>Cluster 887
+0	21nt, >miR1396_R2_L21... *
+>Cluster 888
+0	21nt, >miR1398_R2_L21... *
+>Cluster 889
+0	21nt, >miR1401_R2_L21... *
+>Cluster 890
+0	21nt, >miR1403_R2_L21... *
+>Cluster 891
+0	21nt, >miR1405_R2_L21... *
+>Cluster 892
+0	21nt, >miR1408_R2_L21... *
+>Cluster 893
+0	21nt, >miR1414_R2_L21... *
+>Cluster 894
+0	21nt, >miR1425_R2_L21... *
+>Cluster 895
+0	21nt, >miR1427_R2_L21... *
+>Cluster 896
+0	21nt, >miR1431_R2_L21... *
+>Cluster 897
+0	21nt, >miR1441_R2_L21... *
+>Cluster 898
+0	21nt, >miR1445_R2_L21... *
+>Cluster 899
+0	21nt, >miR1447_R2_L21... *
+>Cluster 900
+0	21nt, >miR1449_R2_L21... *
+>Cluster 901
+0	21nt, >miR1451_R2_L21... *
+>Cluster 902
+0	21nt, >miR1452_R2_L21... *
+>Cluster 903
+0	21nt, >miR1455_R2_L21... *
+>Cluster 904
+0	21nt, >miR1456_R2_L21... *
+>Cluster 905
+0	21nt, >miR1461_R2_L21... *
+>Cluster 906
+0	21nt, >miR1462_R2_L21... *
+>Cluster 907
+0	21nt, >miR1463_R2_L21... *
+>Cluster 908
+0	21nt, >miR1464_R2_L21... *
+>Cluster 909
+0	21nt, >miR1468_R2_L21... *
+>Cluster 910
+0	21nt, >miR1470_R2_L21... *
+>Cluster 911
+0	21nt, >miR1473_R2_L21... *
+>Cluster 912
+0	21nt, >miR1474_R2_L21... *
+>Cluster 913
+0	21nt, >miR1475_R2_L21... *
+>Cluster 914
+0	21nt, >miR1477_R2_L21... *
+>Cluster 915
+0	21nt, >miR1478_R2_L21... *
+>Cluster 916
+0	21nt, >miR1482_R2_L21... *
+>Cluster 917
+0	21nt, >miR1483_R2_L21... *
+>Cluster 918
+0	21nt, >miR1485_R2_L21... *
+>Cluster 919
+0	21nt, >miR1490_R2_L21... *
+>Cluster 920
+0	21nt, >miR1494_R2_L21... *
+>Cluster 921
+0	21nt, >miR1495_R2_L21... *
+>Cluster 922
+0	21nt, >miR1499_R2_L21... *
+>Cluster 923
+0	21nt, >miR1500_R2_L21... *
+>Cluster 924
+0	21nt, >miR1501_R2_L21... *
+>Cluster 925
+0	21nt, >miR1502_R2_L21... *
+>Cluster 926
+0	21nt, >miR1506_R2_L21... *
+>Cluster 927
+0	21nt, >miR1509_R2_L21... *
+>Cluster 928
+0	21nt, >miR1511_R2_L21... *
+>Cluster 929
+0	21nt, >miR1515_R2_L21... *
+>Cluster 930
+0	21nt, >miR1518_R2_L21... *
+>Cluster 931
+0	21nt, >miR1526_R2_L21... *
+>Cluster 932
+0	21nt, >miR1531_R2_L21... *
+>Cluster 933
+0	21nt, >miR1534_R2_L21... *
+>Cluster 934
+0	21nt, >miR1540_R2_L21... *
+>Cluster 935
+0	21nt, >miR1543_R2_L21... *
+>Cluster 936
+0	21nt, >miR1545_R2_L21... *
+>Cluster 937
+0	21nt, >miR1547_R2_L21... *
+>Cluster 938
+0	21nt, >miR1556_R2_L21... *
+>Cluster 939
+0	21nt, >miR1565_R2_L21... *
+>Cluster 940
+0	21nt, >miR1574_R2_L21... *
+>Cluster 941
+0	21nt, >miR1579_R2_L21... *
+>Cluster 942
+0	20nt, >miR255_R50_L20... *
+>Cluster 943
+0	20nt, >miR304_R37_L20... *
+>Cluster 944
+0	20nt, >miR324_R32_L20... *
+>Cluster 945
+0	20nt, >miR335_R31_L20... *
+>Cluster 946
+0	20nt, >miR368_R27_L20... *
+>Cluster 947
+0	20nt, >miR393_R25_L20... *
+>Cluster 948
+0	20nt, >miR410_R22_L20... *
+>Cluster 949
+0	20nt, >miR550_R12_L20... *
+>Cluster 950
+0	20nt, >miR557_R12_L20... *
+>Cluster 951
+0	20nt, >miR559_R12_L20... *
+>Cluster 952
+0	20nt, >miR643_R9_L20... *
+>Cluster 953
+0	20nt, >miR677_R8_L20... *
+>Cluster 954
+0	20nt, >miR715_R8_L20... *
+1	20nt, >miR1068_R4_L20... at +/90.00%
+>Cluster 955
+0	20nt, >miR821_R6_L20... *
+>Cluster 956
+0	20nt, >miR827_R6_L20... *
+>Cluster 957
+0	20nt, >miR851_R6_L20... *
+>Cluster 958
+0	20nt, >miR855_R6_L20... *
+>Cluster 959
+0	20nt, >miR891_R5_L20... *
+>Cluster 960
+0	20nt, >miR912_R5_L20... *
+>Cluster 961
+0	20nt, >miR930_R5_L20... *
+>Cluster 962
+0	20nt, >miR955_R5_L20... *
+>Cluster 963
+0	20nt, >miR1000_R4_L20... *
+>Cluster 964
+0	20nt, >miR1009_R4_L20... *
+>Cluster 965
+0	20nt, >miR1064_R4_L20... *
+>Cluster 966
+0	20nt, >miR1067_R4_L20... *
+>Cluster 967
+0	20nt, >miR1103_R3_L20... *
+>Cluster 968
+0	20nt, >miR1112_R3_L20... *
+1	20nt, >miR1113_R3_L20... at +/95.00%
+>Cluster 969
+0	20nt, >miR1141_R3_L20... *
+>Cluster 970
+0	20nt, >miR1143_R3_L20... *
+>Cluster 971
+0	20nt, >miR1144_R3_L20... *
+>Cluster 972
+0	20nt, >miR1146_R3_L20... *
+>Cluster 973
+0	20nt, >miR1148_R3_L20... *
+>Cluster 974
+0	20nt, >miR1152_R3_L20... *
+>Cluster 975
+0	20nt, >miR1162_R3_L20... *
+>Cluster 976
+0	20nt, >miR1163_R3_L20... *
+>Cluster 977
+0	20nt, >miR1165_R3_L20... *
+>Cluster 978
+0	20nt, >miR1171_R3_L20... *
+>Cluster 979
+0	20nt, >miR1176_R3_L20... *
+>Cluster 980
+0	20nt, >miR1184_R3_L20... *
+>Cluster 981
+0	20nt, >miR1223_R3_L20... *
+>Cluster 982
+0	20nt, >miR1232_R3_L20... *
+>Cluster 983
+0	20nt, >miR1255_R2_L20... *
+>Cluster 984
+0	20nt, >miR1326_R2_L20... *
+>Cluster 985
+0	20nt, >miR1356_R2_L20... *
+>Cluster 986
+0	20nt, >miR1363_R2_L20... *
+>Cluster 987
+0	20nt, >miR1369_R2_L20... *
+>Cluster 988
+0	20nt, >miR1371_R2_L20... *
+>Cluster 989
+0	20nt, >miR1377_R2_L20... *
+>Cluster 990
+0	20nt, >miR1383_R2_L20... *
+>Cluster 991
+0	20nt, >miR1399_R2_L20... *
+>Cluster 992
+0	20nt, >miR1406_R2_L20... *
+>Cluster 993
+0	20nt, >miR1413_R2_L20... *
+>Cluster 994
+0	20nt, >miR1419_R2_L20... *
+>Cluster 995
+0	20nt, >miR1433_R2_L20... *
+>Cluster 996
+0	20nt, >miR1438_R2_L20... *
+>Cluster 997
+0	20nt, >miR1440_R2_L20... *
+>Cluster 998
+0	20nt, >miR1450_R2_L20... *
+>Cluster 999
+0	20nt, >miR1459_R2_L20... *
+>Cluster 1000
+0	20nt, >miR1561_R2_L20... *
+>Cluster 1001
+0	20nt, >miR1563_R2_L20... *
+>Cluster 1002
+0	20nt, >miR1571_R2_L20... *

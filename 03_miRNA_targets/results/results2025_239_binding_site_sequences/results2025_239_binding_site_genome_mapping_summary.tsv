@@ -1,0 +1,9 @@
+metric	value
+unique_miRNA_target_site_records	8301
+records_with_genome_coordinates	8301
+records_without_genome_coordinates	0
+mapped_candidate_result_records	78733
+records_with_multiple_candidate_coordinates	6
+candidate_records_not_matching_CDS_sequence	0
+candidate_records_missing_CDS_transcript	0
+candidate_records_bad_CDS_coordinates	0

@@ -1,0 +1,21 @@
+# Software versions
+
+The workflow was developed with:
+
+```text
+Python 3
+BLAST+ makeblastdb
+BLAST+ blastn
+CD-HIT-EST
+openpyxl
+```
+
+Record exact versions used on the final analysis machine with:
+
+```bash
+python3 --version
+makeblastdb -version
+blastn -version
+cd-hit-est 2>&1 | head
+python3 -c "import openpyxl; print(openpyxl.__version__)"
+```

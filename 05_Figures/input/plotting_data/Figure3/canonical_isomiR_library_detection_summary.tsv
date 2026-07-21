@@ -1,0 +1,16 @@
+Metric	Value
+input_rows	1154
+mann_whitney_u	205744
+mann_whitney_p_value	6.86315e-27
+
+Group	n	mean	median	q1	q3	min	max
+canonical	387	166.968992	56.000000	13.500000	222.000000	2	795
+isomiR	767	84.582790	11.000000	4.000000	71.000000	2	795
+
+Detection_bin	canonical_count	canonical_percentage	isomiR_count	isomiR_percentage
+1	0	0.00	0	0.00
+2-5	29	7.49	247	32.20
+6-10	37	9.56	128	16.69
+11-50	120	31.01	172	22.43
+51-100	49	12.66	59	7.69
+>100	152	39.28	161	20.99

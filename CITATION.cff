@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript or dataset release."
+title: "SoymiR-atlas"
+type: software
+authors:
+  - name: "To be updated"
+date-released: "2026-07-05"

@@ -1,0 +1,7 @@
+Query_ID	Database_chr	Database_strand	Top_tie_candidate_count	Old_Chr	Old_start	Old_end	Old_strand	New_Chr	New_start	New_end	New_strand
+gma-MIR10410c	Chr15	-	3	Chr01	47648016	47648090	minus	Chr15	17040141	17040215	minus
+gma-MIR162c	Chr17	+	2	Chr05	1429231	1429349	plus	Chr17	9945645	9945763	plus
+gma-MIR167j	Chr20	+	2	Chr10	42163412	42163489	plus	Chr20	50199535	50199612	plus
+gma-MIR171l	Chr17	-	2	Chr13	28641515	28641612	plus	Chr17	8890393	8890490	minus
+gma-MIR4384	Chr12	+	4	Chr10	53388732	53388784	plus	Chr12	9145258	9145310	plus
+gma-MIR5380b	Chr11	-	2	Chr11	7791977	7792113	plus	Chr11	7825665	7825801	minus

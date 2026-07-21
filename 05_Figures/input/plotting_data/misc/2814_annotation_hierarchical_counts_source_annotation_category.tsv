@@ -1,0 +1,16 @@
+Source	annotation_category	Count
+miRbase	reference_matched	320
+miRbase	reference_locus_variant	435
+miRbase	known_family_new_locus	157
+miRbase	known_family_new_locus_variant	52
+miRbase	unannotated_opposite_arm_product	157
+miRbase	unannotated_opposite_arm_variant	56
+pmiren	reference_matched	195
+pmiren	reference_locus_variant	115
+pmiren	known_family_new_locus	156
+pmiren	known_family_new_locus_variant	27
+pmiren	unannotated_opposite_arm_product	16
+pmiren	unannotated_opposite_arm_variant	2
+soymir	novel_family_new_locus	1040
+soymir	novel_family_new_locus_variant	80
+soymir	unannotated_opposite_arm_product	6

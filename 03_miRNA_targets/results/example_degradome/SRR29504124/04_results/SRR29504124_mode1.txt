@@ -1,0 +1,3459 @@
+
+CleaveLand4 version 4.5
+2026年 07月 06日 星期一 16:31:34 CST
+
+Mode: 1
+Checking Dependencies
+	bowtie: PASS: <CONDA_ENV_DIR>/cleaveland_env/bin/bowtie
+	bowtie-build: PASS: <CONDA_ENV_DIR>/cleaveland_env/bin/bowtie-build
+	RNAplex: PASS RNAplex 2.3.5
+	GSTAr: PASS GSTAr.pl version 1.0
+	samtools: PASS Version: 1.23.1 (using htslib 1.23.1)
+	R: PASS R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
+
+T-plot directory <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots already exists, new T-plots will be placed there.
+
+Initiating alignment of degradome reads to transcriptome.
+Bowtie index files for <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/cds/GWHAAEV00000000.1.CDS.simple.fasta PRESENT
+Setting the index via positional argument will be deprecated in a future release. Please use -x option instead.
+# reads processed: 23465736
+# reads with at least one alignment: 12841167 (54.72%)
+# reads that failed to align: 10624569 (45.28%)
+Reported 12841167 alignments
+Alignments complete. Generating degradome density file.
+Degradome density file completed ... <SOYMIR_ATLAS_ROOT># reads processed: 23465736
+# reads with at least one alignment: 12841167 (54.72%)
+# reads that failed to align: 10624569 (45.28%)
+Reported 12841167 alignments
+ABORT: No bam file <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/cds/GWHAAEV00000000.1.CDS.simple.fasta_sorted.bam found after bowtie call in sub-routine make_deg_density
+ command is GSTAr.pl -t <SOYMIR_ATLAS_ROOT>/01_miRNA_identification/SRR27718796/results/SRR27718796_miRNA_query.fa <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/cds/GWHAAEV00000000.1.CDS.simple.fasta > <SOYMIR_ATLAS_ROOT>/01_miRNA_identification/SRR27718796/results/SRR27718796_miRNA_query.fa_GSTAr.txt
+
+
+GSTAr version 1.0
+2026年 07月 06日 星期一 16:34:30 CST
+
+Dependency checks:
+	RNAplex: PASS RNAplex 2.3.5
+
+
+Hashing the transcriptome data... Done
+
+Working on query read6129_x151 ... Found 579 valid alignments
+Working on query read5105_x178 ... Found 329 valid alignments
+Working on query read17591_x56 ... Found 850 valid alignments
+Working on query read2308_x28 ... Found 1003 valid alignments
+Working on query read1260_x1674 ... Found 468 valid alignments
+Working on query read1384_x306 ... Found 1106 valid alignments
+Working on query read4658_x39 ... Found 2347 valid alignments
+Working on query read25963_x17 ... Found 661 valid alignments
+Working on query read88095_x18 ... Found 2956 valid alignments
+Working on query read13174_x33 ... Found 906 valid alignments
+Working on query read6098_x67 ... Found 331 valid alignments
+Working on query read16773_x34 ... Found 324 valid alignments
+Working on query read2305_x330 ... Found 778 valid alignments
+Working on query read5110_x724 ... Found 591 valid alignments
+Working on query read8083_x64 ... Found 1909 valid alignments
+
+
+GSTAr run complete
+Loaded GSTAr alignment file <SOYMIR_ATLAS_ROOT>/01_miRNA_identification/SRR27718796/results/SRR27718796_miRNA_query.fa_GSTAr.txt
+	Transcriptome: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/cds/GWHAAEV00000000.1.CDS.simple.fasta
+	Queries: <SOYMIR_ATLAS_ROOT>/01_miRNA_identification/SRR27718796/results/SRR27718796_miRNA_query.fa
+	Ranked by: MFEratio
+# CleaveLand4 4.5
+# 
+Beginning analysis phase...
+
+Finished with Query: read6129_x151
+Finished with Query: read5105_x178
+Finished with Query: read17591_x56
+Finished with Query: read2308_x28
+Finished with Query: read1260_x1674
+Finished with Query: read1384_x306
+Finished with Query: read4658_x39
+Finished with Query: read25963_x17
+Finished with Query: read88095_x18
+Finished with Query: read13174_x33
+Finished with Query: read6098_x67
+Finished with Query: read16773_x34
+Finished with Query: read2305_x330
+Finished with Query: read5110_x724
+Finished with Query: read8083_x64
+
+Found a total of 25 non-redundant putative slicing sites with p-values <= 0.05 and categories <= 1. Outputting results.
+2026年 07月 06日 星期一 16:51:40 CST
+# Degradome Density File: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+# Query Alignment file: <SOYMIR_ATLAS_ROOT>/01_miRNA_identification/SRR27718796/results/SRR27718796_miRNA_query.fa_GSTAr.txt
+# Transcriptome: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/cds/GWHAAEV00000000.1.CDS.simple.fasta
+# P-value cutoff: 0.05
+# Category cutoff: 1
+# Output Format: Pretty
+---------------------------------------------------
+
+5' UUAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV008672.1:2294-2315 Slice Site:2306
+   |o|||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV008672.1:2306
+MFE of perfect match: -42.10
+MFE of this site: -32.90
+MFEratio: 0.781472684085511
+Allen et al. score: 4.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2313-2303
+	15-22,2301-2294
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2315-2314	UP5: Unpaired region at 5' of query
+	14-14,2302-2302	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0017231769762911
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV008672.1_2306_TPlot.pdf
+
+Position	Reads	Category
+15	1	4
+72	2	2
+144	1	4
+175	1	4
+213	1	4
+254	1	4
+286	1	4
+291	1	4
+295	1	4
+299	1	4
+337	5	2
+379	1	4
+393	1	4
+404	3	2
+435	1	4
+443	2	2
+456	1	4
+458	1	4
+504	5	2
+667	2	2
+672	1	4
+691	1	4
+697	2	2
+736	1	4
+740	1	4
+750	1	4
+836	2	2
+839	2	2
+851	3	2
+852	1	4
+859	1	4
+861	1	4
+907	2	2
+946	1	4
+993	2	2
+1009	1	4
+1059	1	4
+1062	3	2
+1070	1	4
+1075	1	4
+1077	2	2
+1079	1	4
+1086	1	4
+1131	3	2
+1135	1	4
+1157	2	2
+1235	1	4
+1237	2	2
+1238	3	2
+1252	1	4
+1284	2	2
+1288	4	2
+1291	3	2
+1292	4	2
+1296	2	2
+1297	1	4
+1300	2	2
+1310	1	4
+1312	1	4
+1322	1	4
+1355	2	2
+1382	3	2
+1383	1	4
+1387	1	4
+1389	2	2
+1393	6	2
+1396	2	2
+1397	2	2
+1398	1	4
+1401	1	4
+1402	2	2
+1404	2	2
+1405	1	4
+1407	3	2
+1411	1	4
+1414	1	4
+1430	1	4
+1474	1	4
+1475	1	4
+1496	1	4
+1538	1	4
+1550	2	2
+1555	1	4
+1560	1	4
+1561	3	2
+1563	1	4
+1608	1	4
+1610	1	4
+1613	3	2
+1615	1	4
+1616	1	4
+1620	1	4
+1621	1	4
+1623	1	4
+1630	1	4
+1637	2	2
+1662	1	4
+1665	1	4
+1666	2	2
+1692	2	2
+1776	2	2
+1787	1	4
+1791	1	4
+1808	1	4
+1822	3	2
+1829	1	4
+1838	1	4
+1866	2	2
+1870	2	2
+1871	1	4
+1873	2	2
+1875	1	4
+1881	2	2
+1890	1	4
+1899	2	2
+1908	1	4
+1928	1	4
+1931	3	2
+1948	1	4
+1956	1	4
+1957	1	4
+1959	2	2
+1961	4	2
+1963	4	2
+1965	5	2
+1985	1	4
+2000	2	2
+2012	2	2
+2017	1	4
+2030	1	4
+2089	1	4
+2091	2	2
+2147	2	2
+2179	1	4
+2181	2	2
+2290	1	4
+2306	21	0	<<<<<<<<<<
+2373	1	4
+2403	1	4
+2404	1	4
+2410	1	4
+2452	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' AGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV009451.1:2417-2438 Slice Site:2429
+     |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV009451.1:2429
+MFE of perfect match: -42.10
+MFE of this site: -31.10
+MFEratio: 0.738717339667458
+Allen et al. score: 6
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2436-2426
+	15-20,2424-2419
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2438-2437	UP5: Unpaired region at 5' of query
+	14-14,2425-2425	SIL: Symmetric internal loop
+	21-22,2418-2417	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0130219130695661
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV009451.1_2429_TPlot.pdf
+
+Position	Reads	Category
+171	1	4
+199	1	4
+206	1	4
+387	2	2
+396	1	4
+515	1	4
+526	1	4
+542	1	4
+649	2	2
+677	1	4
+730	1	4
+794	3	2
+800	1	4
+807	1	4
+844	1	4
+890	1	4
+909	1	4
+1085	2	2
+1089	1	4
+1096	1	4
+1124	1	4
+1148	1	4
+1151	2	2
+1190	1	4
+1298	1	4
+1299	2	2
+1300	1	4
+1380	1	4
+1382	1	4
+1385	1	4
+1425	1	4
+1501	3	2
+1611	1	4
+1742	1	4
+2048	1	4
+2092	1	4
+2268	1	4
+2329	1	4
+2330	1	4
+2339	1	4
+2359	1	4
+2373	1	4
+2379	1	4
+2388	1	4
+2391	1	4
+2401	1	4
+2429	8	0	<<<<<<<<<<
+2430	1	4
+2432	1	4
+2468	1	4
+2496	1	4
+2501	1	4
+2503	1	4
+2506	1	4
+2622	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' AGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV009452.1:2417-2438 Slice Site:2429
+     |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV009452.1:2429
+MFE of perfect match: -42.10
+MFE of this site: -31.10
+MFEratio: 0.738717339667458
+Allen et al. score: 6
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2436-2426
+	15-20,2424-2419
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2438-2437	UP5: Unpaired region at 5' of query
+	14-14,2425-2425	SIL: Symmetric internal loop
+	21-22,2418-2417	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0133622953491561
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV009452.1_2429_TPlot.pdf
+
+Position	Reads	Category
+24	1	4
+61	1	4
+351	1	4
+387	1	4
+396	1	4
+460	2	2
+480	1	4
+485	1	4
+490	1	4
+515	1	4
+521	1	4
+525	1	4
+528	1	4
+804	2	2
+830	1	4
+1085	2	2
+1148	1	4
+1151	1	4
+1159	2	2
+1184	1	4
+1190	2	2
+1287	1	4
+1299	1	4
+1300	1	4
+1317	2	2
+1494	1	4
+1501	1	4
+1523	1	4
+1674	1	4
+1762	1	4
+1823	1	4
+1834	2	2
+1838	1	4
+1966	1	4
+2144	1	4
+2154	1	4
+2269	1	4
+2299	2	2
+2373	1	4
+2429	10	0	<<<<<<<<<<
+2430	2	2
+2446	1	4
+2469	1	4
+2501	1	4
+2505	1	4
+2574	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' AGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV009453.1:2417-2438 Slice Site:2429
+     |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV009453.1:2429
+MFE of perfect match: -42.10
+MFE of this site: -31.10
+MFEratio: 0.738717339667458
+Allen et al. score: 6
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2436-2426
+	15-20,2424-2419
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2438-2437	UP5: Unpaired region at 5' of query
+	14-14,2425-2425	SIL: Symmetric internal loop
+	21-22,2418-2417	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0137025602400241
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV009453.1_2429_TPlot.pdf
+
+Position	Reads	Category
+199	1	4
+431	1	4
+484	1	4
+507	1	4
+521	1	4
+526	1	4
+530	1	4
+641	1	4
+649	2	2
+804	1	4
+807	1	4
+815	1	4
+841	2	2
+844	1	4
+1085	2	2
+1148	1	4
+1151	2	2
+1160	1	4
+1164	1	4
+1244	1	4
+1298	1	4
+1299	1	4
+1300	1	4
+1317	1	4
+1365	1	4
+1373	1	4
+1431	1	4
+1472	1	4
+1498	1	4
+1523	1	4
+1561	1	4
+1565	1	4
+1675	1	4
+1704	3	2
+1823	1	4
+2076	1	4
+2277	1	4
+2391	1	4
+2415	1	4
+2429	11	0	<<<<<<<<<<
+2430	1	4
+2437	1	4
+2439	1	4
+2451	1	4
+2463	1	4
+2622	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV021573.1:2456-2477 Slice Site:2468
+   | |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV021573.1:2468
+MFE of perfect match: -42.10
+MFE of this site: -31.20
+MFEratio: 0.741092636579572
+Allen et al. score: 5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2475-2465
+	15-20,2463-2458
+	22-22,2456-2456
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2477-2476	UP5: Unpaired region at 5' of query
+	14-14,2464-2464	SIL: Symmetric internal loop
+	21-21,2457-2457	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.011659209253813
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV021573.1_2468_TPlot.pdf
+
+Position	Reads	Category
+62	1	4
+99	1	4
+244	1	4
+308	2	2
+350	2	2
+388	3	2
+390	1	4
+435	1	4
+450	1	4
+459	1	4
+463	1	4
+520	1	4
+523	1	4
+529	2	2
+533	1	4
+541	1	4
+544	2	2
+615	1	4
+642	1	4
+647	1	4
+661	5	2
+775	1	4
+783	2	2
+905	1	4
+922	1	4
+961	2	2
+990	1	4
+1053	2	2
+1080	1	4
+1081	1	4
+1083	2	2
+1084	5	2
+1085	1	4
+1086	2	2
+1088	1	4
+1089	1	4
+1092	2	2
+1094	2	2
+1102	2	2
+1104	2	2
+1111	1	4
+1154	3	2
+1165	2	2
+1179	1	4
+1185	1	4
+1187	1	4
+1192	1	4
+1193	1	4
+1194	1	4
+1224	1	4
+1234	1	4
+1235	1	4
+1236	1	4
+1238	5	2
+1257	1	4
+1290	1	4
+1292	1	4
+1299	1	4
+1308	1	4
+1366	1	4
+1367	1	4
+1368	1	4
+1391	1	4
+1402	1	4
+1403	2	2
+1418	3	2
+1432	1	4
+1468	2	2
+1485	1	4
+1511	1	4
+1515	1	4
+1526	1	4
+1530	2	2
+1548	1	4
+1558	1	4
+1580	1	4
+1583	1	4
+1585	1	4
+1594	1	4
+1602	1	4
+1627	2	2
+1668	1	4
+1679	1	4
+1684	1	4
+1685	1	4
+1691	1	4
+1707	1	4
+1709	1	4
+1724	1	4
+1740	1	4
+1762	1	4
+1772	1	4
+1801	1	4
+1848	2	2
+1864	1	4
+1865	1	4
+1869	1	4
+1873	2	2
+1879	1	4
+1889	3	2
+1895	1	4
+1897	3	2
+1898	1	4
+1904	1	4
+1924	1	4
+1925	1	4
+1942	2	2
+1947	2	2
+1955	1	4
+1961	9	2
+1965	1	4
+1984	1	4
+1986	1	4
+2008	1	4
+2055	1	4
+2069	1	4
+2072	2	2
+2078	5	2
+2087	2	2
+2094	4	2
+2097	2	2
+2109	2	2
+2110	1	4
+2112	1	4
+2117	1	4
+2129	1	4
+2152	1	4
+2154	1	4
+2167	2	2
+2180	1	4
+2184	1	4
+2186	1	4
+2190	1	4
+2192	2	2
+2193	5	2
+2194	4	2
+2195	1	4
+2196	1	4
+2197	2	2
+2198	2	2
+2199	1	4
+2200	3	2
+2201	8	2
+2202	9	2
+2203	1	4
+2204	4	2
+2205	1	4
+2206	3	2
+2207	1	4
+2208	1	4
+2209	1	4
+2210	1	4
+2218	1	4
+2220	2	2
+2221	3	2
+2222	2	2
+2223	1	4
+2224	1	4
+2226	5	2
+2227	2	2
+2228	1	4
+2231	3	2
+2233	1	4
+2234	3	2
+2236	1	4
+2237	5	2
+2239	1	4
+2240	2	2
+2241	1	4
+2243	1	4
+2244	1	4
+2245	2	2
+2246	1	4
+2248	3	2
+2250	1	4
+2251	1	4
+2253	2	2
+2257	2	2
+2258	2	2
+2259	1	4
+2260	4	2
+2261	3	2
+2263	6	2
+2264	1	4
+2268	1	4
+2295	1	4
+2313	1	4
+2318	1	4
+2328	1	4
+2368	1	4
+2375	2	2
+2377	1	4
+2378	2	2
+2381	1	4
+2383	2	2
+2384	1	4
+2385	2	2
+2387	1	4
+2390	1	4
+2399	1	4
+2410	1	4
+2412	1	4
+2424	1	4
+2433	1	4
+2449	1	4
+2468	11	0	<<<<<<<<<<
+2477	1	4
+2534	1	4
+2541	1	4
+2561	1	4
+2567	1	4
+2597	2	2
+2598	1	4
+2614	1	4
+2624	1	4
+2625	1	4
+2670	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV021574.1:2459-2480 Slice Site:2471
+   | |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV021574.1:2471
+MFE of perfect match: -42.10
+MFE of this site: -31.20
+MFEratio: 0.741092636579572
+Allen et al. score: 5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2478-2468
+	15-20,2466-2461
+	22-22,2459-2459
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2480-2479	UP5: Unpaired region at 5' of query
+	14-14,2467-2467	SIL: Symmetric internal loop
+	21-21,2460-2460	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.00961162497743562
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV021574.1_2471_TPlot.pdf
+
+Position	Reads	Category
+59	1	4
+99	1	4
+199	1	4
+232	1	4
+280	1	4
+388	1	4
+390	1	4
+459	2	2
+463	1	4
+485	1	4
+499	2	2
+506	1	4
+518	1	4
+529	1	4
+544	1	4
+605	1	4
+615	2	2
+661	1	4
+664	1	4
+672	2	2
+795	1	4
+900	1	4
+905	1	4
+961	3	2
+990	1	4
+1009	2	2
+1057	2	2
+1074	1	4
+1075	2	2
+1078	1	4
+1079	1	4
+1080	1	4
+1081	1	4
+1083	8	2
+1086	2	2
+1088	1	4
+1090	1	4
+1091	1	4
+1092	1	4
+1094	1	4
+1104	1	4
+1182	1	4
+1188	2	2
+1189	2	2
+1190	1	4
+1191	2	2
+1195	1	4
+1222	1	4
+1229	1	4
+1237	1	4
+1239	1	4
+1240	1	4
+1241	4	2
+1307	1	4
+1310	1	4
+1311	1	4
+1364	1	4
+1370	4	2
+1371	1	4
+1397	1	4
+1398	1	4
+1399	1	4
+1406	1	4
+1434	1	4
+1435	2	2
+1445	1	4
+1488	1	4
+1508	3	2
+1514	1	4
+1517	1	4
+1518	1	4
+1523	1	4
+1536	1	4
+1542	1	4
+1551	3	2
+1586	1	4
+1619	1	4
+1630	3	2
+1638	1	4
+1647	1	4
+1682	1	4
+1687	1	4
+1688	2	2
+1694	2	2
+1696	1	4
+1699	1	4
+1701	1	4
+1734	2	2
+1743	1	4
+1754	1	4
+1775	2	2
+1777	1	4
+1806	1	4
+1835	1	4
+1851	2	2
+1864	1	4
+1871	1	4
+1876	3	2
+1879	1	4
+1882	1	4
+1885	2	2
+1888	1	4
+1892	2	2
+1902	1	4
+1924	1	4
+1927	1	4
+1928	1	4
+1942	2	2
+1945	1	4
+1948	2	2
+1949	1	4
+1953	1	4
+1959	1	4
+1964	4	2
+1968	2	2
+1985	1	4
+1987	2	2
+1990	2	2
+2071	1	4
+2092	2	2
+2097	3	2
+2100	2	2
+2102	1	4
+2103	1	4
+2110	1	4
+2112	1	4
+2120	1	4
+2124	1	4
+2128	1	4
+2137	1	4
+2146	1	4
+2157	1	4
+2162	1	4
+2170	2	2
+2184	1	4
+2191	1	4
+2193	2	2
+2195	4	2
+2196	6	2
+2197	3	2
+2198	3	2
+2200	3	2
+2201	3	2
+2202	2	2
+2203	7	2
+2204	4	2
+2205	8	2
+2206	1	4
+2207	5	2
+2208	4	2
+2209	3	2
+2211	1	4
+2213	1	4
+2222	1	4
+2223	3	2
+2224	3	2
+2225	2	2
+2226	2	2
+2227	1	4
+2229	5	2
+2230	1	4
+2231	2	2
+2233	1	4
+2234	1	4
+2235	1	4
+2236	1	4
+2237	3	2
+2238	1	4
+2240	3	2
+2241	5	2
+2246	1	4
+2249	5	2
+2251	1	4
+2254	1	4
+2255	1	4
+2256	1	4
+2260	1	4
+2261	2	2
+2262	1	4
+2263	2	2
+2264	2	2
+2265	1	4
+2266	5	2
+2267	1	4
+2268	2	2
+2276	1	4
+2298	1	4
+2312	1	4
+2321	1	4
+2326	1	4
+2327	1	4
+2336	1	4
+2371	1	4
+2374	1	4
+2378	1	4
+2384	1	4
+2385	1	4
+2390	1	4
+2399	1	4
+2401	3	2
+2402	1	4
+2406	1	4
+2409	2	2
+2416	1	4
+2417	1	4
+2419	1	4
+2436	1	4
+2462	1	4
+2471	9	0	<<<<<<<<<<
+2472	2	2
+2479	1	4
+2520	1	4
+2536	1	4
+2566	2	2
+2573	1	4
+2628	1	4
+2629	1	4
+2673	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' CGAGCAUGGGUGGAAUUGGCAA 3' Transcript: GWHTAAEV022609.1:468-489 Slice Site:480
+        |||||||||||o|||||
+3' AUCCUUACCCACCUUAGCCGUU 5' Query: read1384_x306
+
+SiteID: GWHTAAEV022609.1:480
+MFE of perfect match: -41.30
+MFE of this site: -30.30
+MFEratio: 0.733656174334141
+Allen et al. score: 6
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	1-17,489-473
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	18-22,472-468	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0211587702843675
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1384_x306_GWHTAAEV022609.1_480_TPlot.pdf
+
+Position	Reads	Category
+7	1	4
+17	3	2
+19	1	4
+25	7	2
+41	2	3
+45	2	3
+54	1	4
+61	2	3
+102	1	4
+108	1	4
+113	5	2
+121	1	4
+122	4	2
+127	1	4
+128	1	4
+132	1	4
+138	1	4
+139	2	3
+140	4	2
+142	1	4
+147	6	2
+148	2	3
+151	2	3
+165	4	2
+166	1	4
+181	11	2
+183	1	4
+185	2	3
+187	1	4
+190	4	2
+191	3	2
+195	2	3
+203	1	4
+210	2	3
+211	1	4
+214	2	3
+218	1	4
+220	3	2
+223	2	3
+226	1	4
+229	1	4
+231	2	3
+250	2	3
+251	2	3
+252	1	4
+253	1	4
+254	7	2
+255	1	4
+256	2	3
+261	1	4
+269	3	2
+274	2	3
+275	1	4
+276	6	2
+291	2	3
+295	3	2
+296	1	4
+301	1	4
+303	1	4
+319	2	3
+330	1	4
+358	1	4
+362	1	4
+364	8	2
+392	2	3
+413	3	2
+414	2	3
+419	5	2
+424	1	4
+430	1	4
+431	2	3
+455	1	4
+457	1	4
+465	1	4
+471	1	4
+479	6	2
+480	70	0	<<<<<<<<<<
+484	1	4
+486	1	4
+491	2	3
+493	1	4
+495	2	3
+500	1	4
+506	1	4
+508	1	4
+512	3	2
+516	1	4
+520	1	4
+529	2	3
+542	1	4
+547	1	4
+560	1	4
+565	3	2
+571	2	3
+572	1	4
+573	1	4
+574	1	4
+575	4	2
+576	3	2
+578	3	2
+580	1	4
+581	1	4
+585	1	4
+586	4	2
+588	5	2
+594	1	4
+595	2	3
+596	2	3
+607	1	4
+610	1	4
+624	1	4
+625	2	3
+627	3	2
+635	1	4
+637	1	4
+638	1	4
+641	1	4
+646	1	4
+647	1	4
+648	3	2
+653	3	2
+658	2	3
+659	1	4
+662	1	4
+667	1	4
+669	4	2
+670	3	2
+671	1	4
+674	1	4
+676	2	3
+677	1	4
+678	3	2
+679	1	4
+692	7	2
+699	1	4
+703	2	3
+704	5	2
+707	2	3
+708	2	3
+719	4	2
+724	1	4
+725	1	4
+730	1	4
+736	2	3
+740	1	4
+741	1	4
+743	1	4
+744	3	2
+748	2	3
+751	2	3
+753	2	3
+754	2	3
+756	2	3
+761	1	4
+788	4	2
+794	2	3
+808	3	2
+811	2	3
+829	1	4
+853	1	4
+856	3	2
+858	1	4
+882	4	2
+887	1	4
+909	5	2
+917	1	4
+969	3	2
+975	1	4
+982	5	2
+983	2	3
+985	1	4
+992	1	4
+1004	1	4
+1011	1	4
+1014	1	4
+1022	2	3
+1028	5	2
+1031	1	4
+1034	1	4
+1036	3	2
+1038	3	2
+1044	1	4
+1048	1	4
+1049	3	2
+1073	1	4
+1074	2	3
+1075	1	4
+1079	4	2
+1085	2	3
+1087	1	4
+1088	1	4
+1089	2	3
+1091	1	4
+1094	1	4
+1096	2	3
+1097	1	4
+1099	6	2
+1100	2	3
+1101	3	2
+1102	3	2
+1103	6	2
+1104	5	2
+1106	3	2
+1107	8	2
+1108	4	2
+1109	5	2
+1111	4	2
+1112	2	3
+1113	1	4
+1120	6	2
+1121	3	2
+1123	4	2
+1124	2	3
+1128	1	4
+1133	2	3
+1141	2	3
+1142	3	2
+1143	1	4
+1144	2	3
+1145	6	2
+1147	1	4
+1150	1	4
+1151	3	2
+1153	2	3
+1154	1	4
+1155	1	4
+1158	1	4
+1170	2	3
+1171	2	3
+1172	2	3
+1174	7	2
+1175	7	2
+1176	6	2
+1177	3	2
+1178	1	4
+1179	1	4
+1180	1	4
+1181	1	4
+1183	3	2
+1187	2	3
+1188	3	2
+1192	1	4
+1195	3	2
+1196	2	3
+1197	2	3
+1199	1	4
+1200	2	3
+1201	1	4
+1202	2	3
+1205	1	4
+1206	1	4
+1211	1	4
+1214	1	4
+1226	1	4
+1229	1	4
+1235	4	2
+1238	2	3
+1239	5	2
+1240	1	4
+1246	3	2
+1249	1	4
+1257	1	4
+1260	1	4
+1265	1	4
+1267	2	3
+1271	2	3
+1279	1	4
+1283	2	3
+1285	3	2
+1287	3	2
+1289	2	3
+1295	1	4
+1321	1	4
+1326	1	4
+1333	1	4
+1340	1	4
+1341	1	4
+1342	3	2
+1343	5	2
+1346	2	3
+1350	1	4
+1352	4	2
+1353	2	3
+1359	2	3
+1366	2	3
+1369	2	3
+1370	1	4
+1373	2	3
+1380	3	2
+1381	3	2
+1382	4	2
+1383	3	2
+1384	5	2
+1386	1	4
+1387	1	4
+1388	4	2
+1389	1	4
+1392	1	4
+1395	2	3
+1397	1	4
+1402	1	4
+1411	3	2
+1418	1	4
+1435	3	2
+1457	4	2
+1483	2	3
+1493	2	3
+1498	7	2
+1522	1	4
+1531	3	2
+1539	2	3
+1548	3	2
+1555	2	3
+1561	1	4
+1563	1	4
+1575	2	3
+1576	1	4
+1579	2	3
+1580	8	2
+1581	1	4
+1595	2	3
+1614	2	3
+1620	1	4
+1623	1	4
+1626	3	2
+1628	11	2
+1629	5	2
+1631	3	2
+1641	1	4
+1648	1	4
+1652	1	4
+1659	2	3
+1663	2	3
+1681	1	4
+1693	1	4
+1696	6	2
+1699	2	3
+1709	5	2
+1715	2	3
+1721	1	4
+1722	2	3
+---------------------------------------------------
+---------------------------------------------------
+
+5' AGGUGGAAUAGGAAAGACAACA 3' Transcript: GWHTAAEV027144.1:84-105 Slice Site:96
+    ||||||||||| ||o||||||
+3' ACCACCUUAUCCAUUUUGUUGU 5' Query: read8083_x64
+
+SiteID: GWHTAAEV027144.1:96
+MFE of perfect match: -34.70
+MFE of this site: -30.60
+MFEratio: 0.881844380403458
+Allen et al. score: 4
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	1-9,105-97
+	11-21,95-85
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	10-10,96-96	SIL: Symmetric internal loop
+	22-22,84-84	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0079020646570267
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read8083_x64_GWHTAAEV027144.1_96_TPlot.pdf
+
+Position	Reads	Category
+37	2	3
+38	1	4
+51	1	4
+96	19	0	<<<<<<<<<<
+101	1	4
+106	1	4
+178	1	4
+187	1	4
+294	1	4
+322	1	4
+325	5	2
+332	2	3
+334	1	4
+366	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' GGGUGGAAUAGGAAAGACAACU 3' Transcript: GWHTAAEV028433.1:3-24 Slice Site:15
+    ||||||||||| ||o||||| 
+3' ACCACCUUAUCCAUUUUGUUGU 5' Query: read8083_x64
+
+SiteID: GWHTAAEV028433.1:15
+MFE of perfect match: -34.70
+MFE of this site: -29.50
+MFEratio: 0.85014409221902
+Allen et al. score: 5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	2-9,23-16
+	11-21,14-4
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-1,24-24	UP5: Unpaired region at 5' of query
+	10-10,15-15	SIL: Symmetric internal loop
+	22-22,3-3	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0140427077826544
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read8083_x64_GWHTAAEV028433.1_15_TPlot.pdf
+
+Position	Reads	Category
+15	2	0	<<<<<<<<<<
+198	1	4
+581	1	4
+658	1	4
+1037	1	4
+1429	1	4
+2219	1	4
+2275	1	4
+2369	1	4
+2487	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UUAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV054617.1:2285-2306 Slice Site:2297
+   |o|||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV054617.1:2297
+MFE of perfect match: -42.10
+MFE of this site: -32.90
+MFEratio: 0.781472684085511
+Allen et al. score: 4.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2304-2294
+	15-22,2292-2285
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2306-2305	UP5: Unpaired region at 5' of query
+	14-14,2293-2293	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.00241161606518514
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV054617.1_2297_TPlot.pdf
+
+Position	Reads	Category
+237	2	2
+254	1	4
+256	1	4
+259	1	4
+263	1	4
+274	1	4
+284	1	4
+382	1	4
+465	1	4
+665	1	4
+796	1	4
+801	1	4
+851	1	4
+855	1	4
+858	1	4
+860	1	4
+875	1	4
+904	1	4
+1093	1	4
+1144	1	4
+1175	1	4
+1306	1	4
+1380	2	2
+1386	1	4
+1390	1	4
+1439	1	4
+1445	1	4
+1474	1	4
+1483	1	4
+1501	1	4
+1503	1	4
+1547	1	4
+1663	1	4
+1665	1	4
+1667	2	2
+1670	1	4
+1711	1	4
+1915	1	4
+2037	2	2
+2052	3	2
+2240	1	4
+2297	7	0	<<<<<<<<<<
+2298	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UUAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV054619.1:2285-2306 Slice Site:2297
+   |o|||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV054619.1:2297
+MFE of perfect match: -42.10
+MFE of this site: -32.90
+MFEratio: 0.781472684085511
+Allen et al. score: 4.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2304-2294
+	15-22,2292-2285
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2306-2305	UP5: Unpaired region at 5' of query
+	14-14,2293-2293	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.00137877929203378
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV054619.1_2297_TPlot.pdf
+
+Position	Reads	Category
+27	1	4
+86	1	4
+237	3	2
+256	1	4
+284	1	4
+289	2	2
+293	1	4
+569	1	4
+665	1	4
+741	1	4
+810	1	4
+852	1	4
+893	2	2
+1016	1	4
+1093	1	4
+1100	1	4
+1124	1	4
+1144	2	2
+1283	1	4
+1290	1	4
+1294	1	4
+1380	3	2
+1381	1	4
+1382	1	4
+1383	2	2
+1386	1	4
+1395	1	4
+1425	1	4
+1432	1	4
+1458	2	2
+1478	1	4
+1508	1	4
+1666	1	4
+2297	4	0	<<<<<<<<<<
+2298	1	4
+2299	1	4
+2385	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UUAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV054620.1:2285-2306 Slice Site:2297
+   |o|||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV054620.1:2297
+MFE of perfect match: -42.10
+MFE of this site: -32.90
+MFEratio: 0.781472684085511
+Allen et al. score: 4.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2304-2294
+	15-22,2292-2285
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2306-2305	UP5: Unpaired region at 5' of query
+	14-14,2293-2293	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 1
+Degradome p-value: 0.0053126337243975
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV054620.1_2297_TPlot.pdf
+
+Position	Reads	Category
+3	1	4
+178	1	4
+237	2	1
+325	1	4
+539	1	4
+598	1	4
+606	1	4
+795	1	4
+798	1	4
+810	1	4
+849	1	4
+855	1	4
+860	1	4
+877	1	4
+903	1	4
+949	1	4
+968	1	4
+1017	1	4
+1086	1	4
+1144	1	4
+1225	1	4
+1286	1	4
+1294	1	4
+1306	1	4
+1379	2	1
+1380	1	4
+1382	2	1
+1383	1	4
+1421	1	4
+1458	1	4
+1474	1	4
+1477	1	4
+1485	1	4
+1539	1	4
+1547	1	4
+1665	1	4
+1915	2	1
+2052	1	4
+2135	1	4
+2297	2	1	<<<<<<<<<<
+2298	1	4
+2329	1	4
+2374	1	4
+2381	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV063875.1:2429-2450 Slice Site:2441
+   | |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV063875.1:2441
+MFE of perfect match: -42.10
+MFE of this site: -31.20
+MFEratio: 0.741092636579572
+Allen et al. score: 5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2448-2438
+	15-20,2436-2431
+	22-22,2429-2429
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2450-2449	UP5: Unpaired region at 5' of query
+	14-14,2437-2437	SIL: Symmetric internal loop
+	21-21,2430-2430	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 1
+Degradome p-value: 0.0210817894151889
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV063875.1_2441_TPlot.pdf
+
+Position	Reads	Category
+4	2	2
+79	2	2
+81	1	4
+83	1	4
+146	1	4
+232	2	2
+244	1	4
+308	1	4
+458	2	2
+499	1	4
+612	1	4
+787	2	2
+951	1	4
+954	1	4
+989	1	4
+990	1	4
+1006	3	2
+1049	5	2
+1059	2	2
+1062	2	2
+1080	1	4
+1133	2	2
+1143	2	2
+1229	2	2
+1234	1	4
+1235	3	2
+1237	1	4
+1238	1	4
+1266	7	1
+1296	2	2
+1297	6	2
+1301	3	2
+1306	2	2
+1311	3	2
+1315	2	2
+1316	1	4
+1323	2	2
+1330	1	4
+1351	1	4
+1356	1	4
+1361	1	4
+1372	4	2
+1374	3	2
+1375	3	2
+1376	2	2
+1377	2	2
+1378	4	2
+1384	1	4
+1385	2	2
+1386	1	4
+1390	2	2
+1391	1	4
+1394	1	4
+1395	1	4
+1400	1	4
+1406	1	4
+1408	1	4
+1410	1	4
+1427	2	2
+1436	1	4
+1511	1	4
+1520	2	2
+1525	1	4
+1528	1	4
+1537	2	2
+1538	1	4
+1540	2	2
+1545	2	2
+1553	1	4
+1555	2	2
+1561	1	4
+1563	3	2
+1571	3	2
+1573	1	4
+1589	3	2
+1595	5	2
+1616	1	4
+1625	2	2
+1631	1	4
+1633	2	2
+1634	4	2
+1635	5	2
+1639	1	4
+1652	1	4
+1654	1	4
+1664	2	2
+1694	1	4
+1705	2	2
+1709	1	4
+1711	1	4
+1728	1	4
+1731	2	2
+1736	3	2
+1739	1	4
+1763	1	4
+1765	1	4
+1808	1	4
+1812	1	4
+1832	1	4
+1842	1	4
+1881	2	2
+1884	3	2
+1909	3	2
+1926	1	4
+1977	6	2
+1982	2	2
+1991	1	4
+2044	2	2
+2048	5	2
+2059	2	2
+2060	1	4
+2068	1	4
+2077	2	2
+2078	1	4
+2085	1	4
+2106	1	4
+2115	3	2
+2123	1	4
+2127	1	4
+2157	1	4
+2171	3	2
+2172	1	4
+2174	2	2
+2176	2	2
+2179	4	2
+2188	4	2
+2189	1	4
+2204	1	4
+2207	1	4
+2211	1	4
+2218	1	4
+2225	1	4
+2236	2	2
+2242	1	4
+2282	1	4
+2297	1	4
+2299	1	4
+2302	1	4
+2315	1	4
+2334	1	4
+2339	1	4
+2345	3	2
+2349	2	2
+2351	1	4
+2356	1	4
+2371	1	4
+2394	1	4
+2417	1	4
+2441	7	1	<<<<<<<<<<
+2453	1	4
+2470	2	2
+2513	2	2
+2557	1	4
+2578	1	4
+2597	1	4
+2654	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' AGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV067261.1:2165-2186 Slice Site:2177
+     |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV067261.1:2177
+MFE of perfect match: -42.10
+MFE of this site: -31.10
+MFEratio: 0.738717339667458
+Allen et al. score: 6
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2184-2174
+	15-20,2172-2167
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2186-2185	UP5: Unpaired region at 5' of query
+	14-14,2173-2173	SIL: Symmetric internal loop
+	21-22,2166-2165	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0120000614934126
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV067261.1_2177_TPlot.pdf
+
+Position	Reads	Category
+42	1	4
+130	1	4
+143	1	4
+210	1	4
+218	1	4
+278	1	4
+281	1	4
+425	1	4
+549	4	2
+551	1	4
+581	1	4
+582	2	2
+621	1	4
+680	1	4
+811	2	2
+841	1	4
+842	1	4
+905	1	4
+911	1	4
+912	1	4
+996	1	4
+1010	1	4
+1024	1	4
+1029	2	2
+1067	1	4
+1069	1	4
+1090	2	2
+1103	2	2
+1121	1	4
+1129	2	2
+1168	1	4
+1208	1	4
+1229	1	4
+1233	1	4
+1235	1	4
+1246	2	2
+1266	1	4
+1275	1	4
+1302	2	2
+1310	3	2
+1312	1	4
+1313	1	4
+1389	1	4
+1400	1	4
+1425	1	4
+1496	1	4
+1527	2	2
+1544	1	4
+1667	1	4
+1740	1	4
+1763	2	2
+1788	1	4
+1790	3	2
+1793	1	4
+1794	1	4
+1863	1	4
+1876	2	2
+1877	2	2
+1880	1	4
+1898	1	4
+1918	1	4
+1929	1	4
+1935	1	4
+1990	1	4
+2025	1	4
+2073	1	4
+2080	1	4
+2081	2	2
+2087	1	4
+2089	1	4
+2096	1	4
+2109	1	4
+2139	2	2
+2140	1	4
+2149	1	4
+2177	7	0	<<<<<<<<<<
+2178	2	2
+2180	1	4
+2185	1	4
+2210	1	4
+2242	1	4
+2246	1	4
+2252	1	4
+2261	1	4
+2267	1	4
+2272	1	4
+2277	1	4
+2284	1	4
+2298	1	4
+2309	1	4
+2317	1	4
+2320	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' AGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV067262.1:2417-2438 Slice Site:2429
+     |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV067262.1:2429
+MFE of perfect match: -42.10
+MFE of this site: -31.10
+MFEratio: 0.738717339667458
+Allen et al. score: 6
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2436-2426
+	15-20,2424-2419
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2438-2437	UP5: Unpaired region at 5' of query
+	14-14,2425-2425	SIL: Symmetric internal loop
+	21-22,2418-2417	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.012681413360756
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV067262.1_2429_TPlot.pdf
+
+Position	Reads	Category
+105	1	4
+200	6	2
+240	2	2
+382	1	4
+397	1	4
+462	1	4
+470	2	2
+520	1	4
+743	1	4
+800	1	4
+801	2	2
+803	2	2
+833	4	2
+851	3	2
+892	1	4
+970	1	4
+977	1	4
+992	1	4
+1005	1	4
+1063	1	4
+1094	1	4
+1148	1	4
+1151	2	2
+1153	1	4
+1160	1	4
+1184	1	4
+1278	2	2
+1281	1	4
+1332	2	2
+1333	2	2
+1339	1	4
+1377	1	4
+1379	1	4
+1403	2	2
+1412	1	4
+1485	4	2
+1490	1	4
+1495	2	2
+1499	1	4
+1518	3	2
+1527	1	4
+1545	1	4
+1554	1	4
+1564	2	2
+1565	1	4
+1575	1	4
+1588	1	4
+1599	1	4
+1620	1	4
+1640	1	4
+1641	1	4
+1642	2	2
+1684	2	2
+1872	1	4
+1919	1	4
+1955	1	4
+1958	1	4
+2014	1	4
+2040	2	2
+2042	2	2
+2043	2	2
+2045	1	4
+2046	1	4
+2047	1	4
+2066	1	4
+2067	1	4
+2075	1	4
+2109	1	4
+2128	1	4
+2129	4	2
+2130	1	4
+2132	1	4
+2148	2	2
+2150	1	4
+2156	1	4
+2157	1	4
+2185	1	4
+2186	1	4
+2189	1	4
+2208	2	2
+2234	1	4
+2268	1	4
+2285	1	4
+2301	1	4
+2306	1	4
+2309	1	4
+2329	1	4
+2333	3	2
+2335	1	4
+2341	1	4
+2348	1	4
+2351	2	2
+2361	1	4
+2380	1	4
+2388	2	2
+2390	1	4
+2391	1	4
+2392	1	4
+2401	1	4
+2406	1	4
+2429	7	0	<<<<<<<<<<
+2432	1	4
+2437	1	4
+2439	1	4
+2442	1	4
+2448	1	4
+2518	1	4
+2519	2	2
+2520	1	4
+2522	1	4
+2529	2	2
+2539	1	4
+2544	1	4
+2568	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' AGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV067263.1:2417-2438 Slice Site:2429
+     |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV067263.1:2429
+MFE of perfect match: -42.10
+MFE of this site: -31.10
+MFEratio: 0.738717339667458
+Allen et al. score: 6
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2436-2426
+	15-20,2424-2419
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2438-2437	UP5: Unpaired region at 5' of query
+	14-14,2425-2425	SIL: Symmetric internal loop
+	21-22,2418-2417	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0123407961822135
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV067263.1_2429_TPlot.pdf
+
+Position	Reads	Category
+61	1	4
+200	1	4
+251	1	4
+257	1	4
+300	1	4
+350	1	4
+464	1	4
+507	1	4
+525	1	4
+530	1	4
+649	1	4
+803	4	2
+833	1	4
+837	1	4
+873	1	4
+887	1	4
+890	1	4
+901	1	4
+961	1	4
+1059	1	4
+1089	1	4
+1148	1	4
+1151	1	4
+1232	2	2
+1281	1	4
+1298	1	4
+1319	1	4
+1373	1	4
+1377	2	2
+1379	1	4
+1380	1	4
+1381	1	4
+1412	2	2
+1420	1	4
+1483	2	2
+1485	1	4
+1489	1	4
+1490	1	4
+1498	1	4
+1521	1	4
+1534	1	4
+1554	1	4
+1563	1	4
+1564	1	4
+1565	2	2
+1641	3	2
+1677	1	4
+1684	2	2
+1700	1	4
+1748	2	2
+1770	1	4
+1779	1	4
+1866	1	4
+1919	1	4
+1955	1	4
+2040	3	2
+2041	1	4
+2045	1	4
+2046	1	4
+2075	1	4
+2098	3	2
+2109	1	4
+2110	1	4
+2128	1	4
+2129	2	2
+2132	1	4
+2147	1	4
+2148	2	2
+2156	1	4
+2170	1	4
+2192	2	2
+2211	1	4
+2228	2	2
+2236	1	4
+2298	1	4
+2325	1	4
+2329	1	4
+2337	1	4
+2339	1	4
+2343	2	2
+2346	1	4
+2348	1	4
+2373	1	4
+2387	1	4
+2398	1	4
+2429	9	0	<<<<<<<<<<
+2446	2	2
+2459	1	4
+2498	1	4
+2503	1	4
+2518	1	4
+2520	2	2
+2521	1	4
+2525	1	4
+2526	1	4
+2528	1	4
+2539	1	4
+2554	1	4
+2571	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UUAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV070549.1:2282-2303 Slice Site:2294
+   |o|||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV070549.1:2294
+MFE of perfect match: -42.10
+MFE of this site: -32.90
+MFEratio: 0.781472684085511
+Allen et al. score: 4.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2301-2291
+	15-22,2289-2282
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2303-2302	UP5: Unpaired region at 5' of query
+	14-14,2290-2290	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0030995803875935
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV070549.1_2294_TPlot.pdf
+
+Position	Reads	Category
+53	1	4
+144	1	4
+182	3	2
+254	1	4
+263	1	4
+265	1	4
+308	1	4
+336	2	2
+337	3	2
+379	1	4
+456	1	4
+458	1	4
+545	2	2
+579	1	4
+597	1	4
+667	1	4
+675	5	2
+747	1	4
+779	2	2
+841	2	2
+844	2	2
+849	2	2
+850	3	2
+856	1	4
+878	2	2
+900	2	2
+907	3	2
+1035	2	2
+1058	2	2
+1059	1	4
+1071	1	4
+1082	1	4
+1085	1	4
+1086	2	2
+1088	2	2
+1091	1	4
+1093	1	4
+1095	4	2
+1120	1	4
+1147	1	4
+1154	3	2
+1159	2	2
+1191	2	2
+1237	1	4
+1252	1	4
+1261	1	4
+1281	1	4
+1283	2	2
+1284	4	2
+1293	1	4
+1303	4	2
+1304	2	2
+1305	1	4
+1306	1	4
+1307	3	2
+1312	1	4
+1313	2	2
+1382	1	4
+1383	4	2
+1386	2	2
+1393	2	2
+1398	2	2
+1404	1	4
+1405	1	4
+1486	2	2
+1491	2	2
+1523	3	2
+1540	1	4
+1552	2	2
+1563	1	4
+1610	2	2
+1626	2	2
+1658	1	4
+1662	1	4
+1663	5	2
+1667	2	2
+1683	5	2
+1807	1	4
+1814	1	4
+1854	2	2
+1858	2	2
+1880	1	4
+1882	1	4
+1889	2	2
+1899	5	2
+1919	2	2
+1939	2	2
+1945	1	4
+1946	4	2
+1947	1	4
+1948	1	4
+1950	3	2
+1951	3	2
+1952	1	4
+1970	3	2
+2006	2	2
+2012	3	2
+2014	1	4
+2015	4	2
+2033	2	2
+2064	1	4
+2135	2	2
+2156	1	4
+2167	1	4
+2207	1	4
+2220	1	4
+2279	5	2
+2281	1	4
+2294	23	0	<<<<<<<<<<
+2296	1	4
+2297	1	4
+2328	1	4
+2351	2	2
+2361	1	4
+2374	1	4
+2387	1	4
+2390	1	4
+2396	1	4
+2398	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV072476.1:1721-1742 Slice Site:1733
+   | |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV072476.1:1733
+MFE of perfect match: -42.10
+MFE of this site: -31.20
+MFEratio: 0.741092636579572
+Allen et al. score: 5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,1740-1730
+	15-20,1728-1723
+	22-22,1721-1721
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,1742-1741	UP5: Unpaired region at 5' of query
+	14-14,1729-1729	SIL: Symmetric internal loop
+	21-21,1722-1722	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 1
+Degradome p-value: 0.021733384653183
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV072476.1_1733_TPlot.pdf
+
+Position	Reads	Category
+78	1	4
+83	1	4
+96	1	4
+122	1	4
+134	1	4
+159	2	2
+219	2	2
+343	1	4
+379	1	4
+410	1	4
+466	1	4
+528	1	4
+532	1	4
+533	1	4
+536	1	4
+555	2	2
+594	1	4
+595	1	4
+596	3	2
+630	2	2
+671	1	4
+673	2	2
+679	3	2
+681	1	4
+682	3	2
+685	1	4
+689	1	4
+690	1	4
+692	4	1
+695	1	4
+699	1	4
+701	1	4
+702	2	2
+717	1	4
+731	1	4
+774	1	4
+775	1	4
+784	1	4
+785	1	4
+787	3	2
+793	1	4
+794	1	4
+795	2	2
+800	1	4
+801	1	4
+819	1	4
+821	1	4
+857	1	4
+871	1	4
+883	1	4
+925	1	4
+943	1	4
+990	2	2
+1026	1	4
+1034	1	4
+1048	1	4
+1053	1	4
+1055	1	4
+1059	1	4
+1076	1	4
+1205	2	2
+1253	3	2
+1267	1	4
+1270	2	2
+1280	4	1
+1283	1	4
+1295	3	2
+1296	2	2
+1300	1	4
+1337	2	2
+1343	2	2
+1346	2	2
+1352	1	4
+1373	1	4
+1392	1	4
+1402	1	4
+1432	2	2
+1433	1	4
+1443	3	2
+1445	1	4
+1448	1	4
+1452	2	2
+1453	2	2
+1454	1	4
+1456	2	2
+1460	3	2
+1463	1	4
+1464	3	2
+1465	2	2
+1466	1	4
+1467	1	4
+1468	2	2
+1469	2	2
+1470	1	4
+1474	3	2
+1480	2	2
+1482	1	4
+1483	1	4
+1484	1	4
+1486	1	4
+1487	2	2
+1488	4	1
+1492	1	4
+1498	1	4
+1503	4	1
+1519	1	4
+1532	1	4
+1552	2	2
+1553	1	4
+1561	2	2
+1591	1	4
+1598	1	4
+1600	1	4
+1602	1	4
+1607	1	4
+1609	1	4
+1622	1	4
+1625	2	2
+1628	1	4
+1637	3	2
+1674	1	4
+1686	1	4
+1733	4	1	<<<<<<<<<<
+1735	2	2
+1788	1	4
+1839	1	4
+1902	1	4
+1930	1	4
+1946	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UGAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV072477.1:2423-2444 Slice Site:2435
+   | |||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV072477.1:2435
+MFE of perfect match: -42.10
+MFE of this site: -31.20
+MFEratio: 0.741092636579572
+Allen et al. score: 5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2442-2432
+	15-20,2430-2425
+	22-22,2423-2423
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2444-2443	UP5: Unpaired region at 5' of query
+	14-14,2431-2431	SIL: Symmetric internal loop
+	21-21,2424-2424	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0102946239761368
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV072477.1_2435_TPlot.pdf
+
+Position	Reads	Category
+9	2	2
+17	1	4
+39	1	4
+40	1	4
+81	3	2
+91	1	4
+127	1	4
+128	1	4
+134	1	4
+135	7	2
+238	3	2
+244	1	4
+246	1	4
+248	1	4
+249	1	4
+283	3	2
+286	2	2
+292	1	4
+295	1	4
+303	3	2
+332	1	4
+453	1	4
+462	1	4
+465	1	4
+501	2	2
+505	1	4
+569	2	2
+573	1	4
+640	3	2
+657	1	4
+680	1	4
+694	1	4
+746	1	4
+785	1	4
+793	2	2
+824	2	2
+836	1	4
+861	1	4
+921	1	4
+930	1	4
+944	1	4
+975	1	4
+1010	1	4
+1020	2	2
+1081	3	2
+1168	2	2
+1184	1	4
+1230	2	2
+1234	1	4
+1235	1	4
+1238	1	4
+1257	1	4
+1297	3	2
+1298	1	4
+1332	1	4
+1370	2	2
+1375	2	2
+1384	6	2
+1387	1	4
+1388	1	4
+1391	1	4
+1392	1	4
+1393	1	4
+1394	2	2
+1395	3	2
+1397	1	4
+1399	2	2
+1401	1	4
+1416	1	4
+1419	5	2
+1424	1	4
+1435	1	4
+1444	2	2
+1449	1	4
+1456	1	4
+1478	1	4
+1487	2	2
+1489	3	2
+1490	1	4
+1496	1	4
+1497	1	4
+1502	2	2
+1512	1	4
+1516	1	4
+1550	1	4
+1553	1	4
+1556	2	2
+1560	1	4
+1581	1	4
+1582	1	4
+1585	1	4
+1627	1	4
+1661	1	4
+1662	2	2
+1669	1	4
+1692	2	2
+1698	1	4
+1728	1	4
+1745	1	4
+1757	1	4
+1761	1	4
+1762	2	2
+1775	1	4
+1828	1	4
+1836	1	4
+1849	1	4
+1858	1	4
+1907	2	2
+1969	1	4
+1972	1	4
+1975	1	4
+1981	1	4
+1982	1	4
+1985	1	4
+1993	1	4
+1995	1	4
+1997	2	2
+2002	2	2
+2044	1	4
+2055	1	4
+2075	2	2
+2090	1	4
+2094	1	4
+2100	1	4
+2120	1	4
+2134	2	2
+2135	1	4
+2154	1	4
+2155	1	4
+2158	1	4
+2162	1	4
+2165	2	2
+2166	3	2
+2167	2	2
+2168	3	2
+2170	3	2
+2171	2	2
+2172	1	4
+2173	2	2
+2176	3	2
+2181	2	2
+2182	6	2
+2185	2	2
+2186	1	4
+2189	3	2
+2190	1	4
+2196	1	4
+2200	2	2
+2209	1	4
+2213	2	2
+2215	1	4
+2227	1	4
+2229	1	4
+2234	1	4
+2242	1	4
+2243	1	4
+2256	1	4
+2263	3	2
+2277	1	4
+2293	1	4
+2298	2	2
+2299	1	4
+2300	1	4
+2304	1	4
+2309	2	2
+2312	1	4
+2313	1	4
+2324	2	2
+2327	2	2
+2332	4	2
+2335	1	4
+2337	1	4
+2339	2	2
+2341	2	2
+2352	1	4
+2365	1	4
+2394	1	4
+2435	8	0	<<<<<<<<<<
+2437	1	4
+2439	1	4
+2467	1	4
+2475	1	4
+2504	1	4
+2508	1	4
+2527	1	4
+2541	1	4
+2648	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UUUACCUCAGGAUGCAGAUUA 3' Transcript: GWHTAAEV076666.1:141-161 Slice Site:152
+     o||||||||||||||||||
+3' AUGUGGAGUCCUACGUCUAAU 5' Query: read13174_x33
+
+SiteID: GWHTAAEV076666.1:152
+MFE of perfect match: -36.90
+MFE of this site: -33.50
+MFEratio: 0.907859078590786
+Allen et al. score: 2.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	1-19,161-143
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	20-21,142-141	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.000344873188267592
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read13174_x33_GWHTAAEV076666.1_152_TPlot.pdf
+
+Position	Reads	Category
+5	1	4
+10	2	3
+11	3	2
+12	2	3
+17	1	4
+19	1	4
+23	1	4
+25	1	4
+28	1	4
+33	2	3
+37	1	4
+49	2	3
+50	3	2
+54	1	4
+58	2	3
+62	2	3
+65	1	4
+67	2	3
+130	4	2
+152	16	0	<<<<<<<<<<
+154	2	3
+159	1	4
+161	2	3
+162	5	2
+163	2	3
+172	1	4
+199	2	3
+300	4	2
+313	3	2
+342	1	4
+390	1	4
+392	1	4
+422	2	3
+431	2	3
+452	1	4
+485	1	4
+491	2	3
+510	1	4
+512	3	2
+518	4	2
+520	1	4
+524	2	3
+526	1	4
+532	2	3
+568	1	4
+569	1	4
+591	3	2
+599	5	2
+601	3	2
+610	1	4
+642	2	3
+649	1	4
+650	3	2
+680	1	4
+692	4	2
+694	2	3
+726	1	4
+730	1	4
+752	1	4
+759	2	3
+762	4	2
+775	1	4
+794	3	2
+809	1	4
+825	6	2
+829	2	3
+832	2	3
+833	4	2
+835	1	4
+836	1	4
+837	1	4
+841	1	4
+843	1	4
+846	1	4
+847	1	4
+860	1	4
+864	1	4
+870	5	2
+877	4	2
+879	2	3
+888	1	4
+919	3	2
+920	1	4
+930	7	2
+931	1	4
+936	1	4
+975	1	4
+979	1	4
+988	1	4
+1016	4	2
+1037	1	4
+1059	2	3
+1061	1	4
+1080	1	4
+1087	1	4
+1091	1	4
+1095	2	3
+1099	1	4
+1102	1	4
+1109	1	4
+1110	2	3
+1114	1	4
+1145	2	3
+1157	2	3
+1166	4	2
+---------------------------------------------------
+---------------------------------------------------
+
+5' UGGUGGGGUAGGAAAAACAACA 3' Transcript: GWHTAAEV078388.1:21-42 Slice Site:33
+   ||||||oo|||| |||||||||
+3' ACCACCUUAUCCAUUUUGUUGU 5' Query: read8083_x64
+
+SiteID: GWHTAAEV078388.1:33
+MFE of perfect match: -34.70
+MFE of this site: -30.50
+MFEratio: 0.878962536023055
+Allen et al. score: 3
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	1-9,42-34
+	11-22,32-21
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	10-10,33-33	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.0085862426154335
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read8083_x64_GWHTAAEV078388.1_33_TPlot.pdf
+
+Position	Reads	Category
+33	9	0	<<<<<<<<<<
+55	3	2
+57	1	4
+60	1	4
+62	1	4
+63	2	2
+64	8	2
+67	1	4
+73	1	4
+79	1	4
+117	1	4
+128	2	2
+168	1	4
+283	3	2
+301	5	2
+451	2	2
+454	1	4
+473	4	2
+486	3	2
+487	1	4
+490	2	2
+550	1	4
+606	2	2
+668	1	4
+680	1	4
+695	1	4
+698	1	4
+704	2	2
+723	2	2
+727	1	4
+763	2	2
+786	1	4
+798	1	4
+801	1	4
+844	1	4
+859	1	4
+889	1	4
+904	2	2
+1314	2	2
+1327	1	4
+1417	1	4
+1679	1	4
+1804	2	2
+1842	1	4
+2065	7	2
+2083	1	4
+2212	2	2
+2217	3	2
+2245	1	4
+2274	1	4
+2283	1	4
+2362	1	4
+2462	1	4
+2538	2	2
+2626	1	4
+2631	2	2
+2643	1	4
+2645	1	4
+2649	2	2
+2682	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UUAGAUCAGGCUGGCAGCUUGU 3' Transcript: GWHTAAEV084907.1:2276-2297 Slice Site:2288
+   |o|||||| |||||||||||  
+3' AGUCUAGUACGACCGUCGAAGU 5' Query: read1260_x1674
+
+SiteID: GWHTAAEV084907.1:2288
+MFE of perfect match: -42.10
+MFE of this site: -32.90
+MFEratio: 0.781472684085511
+Allen et al. score: 4.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	3-13,2295-2285
+	15-22,2283-2276
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-2,2297-2296	UP5: Unpaired region at 5' of query
+	14-14,2284-2284	SIL: Symmetric internal loop
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.00103426279327323
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1260_x1674_GWHTAAEV084907.1_2288_TPlot.pdf
+
+Position	Reads	Category
+27	1	4
+80	2	2
+149	1	4
+180	1	4
+183	1	4
+184	1	4
+208	3	2
+217	1	4
+232	5	2
+234	1	4
+263	1	4
+285	1	4
+289	2	2
+298	3	2
+312	1	4
+321	2	2
+375	3	2
+377	3	2
+382	2	2
+387	2	2
+471	2	2
+513	1	4
+574	1	4
+640	2	2
+644	1	4
+659	1	4
+669	1	4
+690	1	4
+704	1	4
+774	1	4
+854	2	2
+879	1	4
+904	2	2
+948	1	4
+967	1	4
+1076	1	4
+1086	6	2
+1103	1	4
+1107	2	2
+1140	1	4
+1226	1	4
+1235	6	2
+1237	4	2
+1280	3	2
+1291	1	4
+1378	2	2
+1380	1	4
+1387	1	4
+1433	3	2
+1439	1	4
+1536	2	2
+1561	1	4
+1572	1	4
+1582	3	2
+1591	2	2
+1612	1	4
+1622	2	2
+1631	4	2
+1657	1	4
+1677	2	2
+1703	3	2
+1713	4	2
+1717	1	4
+1753	3	2
+1808	3	2
+1890	1	4
+1922	1	4
+1952	2	2
+1961	2	2
+1966	1	4
+1991	2	2
+2007	4	2
+2013	1	4
+2019	1	4
+2036	1	4
+2037	1	4
+2041	1	4
+2045	1	4
+2048	2	2
+2111	3	2
+2136	1	4
+2152	1	4
+2275	1	4
+2288	11	0	<<<<<<<<<<
+2289	2	2
+2290	1	4
+2333	2	2
+2342	1	4
+2344	4	2
+2372	2	2
+2383	1	4
+2460	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' GUGGAAUGGGUGGUCUUGGUAA 3' Transcript: GWHTAAEV088819.1:620-641 Slice Site:632
+     |||||||||||  |o||o||
+3' AUCCUUACCCACCUUAGCCGUU 5' Query: read1384_x306
+
+SiteID: GWHTAAEV088819.1:632
+MFE of perfect match: -41.30
+MFE of this site: -30.90
+MFEratio: 0.74818401937046
+Allen et al. score: 8
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	1-7,641-635
+	10-20,632-622
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	8-9,634-633	SIL: Symmetric internal loop
+	21-22,621-620	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 1
+Degradome p-value: 0.0333882118293409
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read1384_x306_GWHTAAEV088819.1_632_TPlot.pdf
+
+Position	Reads	Category
+61	2	1
+63	1	4
+66	1	4
+68	1	4
+110	1	4
+125	1	4
+145	1	4
+210	1	4
+214	1	4
+239	2	1
+245	1	4
+253	1	4
+256	2	1
+257	1	4
+258	1	4
+259	1	4
+261	1	4
+309	1	4
+314	1	4
+316	1	4
+318	1	4
+321	1	4
+322	1	4
+373	1	4
+414	2	1
+415	1	4
+454	1	4
+474	1	4
+494	2	1
+523	1	4
+526	1	4
+565	1	4
+581	1	4
+632	2	1	<<<<<<<<<<
+667	1	4
+750	1	4
+859	1	4
+867	2	1
+978	1	4
+1052	1	4
+1102	1	4
+1333	1	4
+1377	1	4
+1379	1	4
+1469	1	4
+1472	1	4
+1480	1	4
+1509	1	4
+1522	1	4
+1540	1	4
+1795	1	4
+1846	1	4
+2031	1	4
+2080	1	4
+2145	1	4
+2151	1	4
+2165	1	4
+2226	1	4
+2256	1	4
+2288	1	4
+2462	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' UUUACCUCAGGAUGCAGAUUA 3' Transcript: GWHTAAEV091198.1:141-161 Slice Site:152
+     o||||||||||||||||||
+3' AUGUGGAGUCCUACGUCUAAU 5' Query: read13174_x33
+
+SiteID: GWHTAAEV091198.1:152
+MFE of perfect match: -36.90
+MFE of this site: -33.50
+MFEratio: 0.907859078590786
+Allen et al. score: 2.5
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	1-19,161-143
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	20-21,142-141	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.000689627439019236
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read13174_x33_GWHTAAEV091198.1_152_TPlot.pdf
+
+Position	Reads	Category
+17	1	4
+18	2	2
+23	1	4
+24	2	2
+25	1	4
+26	2	2
+29	2	2
+30	4	2
+32	2	2
+33	4	2
+35	4	2
+37	1	4
+39	2	2
+40	1	4
+41	1	4
+45	2	2
+47	1	4
+52	1	4
+56	1	4
+60	2	2
+63	2	2
+64	1	4
+75	1	4
+78	1	4
+96	2	2
+103	1	4
+110	3	2
+144	2	2
+152	12	0	<<<<<<<<<<
+163	2	2
+165	1	4
+169	4	2
+170	2	2
+186	1	4
+200	4	2
+204	1	4
+215	2	2
+273	1	4
+283	1	4
+288	1	4
+295	8	2
+335	1	4
+369	1	4
+387	2	2
+400	1	4
+418	2	2
+421	2	2
+424	1	4
+425	2	2
+427	5	2
+430	2	2
+431	2	2
+434	2	2
+449	1	4
+463	1	4
+471	2	2
+491	2	2
+507	4	2
+511	2	2
+514	1	4
+517	3	2
+518	3	2
+521	1	4
+522	1	4
+525	4	2
+530	1	4
+552	3	2
+561	3	2
+568	1	4
+585	1	4
+594	3	2
+597	4	2
+598	3	2
+601	2	2
+602	1	4
+613	5	2
+629	1	4
+639	1	4
+640	3	2
+647	1	4
+656	1	4
+658	1	4
+662	2	2
+673	1	4
+675	1	4
+683	2	2
+707	3	2
+717	2	2
+731	1	4
+733	2	2
+744	2	2
+746	1	4
+747	1	4
+750	1	4
+751	1	4
+752	2	2
+757	1	4
+759	5	2
+761	1	4
+774	3	2
+778	1	4
+783	2	2
+786	3	2
+805	5	2
+807	3	2
+809	1	4
+813	1	4
+834	1	4
+845	2	2
+853	1	4
+856	1	4
+857	1	4
+858	2	2
+859	2	2
+863	1	4
+866	3	2
+869	2	2
+878	1	4
+886	1	4
+897	1	4
+900	1	4
+901	10	2
+911	2	2
+926	1	4
+940	1	4
+947	3	2
+956	2	2
+970	3	2
+971	1	4
+986	2	2
+988	2	2
+1024	1	4
+1028	1	4
+1029	4	2
+1041	1	4
+1042	1	4
+1045	1	4
+1046	1	4
+1048	1	4
+1051	2	2
+1057	3	2
+1060	2	2
+1064	3	2
+1071	1	4
+1078	1	4
+1090	1	4
+1091	1	4
+1093	1	4
+1095	1	4
+1100	1	4
+1126	3	2
+1130	4	2
+1143	1	4
+---------------------------------------------------
+---------------------------------------------------
+
+5' GGGGCCUCUGGGUUUCCAAGAA 3' Transcript: GWHTAAEV093444.1:733-754 Slice Site:745
+    ||o|||||o||o ||||    
+3' ACCUGGAGAUCCGUAGGUGAUG 5' Query: read16773_x34
+
+SiteID: GWHTAAEV093444.1:745
+MFE of perfect match: -44.20
+MFE of this site: -29.90
+MFEratio: 0.676470588235294
+Allen et al. score: 12
+Paired Regions (query5'-query3',transcript3'-transcript5')
+	5-8,750-747
+	10-21,745-734
+Unpaired Regions (query5'-query3',transcript3'-transcript5')
+	1-4,754-751	UP5: Unpaired region at 5' of query
+	9-9,746-746	SIL: Symmetric internal loop
+	22-22,733-733	UP3: Unpaired region at 3' of query
+
+Degradome data file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/02_fastp/SRR29504124.clean.fasta_dd.txt
+Degardome Category: 0
+Degradome p-value: 0.037231791808906
+T-Plot file: <SOYMIR_ATLAS_ROOT>/03_miRNA_targets/SRR29504124/04_results/TPlots/read16773_x34_GWHTAAEV093444.1_745_TPlot.pdf
+
+Position	Reads	Category
+10	1	4
+27	1	4
+50	1	4
+57	1	4
+60	1	4
+109	1	4
+216	1	4
+230	2	2
+243	1	4
+247	1	4
+249	1	4
+282	2	2
+297	2	2
+306	2	2
+338	1	4
+350	2	2
+371	1	4
+430	1	4
+432	1	4
+433	1	4
+472	1	4
+499	1	4
+504	3	2
+542	1	4
+547	1	4
+572	1	4
+580	1	4
+591	1	4
+596	3	2
+598	1	4
+604	1	4
+608	1	4
+610	1	4
+615	1	4
+625	1	4
+626	1	4
+627	2	2
+637	1	4
+655	1	4
+657	3	2
+662	2	2
+668	3	2
+670	5	2
+745	7	0	<<<<<<<<<<
+747	4	2
+755	1	4
+758	1	4
+761	1	4
+772	1	4
+774	1	4
+849	1	4
+912	1	4
+1038	1	4
+1046	3	2
+1049	1	4
+1050	3	2
+1097	1	4
+1176	1	4
+1228	2	2
+1236	1	4
+1391	1	4
+1510	2	2
+1566	1	4
+1583	1	4
+1707	1	4
+1717	1	4
+1720	1	4
+1738	1	4
+1753	1	4
+1755	1	4
+1782	2	2
+1813	1	4
+1898	1	4
+1909	1	4
+1920	1	4
+2078	4	2
+2109	1	4
+2214	1	4
+2227	1	4
+2231	1	4
+2233	3	2
+2247	1	4
+2248	1	4
+2254	1	4
+2273	1	4
+2289	3	2
+2397	1	4
+2441	1	4
+2443	1	4
+2450	1	4
+2455	1	4
+2459	1	4
+2464	1	4
+2487	2	2
+2488	1	4
+2500	1	4
+2502	1	4
+2561	1	4
+2604	1	4
+2624	1	4
+2628	1	4
+2629	1	4
+2633	1	4
+2644	1	4
+2664	1	4
+2667	1	4
+2674	1	4
+2676	2	2
+2677	2	2
+2812	1	4
+2831	2	2
+2893	1	4
+3037	1	4
+3040	1	4
+3044	2	2
+3071	1	4
+3077	2	2
+3080	2	2
+3106	1	4
+3109	1	4
+3116	1	4
+3133	1	4
+3135	2	2
+3152	2	2
+3155	1	4
+3158	1	4
+3160	1	4
+3162	1	4
+3191	1	4
+3193	3	2
+3195	1	4
+3199	1	4
+3201	1	4
+3203	1	4
+3209	1	4
+3216	1	4
+3228	1	4
+3232	1	4
+3233	1	4
+3234	1	4
+3238	1	4
+3255	1	4
+3278	1	4
+3283	1	4
+3285	1	4
+3305	1	4
+3327	2	2
+3390	1	4
+3506	1	4
+3523	1	4
+3536	1	4
+3638	1	4
+3693	2	2
+---------------------------------------------------

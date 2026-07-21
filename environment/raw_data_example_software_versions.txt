@@ -1,0 +1,14 @@
+# Software Versions - SoymiR-atlas
+# Generated: 2026年 07月 06日 星期一 18:57:43 CST
+
+bowtie: 1.3.1
+fastp: fastp 0.22.0
+seqkit: seqkit v2.13.0
+samtools: 1.6
+perl: 5, version
+RNAplex: RNAplex 2.4.7
+R: R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+python: Python 3.10.8
+sra-tools: prefetch : 3.4.1
+mirdeep2: 1.1.4 (manual install)
+cleaveland4: 4.5 (manual install)

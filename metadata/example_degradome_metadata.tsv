@@ -1,0 +1,3 @@
+Sample	Species	Library_Type	SRA_Accession	Raw_Reads	Raw_Bases	Clean_Reads	Clean_Bases	Q20_Rate	Q30_Rate	GC_Content	Mapped_Reads	Mapping_Rate
+SRR23932132	Glycine max (soybean)	degradome	SRR23932132	18632973	875749731	18617606	875027482	0.988183	0.961272	0.460775	11009887	59.14%
+SRR29504124	Glycine max (soybean)	degradome	SRR29504124	23617091	1110003277	23465736	1102889592	0.975819	0.947341	0.439283	12841167	54.72%

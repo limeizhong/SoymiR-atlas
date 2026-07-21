@@ -1,0 +1,16 @@
+miRNA_annotation:
+  blast:
+    task: blastn-short
+    evalue: 1e-4
+    outfmt: "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qseq sseq stitle"
+  precursor_anchor:
+    max_midpoint_distance_bp: 10000000
+    require_same_chromosome: true
+    require_same_strand: true
+  position_variant:
+    mature_overlap_threshold: 0.8
+  cdhit:
+    identity_threshold: 0.8
+    word_length: 4
+  conservation:
+    conserved_definition: "At least one non-soybean mature-miRNA BLAST subject hit in miRBase or pmiREN."

@@ -1,0 +1,15 @@
+2814_precusor_miRNAs.txt mature-position variant cluster summary
+Input: 2814_precusor_miRNAs.txt
+Total_records: 2814
+Overlap_threshold_of_shorter_mature_interval: 0.8
+Variant_clusters_size>=2: 461
+Records_in_variant_clusters_size>=2: 1096
+Singleton_records_not_output: 1718
+
+Cluster_Size	Clusters
+2	345
+3	76
+4	26
+5	11
+6	2
+7	1

@@ -1,0 +1,27 @@
+CD-HIT-EST clustering summary
+Input	1588_mature_miRNAs.fasta
+Similarity_threshold	0.8
+Word_size	4
+Total_sequences	1588
+Total_clusters	1003
+Multi_member_clusters	269
+Singletons	734
+
+Cluster_Size	Clusters
+1	734
+2	159
+3	50
+4	29
+5	5
+6	9
+7	6
+8	1
+9	1
+10	2
+11	1
+12	1
+13	1
+15	1
+16	1
+20	1
+25	1
