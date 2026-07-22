@@ -224,7 +224,7 @@ def main() -> None:
         target = clean(row["target_gene"])
         if not seqid or not target:
             continue
-        key = (seqid, target)
+        key = (seqid, target, clean(row.get("binding_site_sequence", "")))
         library_count = to_int(row["library_count"])
         if key not in interactions or library_count > interactions[key]["library_count"]:
             interactions[key] = {
