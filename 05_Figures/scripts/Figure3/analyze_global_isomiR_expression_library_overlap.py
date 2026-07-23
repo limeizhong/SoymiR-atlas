@@ -40,11 +40,11 @@ if ATLAS_ROOT is not None:
     DATA_DIR = ATLAS_ROOT / "05_Figures/input/plotting_data/Figure3/global_expression_library_overlap"
     FIGURE_DIR = ATLAS_ROOT / "05_Figures/results/intermediate_figures/Figure3"
 else:
-    ROOT = SCRIPT_DIR.parents[4]
-    WORKBOOK = ROOT / "2026-miRNA/combine_data/current_database/2026_合并_supplementary_tables.xlsx"
-    DATA_DIR = ROOT / "2026-miRNA/figures/working_analysis/data/figure3_isomiRs/global_expression_library_overlap"
-    FIGURE_DIR = ROOT / "2026-miRNA/figures/working_analysis/intermediate_figures/figure3"
-RAW_EXPRESSION = ROOT / "2026-miRNA/combine_data/current_database/68282.1588.expression.rawdata.txt"
+    raise RuntimeError(
+        "Could not locate SoymiR-atlas repository root. "
+        "Please run this script from within the SoymiR-atlas directory tree."
+    )
+RAW_EXPRESSION = ATLAS_ROOT / "04_miRNA_expression/input/68282.1588.expression.rawdata.txt"
 OUTPUT_PNG = FIGURE_DIR / "Figure_global_isomiR_expression_correlation_library_overlap_600dpi.png"
 OUTPUT_PDF = FIGURE_DIR / "Figure_global_isomiR_expression_correlation_library_overlap.pdf"
 

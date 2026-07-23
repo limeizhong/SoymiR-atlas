@@ -12,8 +12,7 @@ Main scripts:
 
 ```text
 workflow/raw_data_example/
-01_miRNA_identification/scripts/raw_data_example/
-03_miRNA_targets/scripts/raw_data_example/
+workflow/raw_data_example/
 ```
 
 Example outputs:

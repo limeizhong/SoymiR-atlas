@@ -25,15 +25,10 @@ if ATLAS_ROOT is not None:
     MIRBASE_FASTA = DATA_DIR / "gma-mature.fa"
     PMIREN_FASTA = DATA_DIR / "pmiren_gmax_mature.fa"
 else:
-    ROOT = SCRIPT_DIR.parents[4]
-    WORKBOOK = ROOT / "2026-miRNA/combine_data/current_database/2026_合并_supplementary_tables.xlsx"
-    DATA_DIR = ROOT / "2026-miRNA/figures/working_analysis/data/figure3_isomiRs"
-    FIGURE_DIR = ROOT / "2026-miRNA/figures/working_analysis/intermediate_figures/figure3"
-    FINAL_FIGURE_DIR = ROOT / "2026-miRNA/figures/manuscript_results_package/01_final_figures"
-    RAW_EXPRESSION_FILE = ROOT / "2026-miRNA/combine_data/current_database/68282.1588.expression.rawdata.txt"
-    CANONICAL_FASTA = ROOT / "2026-miRNA/figures/working_analysis/data/misc/gma_mature_wo_U.fa"
-    MIRBASE_FASTA = ROOT / "2026-miRNA/combine_data/current_database/gma-mature.fa"
-    PMIREN_FASTA = ROOT / "2026-miRNA/combine_data/current_database/pmiren_gmax_mature.fa"
+    raise RuntimeError(
+        "Could not locate SoymiR-atlas repository root. "
+        "Please run this script from within the SoymiR-atlas directory tree."
+    )
 
 OUTPUT = FIGURE_DIR / "Figure_isomiR_composition_detection_rich_families_global_panel_E_600dpi.png"
 FINAL_OUTPUT = FINAL_FIGURE_DIR / "Figure_3.png"

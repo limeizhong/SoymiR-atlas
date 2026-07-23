@@ -38,17 +38,17 @@ Current summary after merging the original 1,406-miRNA CleaveLand results and th
 The migrated example scripts from the raw degradome workflow are stored under:
 
 ```text
-scripts/raw_data_example/
+../../workflow/raw_data_example/
 ```
 
 They show how representative degradome libraries can be processed from raw
 FASTQ through CleaveLand4:
 
 ```bash
-bash scripts/raw_data_example/05_deg_download_qc.sh SRR23932132 SRR29504124
-bash scripts/raw_data_example/06_deg_mode1.sh SRR23932132
-bash scripts/raw_data_example/06_deg_mode1.sh SRR29504124
-bash scripts/raw_data_example/07_deg_mode4.sh SRR23932132 SRR29504124
+bash ../../workflow/raw_data_example/05_deg_download_qc.sh SRR23932132 SRR29504124
+bash ../../workflow/raw_data_example/06_deg_mode1.sh SRR23932132
+bash ../../workflow/raw_data_example/06_deg_mode1.sh SRR29504124
+bash ../../workflow/raw_data_example/07_deg_mode4.sh SRR23932132 SRR29504124
 ```
 
 These scripts require local installations of CleaveLand4, GSTAr, Bowtie,

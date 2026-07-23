@@ -16,7 +16,7 @@ gma-hairpin.fa
 pmiren_gmax_hairpin.fa
 2814_precusor_miRNAs_mature_position_variant_clusters_overlap80.tsv
 1588_mature_miRNAs_cdhit_est_c0.8.clstr
-../../01_reference_genome/GWHAAEV00000000.1.genome.fasta
+../../data/reference/genome/GWHAAEV00000000.1.genome.fasta
 ```
 
 成熟序列 BLAST 结果作为已生成输入使用：
@@ -205,7 +205,7 @@ specific：无非大豆 subject 命中
 
 ```text
 简化结果.xlsx
-2026_合并_supplementary_tables.xlsx
+2026_merged_supplementary_tables.xlsx
 2814_annotation_hierarchical_counts_source_reported_status.tsv
 2814_annotation_category_rename_count_comparison.tsv
 2814_annotation_category_normalization_issues.tsv

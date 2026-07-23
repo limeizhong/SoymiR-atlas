@@ -1,0 +1,12 @@
+# SoymiR-atlas Python package requirements
+# Core analysis modules (02_miRNA_annotation, 04_miRNA_expression, 05_Figures)
+#
+# Install with:
+#   pip install -r requirements.txt
+
+openpyxl>=3.1.0
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+Pillow>=10.0.0

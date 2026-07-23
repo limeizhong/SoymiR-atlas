@@ -22,11 +22,10 @@ if ATLAS_ROOT is not None:
     FIGURE_DIR = ATLAS_ROOT / "05_Figures/results/intermediate_figures/Figure4"
     FINAL_FIGURE_DIR = ATLAS_ROOT / "05_Figures/results/final_figures"
 else:
-    ROOT = SCRIPT_DIR.parents[4]
-    WORKBOOK = ROOT / "2026-miRNA/combine_data/current_database/2026_合并_supplementary_tables.xlsx"
-    DATA_DIR = ROOT / "2026-miRNA/figures/working_analysis/data/figure4_targets"
-    FIGURE_DIR = ROOT / "2026-miRNA/figures/working_analysis/intermediate_figures/figure4"
-    FINAL_FIGURE_DIR = ROOT / "2026-miRNA/figures/manuscript_results_package/01_final_figures"
+    raise RuntimeError(
+        "Could not locate SoymiR-atlas repository root. "
+        "Please run this script from within the SoymiR-atlas directory tree."
+    )
 
 OUTPUT = FIGURE_DIR / "Figure_miRNA_target_support_count_overlap_ABCD_600dpi.png"
 FINAL_OUTPUT = FINAL_FIGURE_DIR / "Figure_4.png"

@@ -2,6 +2,20 @@
 
 This repository archives the analysis workflow and key outputs for soybean miRNA identification, annotation, and downstream analyses.
 
+## Setup
+
+```bash
+# Full conda environment (recommended)
+conda env create -f environment.yml
+conda activate soymir-atlas
+
+# Or Python packages only
+pip install -r requirements.txt
+```
+
+The core analysis requires Python 3.10+, BLAST+, CD-HIT-EST, and R (for Figure 2).
+See `docs/reproducibility.md` for details.
+
 The repository follows a module-based structure:
 
 ```text
@@ -33,9 +47,9 @@ the upstream discovery step and archives a small example mature-miRNA output.
 Run example:
 
 ```bash
-bash 01_miRNA_identification/scripts/raw_data_example/02_mirna_download_qc.sh SRR27718796
-bash 01_miRNA_identification/scripts/raw_data_example/03_mirna_mirdeep2.sh SRR27718796
-bash 01_miRNA_identification/scripts/raw_data_example/04_mirna_mature.sh SRR27718796
+bash workflow/raw_data_example/02_mirna_download_qc.sh SRR27718796
+bash workflow/raw_data_example/03_mirna_mirdeep2.sh SRR27718796
+bash workflow/raw_data_example/04_mirna_mature.sh SRR27718796
 ```
 
 ### 02_miRNA_annotation
@@ -49,7 +63,7 @@ bash 02_miRNA_annotation/scripts/run_mature_miRNA_search_and_clustering.sh
 python3 02_miRNA_annotation/scripts/build_position_variant_clusters.py
 GENOME=/path/to/GWHAAEV00000000.1.genome.fasta bash 02_miRNA_annotation/scripts/run_hairpin_ZH13_blast_unique_anchor.sh
 python3 02_miRNA_annotation/scripts/annotate_2814_precusor_miRNAs_precursor_overlap_unique_anchor_workflow.py
-python3 02_miRNA_annotation/scripts/update_simplified_result_and_supplementary_s2_s4.py
+python3 02_miRNA_annotation/scripts/normalize_annotation_categories.py
 ```
 
 Final outputs are stored in:
@@ -102,7 +116,7 @@ Run:
 
 ```bash
 python3 05_Figures/scripts/Figure1/plot_figure1_from_supplementary_tables.py
-python3 05_Figures/scripts/Figure2/plot_figure2_from_supplementary_tables.py
+python3 05_Figures/scripts/Figure2/compose_figure2_annotation_and_confidence.py
 ```
 
 Final outputs are stored in:
@@ -114,8 +128,8 @@ Final outputs are stored in:
 ## Documentation
 
 ```text
-docs/miRNA_annotation_workflow_summary.md
-docs/miRNA_annotation_workflow_summary_zh.md
+02_miRNA_annotation/docs/miRNA_annotation_workflow_summary.md
+02_miRNA_annotation/docs/miRNA_annotation_workflow_summary_zh.md
 docs/materials_methods_miRNA_annotation_zh.md
 ```
 
@@ -123,11 +137,30 @@ docs/materials_methods_miRNA_annotation_zh.md
 
 ```text
 Input precursor-location records: 2814
-miRNA loci: 1943
-miRNA families: 911
-miRBase annotations: 1198
-pmiREN annotations: 518
-soymir no-hit candidates: 1098
-conserved records: 851
-specific records: 1963
+miRNA loci: 1965
+miRNA families: 925
+
+Source counts:
+  miRbase: 1178
+  pmiren:  521
+  soymir:  1115
+
+locus_class counts:
+  reference:           1198
+  known-family-new:     501
+  novel-family-new:    1115
+
+annotation_category counts:
+  reference_matched:                 515
+  reference_locus_variant:           473
+  known_family_new_locus:            371
+  known_family_new_locus_variant:    109
+  novel_family_new_locus:           1036
+  novel_family_new_locus_variant:     73
+  unannotated_opposite_arm_product:  179
+  unannotated_opposite_arm_variant:   58
+
+Conservation:
+  conserved: 851
+  specific:  1963
 ```

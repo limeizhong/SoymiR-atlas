@@ -12,15 +12,15 @@ discovery step can be reproduced from raw sequencing data.
 Scripts are archived under:
 
 ```text
-scripts/raw_data_example/
+../workflow/raw_data_example/
 ```
 
 Main steps:
 
 ```bash
-bash scripts/raw_data_example/02_mirna_download_qc.sh SRR27718796
-bash scripts/raw_data_example/03_mirna_mirdeep2.sh SRR27718796
-bash scripts/raw_data_example/04_mirna_mature.sh SRR27718796
+bash ../workflow/raw_data_example/02_mirna_download_qc.sh SRR27718796
+bash ../workflow/raw_data_example/03_mirna_mirdeep2.sh SRR27718796
+bash ../workflow/raw_data_example/04_mirna_mature.sh SRR27718796
 ```
 
 The scripts expect reference files and third-party tools to be available as

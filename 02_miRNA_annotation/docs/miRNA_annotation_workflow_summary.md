@@ -15,7 +15,7 @@ pmiren_gma_position.txt
 pmiren_gmax_hairpin.fa
 2814_precusor_miRNAs_mature_position_variant_clusters_overlap80.tsv
 1588_mature_miRNAs_cdhit_est_c0.8.clstr
-../../01_reference_genome/GWHAAEV00000000.1.genome.fasta
+../../data/reference/genome/GWHAAEV00000000.1.genome.fasta
 ```
 
 The mature BLAST results are used as precomputed inputs:

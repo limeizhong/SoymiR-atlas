@@ -25,6 +25,9 @@ __pycache__/
 data/reference/
 software/
 
+# Editor backup files
+*.bak
+
 # Temporary files
 *.tmp
 ~$*

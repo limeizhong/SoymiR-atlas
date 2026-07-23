@@ -9,7 +9,7 @@ MODULE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 PROJECT_DIR="$(cd "${MODULE_DIR}/.." && pwd)"
 INPUT_DIR="${MODULE_DIR}/input"
 INTERMEDIATE_DIR="${MODULE_DIR}/results/intermediate"
-GENOME="${PROJECT_DIR}/01_reference_genome/GWHAAEV00000000.1.genome.fasta"
+GENOME="${GENOME:-${PROJECT_DIR}/data/reference/genome/GWHAAEV00000000.1.genome.fasta}"
 DB_PREFIX="${INTERMEDIATE_DIR}/blastdb/ZH13v2_genome"
 EVALUE="${EVALUE:-1e-10}"
 THREADS="${THREADS:-8}"
@@ -38,7 +38,7 @@ Environment variables:
 Inputs:
   input/gma-hairpin.fa
   input/pmiren_gmax_hairpin.fa
-  ../01_reference_genome/GWHAAEV00000000.1.genome.fasta
+  ../data/reference/genome/GWHAAEV00000000.1.genome.fasta
   input/miRbase_gma_position.txt
   input/pmiren_gma_position.txt
 
