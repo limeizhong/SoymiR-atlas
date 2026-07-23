@@ -22,8 +22,6 @@ if ATLAS_ROOT is not None:
     FINAL_FIGURE_DIR = ATLAS_ROOT / "05_Figures/results/final_figures"
     RAW_EXPRESSION_FILE = DATA_DIR / "68282.1588.expression.rawdata.txt"
     CANONICAL_FASTA = DATA_DIR / "gma_mature_wo_U.fa"
-    MIRBASE_FASTA = DATA_DIR / "gma-mature.fa"
-    PMIREN_FASTA = DATA_DIR / "pmiren_gmax_mature.fa"
 else:
     ROOT = SCRIPT_DIR.parents[4]
     WORKBOOK = ROOT / "2026-miRNA/combine_data/current_database/2026_合并_supplementary_tables.xlsx"
@@ -32,8 +30,6 @@ else:
     FINAL_FIGURE_DIR = ROOT / "2026-miRNA/figures/manuscript_results_package/01_final_figures"
     RAW_EXPRESSION_FILE = ROOT / "2026-miRNA/combine_data/current_database/68282.1588.expression.rawdata.txt"
     CANONICAL_FASTA = ROOT / "2026-miRNA/figures/working_analysis/data/misc/gma_mature_wo_U.fa"
-    MIRBASE_FASTA = ROOT / "2026-miRNA/combine_data/current_database/gma-mature.fa"
-    PMIREN_FASTA = ROOT / "2026-miRNA/combine_data/current_database/pmiren_gmax_mature.fa"
 
 OUTPUT = FIGURE_DIR / "Figure_isomiR_composition_detection_rich_families_global_panel_E_600dpi.png"
 FINAL_OUTPUT = FINAL_FIGURE_DIR / "Figure_3.png"
@@ -392,86 +388,17 @@ def get_fasta_sequence(fasta: dict[str, str], mature_id: str) -> tuple[str, str 
     return mature_id, None, "missing_in_fasta"
 
 
-def terminal_changes(pair_rows: list[dict], no_canonical_rows: list[dict], s2: list[dict]):
-    fasta_original = read_fasta(CANONICAL_FASTA)
-    fasta_mirbase = read_fasta(MIRBASE_FASTA) if MIRBASE_FASTA.exists() else {}
-    fasta_pmiren = read_fasta(PMIREN_FASTA) if PMIREN_FASTA.exists() else {}
-
+def terminal_changes(pair_rows: list[dict], no_canonical_rows: list[dict]):
+    fasta = read_fasta(CANONICAL_FASTA)
     canonical_by_id = defaultdict(list)
     for row in pair_rows:
         if row["Group"] == "canonical":
             canonical_by_id[row["miRNA_ID"]].append(row)
 
-    # Build full S2 canonical lookup: canonical miRNA_ID → Sequences_Mature
-    # Also record the source for each isomiR row
-    s2_canonical_seq = {}
-    isomiR_source = {}
-    for row in s2:
-        if row["Group"] == "canonical":
-            sid = str(row.get("miRNA_ID") or "").strip()
-            seq = str(row.get("Sequences_Mature") or "").strip()
-            if sid and seq:
-                s2_canonical_seq[sid] = seq
-        else:
-            sid = str(row.get("miRNA_ID") or "").strip()
-            src = str(row.get("source") or "").strip().lower()
-            if sid:
-                isomiR_source[sid] = src
-
     expected_by_key = {
         (row["miRNA_ID"], row["Seq-ID"]): row["Expected_canonical_ID"]
         for row in no_canonical_rows
     }
-
-    def lookup_fasta(canonical_id: str, source: str) -> tuple[str | None, str]:
-        """Search FASTA files in priority order based on annotation source.
-        Returns (fasta_id, sequence) or (None, 'missing') if not found.
-        Handles PmiREN pipe-delimited headers (e.g. Gma-MIR12209|PmiREN...) and
-        MIR/miR naming differences."""
-        # Determine FASTA search order based on source
-        fasta_list = []
-        if source == "mirbase":
-            fasta_list = [("gma-mature.fa", fasta_mirbase)]
-        elif source == "pmiren":
-            fasta_list = [("pmiren_gmax_mature.fa", fasta_pmiren)]
-        # Fallback: try all
-        fasta_list += [
-            ("gma-mature.fa", fasta_mirbase),
-            ("pmiren_gmax_mature.fa", fasta_pmiren),
-            ("gma_mature_wo_U.fa", fasta_original),
-        ]
-
-        def _normalize(name: str) -> str:
-            """Normalize miRNA names for fuzzy matching."""
-            return name.lower().replace("mir", "mir").replace("-", "")
-
-        def _match_key(fasta_key: str, query: str) -> bool:
-            """Check if fasta_key matches the query, considering pipe-delimited
-            headers and MIR/miR differences."""
-            # Exact match
-            if fasta_key == query:
-                return True
-            # Case-insensitive
-            if fasta_key.lower() == query.lower():
-                return True
-            # First | field (PmiREN short ID), case-insensitive
-            short = fasta_key.split("|")[0]
-            if short.lower() == query.lower():
-                return True
-            # MIR → miR normalization (Gma-MIR12209 → Gma-miR12209)
-            normalized_short = short.lower().replace("mir", "mir")
-            normalized_query = query.lower().replace("mir", "mir")
-            if normalized_short == normalized_query:
-                return True
-            return False
-
-        for _fname, fdict in fasta_list:
-            if not fdict:
-                continue
-            for key in fdict:
-                if _match_key(key, canonical_id):
-                    return key, fdict[key]
-        return None, "missing"
 
     counts = Counter()
     detail = []
@@ -480,30 +407,19 @@ def terminal_changes(pair_rows: list[dict], no_canonical_rows: list[dict], s2: l
             continue
         expected_id = canonical_name(row["miRNA_ID"])
         canonical = choose_detected_canonical(row, canonical_by_id.get(expected_id, []))
+        canonical_source = "detected_canonical_row" if canonical is not None else "expected_canonical_from_fasta"
         if canonical is not None:
             offset_5p, offset_3p = coordinate_offsets(canonical, row)
             comparison = compare_sequences(canonical["Sequences_Mature"], row["Sequences_Mature"], offset_5p, offset_3p)
             fasta_id = canonical["miRNA_ID"]
             fasta_match_type = "detected_canonical_sequence"
             canonical_id = canonical["miRNA_ID"]
-            canonical_source = "detected_canonical_row"
         else:
             canonical_id = expected_by_key.get((row["miRNA_ID"], row["Seq-ID"]), expected_id)
-            # Priority: S2 table → source-specific FASTA → all FASTA
-            s2_seq = s2_canonical_seq.get(canonical_id)
-            if s2_seq is not None:
-                comparison = compare_sequences(s2_seq, row["Sequences_Mature"])
-                fasta_id = canonical_id
-                fasta_match_type = "canonical_from_S2"
-                canonical_source = "canonical_from_S2"
-            else:
-                src = isomiR_source.get(row["miRNA_ID"], "")
-                fasta_id, canonical_seq = lookup_fasta(canonical_id, src)
-                if canonical_seq is None:
-                    continue
-                comparison = compare_sequences(canonical_seq, row["Sequences_Mature"])
-                fasta_match_type = "canonical_from_fasta"
-                canonical_source = f"canonical_from_fasta_{src}" if src else "canonical_from_fasta"
+            fasta_id, canonical_seq, fasta_match_type = get_fasta_sequence(fasta, canonical_id)
+            if canonical_seq is None:
+                continue
+            comparison = compare_sequences(canonical_seq, row["Sequences_Mature"])
 
         overlap = int(comparison["Overlap_length"])
         mismatches = int(comparison["Overlap_mismatches"])
@@ -611,7 +527,7 @@ with (DATA_DIR / "canonical_isomiR_library_detection_summary.tsv").open("w", enc
         ic = sum(detection_bin(v) == label for v in groups["isomiR"])
         writer.writerow([label, cc, f"{cc/len(groups['canonical'])*100:.2f}", ic, f"{ic/len(groups['isomiR'])*100:.2f}"])
 
-terminal_change_counts, sequence_difference_rows = terminal_changes(pair_rows, no_canonical_rows, s2)
+terminal_change_counts, sequence_difference_rows = terminal_changes(pair_rows, no_canonical_rows)
 write_tsv(DATA_DIR / "isomiR_sequence_difference_detail.tsv", list(sequence_difference_rows[0]), sequence_difference_rows)
 with (DATA_DIR / "isomiR_sequence_difference_summary.tsv").open("w", encoding="utf-8", newline="") as out:
     writer = csv.writer(out, delimiter="\t", lineterminator="\n")
@@ -633,127 +549,81 @@ plt.rcParams.update({
 fig = plt.figure(figsize=(10.8, 13.2))
 grid = fig.add_gridspec(3, 2, hspace=0.52, wspace=0.38)
 
-# A. isomiR production by locus class and conservation (arm-unit level).
+# A. isomiR production by mature-arm reported/conservation category.
 ax_a = fig.add_subplot(grid[0, 0])
-
-# Merge known-family-new + novel-family-new → Non-reference
-def merge_locus_class(lc: str) -> str:
-    lc = str(lc).strip() if lc else ""
-    if lc == "reference":
-        return "Reference"
-    return "Non-reference"
-
-# Build arm-unit table: (miRNA_loci, arm_status) as unit
-arm_data = defaultdict(lambda: {"locus_class": "", "conservation": set(), "isomiR": False})
+# A mature-arm group is represented by the miRNA name after removing only the
+# .v1/.v2 variant suffix. This keeps multiple isomiRs from inflating the arm
+# denominator.
+locus_records = defaultdict(lambda: {"reported": set(), "conservation": set(), "isomiR": 0})
 for row in s2:
-    locus = str(row.get("miRNA_loci") or "").strip()
-    arm = str(row.get("arm_status") or "").strip()
-    if not locus or not arm:
+    name = str(row.get("miRNA_ID") or "").strip()
+    arm = re.sub(r"\.v\d+$", "", name)
+    if not arm:
         continue
-    key = (locus, arm)
-    arm_data[key]["locus_class"] = merge_locus_class(row.get("locus_class", ""))
-    arm_data[key]["conservation"].add(str(row.get("Conservation") or "").lower())
+    record = locus_records[arm]
+    record["reported"].add(str(row.get("Reported_Status") or "").lower())
+    record["conservation"].add(str(row.get("Conservation") or "").lower())
     if row["Group"] == "isomiR":
-        arm_data[key]["isomiR"] = True
+        record["isomiR"] += 1
 
-# Summarize by (merged_locus_class × Conservation)
-order = [
-    ("Reference",     "conserved"),
-    ("Reference",     "specific"),
-    ("Non-reference", "conserved"),
-    ("Non-reference", "specific"),
+composition_labels = [
+    "Reported\nconserved",
+    "Reported\nspecific",
+    "Unreported\nconserved",
+    "Unreported\nspecific",
 ]
-a_summary = {k: {"total": 0, "isomiR": 0} for k in order}
-for (_locus, _arm), rec in arm_data.items():
-    cons = "conserved" if "conserved" in rec["conservation"] else "specific"
-    lc = rec["locus_class"]
-    key = (lc, cons)
-    if key not in a_summary:
+category_keys = [
+    "reported and\nconserved",
+    "reported and\nspecific",
+    "unreported and\nconserved",
+    "unreported and\nspecific",
+]
+summary = {label: {"isomiR": 0, "non-isomiR": 0} for label in category_keys}
+for record in locus_records.values():
+    reported_label = "reported" if "reported" in record["reported"] else "unreported"
+    conservation_label = "conserved" if "conserved" in record["conservation"] else "specific"
+    label = f"{reported_label} and\n{conservation_label}"
+    if label not in summary:
         continue
-    a_summary[key]["total"] += 1
-    if rec["isomiR"]:
-        a_summary[key]["isomiR"] += 1
+    if record["isomiR"] > 0:
+        summary[label]["isomiR"] += 1
+    else:
+        summary[label]["non-isomiR"] += 1
 
-# Locus-level counts for bottom labels
-locus_class_set = defaultdict(set)
-for (_locus, _arm), rec in arm_data.items():
-    locus_class_set[rec["locus_class"]].add(_locus)
-ref_locus_n = len(locus_class_set.get("Reference", set()))
-nonref_locus_n = len(locus_class_set.get("Non-reference", set()))
-
-# Write TSV
 write_tsv(
-    DATA_DIR / "isomiR_production_by_locus_class_conservation.tsv",
-    ["Locus_class", "Conservation", "total_arm_units", "isomiR_arm_units", "isomiR_percentage"],
+    DATA_DIR / "isomiR_production_by_mature_arm_category.tsv",
+    ["Mature_arm_category", "isomiR_producing_arms", "non_isomiR_arms", "total_arms", "isomiR_percentage", "non_isomiR_percentage"],
     [
         {
-            "Locus_class": lc,
-            "Conservation": cons,
-            "total_arm_units": a_summary[(lc, cons)]["total"],
-            "isomiR_arm_units": a_summary[(lc, cons)]["isomiR"],
-            "isomiR_percentage": f"{a_summary[(lc, cons)]['isomiR'] / a_summary[(lc, cons)]['total'] * 100:.1f}" if a_summary[(lc, cons)]["total"] else "0.0",
+            "Mature_arm_category": label.replace("\n", " "),
+            "isomiR_producing_arms": summary[label]["isomiR"],
+            "non_isomiR_arms": summary[label]["non-isomiR"],
+            "total_arms": sum(summary[label].values()),
+            "isomiR_percentage": f"{summary[label]['isomiR'] / sum(summary[label].values()) * 100:.1f}",
+            "non_isomiR_percentage": f"{summary[label]['non-isomiR'] / sum(summary[label].values()) * 100:.1f}",
         }
-        for lc, cons in order
+        for label in category_keys
     ],
 )
 
-bar_data = []
-for lc, cons in order:
-    t = a_summary[(lc, cons)]["total"]
-    iso = a_summary[(lc, cons)]["isomiR"]
-    pct = iso / t * 100 if t else 0
-    bar_data.append({"pct": pct, "isomiR": iso, "total": t})
-
-x = np.arange(len(bar_data))
-pcts = [d["pct"] for d in bar_data]
-totals_a = [d["total"] for d in bar_data]
-iso_a = [d["isomiR"] for d in bar_data]
-bar_colors = [BLUE if cons == "conserved" else ORANGE for _, cons in order]
-
-ax_a.bar(x, pcts, color=bar_colors, edgecolor="white", linewidth=0.8, width=0.7)
-for i, (p, iso, tot) in enumerate(zip(pcts, iso_a, totals_a)):
-    ax_a.text(i, p + 1.2, f"{p:.1f}%\n({iso}/{tot})",
-              ha="center", va="bottom", fontsize=10, fontweight="bold", color="#333333")
-
-ax_a.set_xticks(x)
-xt_labels_a = ax_a.set_xticklabels(["Conserved", "Specific"] * 2, fontsize=11)
-
-# Place class labels first, then position horizontal lines midway
-group_centers = [0.5, 2.5]
-class_labels = ["Reference", "Non-reference"]
-ref_texts_a = []
-for center, label in zip(group_centers, class_labels):
-    t = ax_a.text(center, -0.12, label, transform=ax_a.get_xaxis_transform(),
-                  ha="center", va="top", fontsize=11, fontweight="bold")
-    ref_texts_a.append(t)
-
-fig.canvas.draw()
-renderer = fig.canvas.get_renderer()
-
-for i, center in enumerate(group_centers):
-    left_bbox = xt_labels_a[2 * i].get_window_extent(renderer)
-    right_bbox = xt_labels_a[2 * i + 1].get_window_extent(renderer)
-    ref_bbox = ref_texts_a[i].get_window_extent(renderer)
-
-    xtick_bottom_disp = min(left_bbox.y0, right_bbox.y0)
-    xtick_bottom_axes = ax_a.transAxes.inverted().transform((0, xtick_bottom_disp))[1]
-    ref_top_disp = ref_bbox.y1
-    ref_top_axes = ax_a.transAxes.inverted().transform((0, ref_top_disp))[1]
-
-    line_axes_y = (xtick_bottom_axes + ref_top_axes) / 2
-    ref_texts_a[i].set_y(line_axes_y - 0.025)
-
-    left_data = ax_a.transData.inverted().transform((left_bbox.x0, 0))[0]
-    right_data = ax_a.transData.inverted().transform((right_bbox.x1, 0))[0]
-
-    ax_a.plot([left_data, right_data], [line_axes_y, line_axes_y],
-              transform=ax_a.get_xaxis_transform(), color="black", linewidth=0.8, clip_on=False)
-
-ax_a.set_title("isomiR production by locus class", loc="left", fontsize=13, fontweight="bold", pad=9)
-ax_a.set_ylabel("IsomiR-producing units (%)")
-ax_a.set_ylim(0, max(pcts) * 1.18)
-ax_a.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:.0f}%"))
-ax_a.spines[["top", "right"]].set_visible(False)
+x_labels = composition_labels
+isomir_counts = np.array([summary[label]["isomiR"] for label in category_keys])
+non_isomir_counts = np.array([summary[label]["non-isomiR"] for label in category_keys])
+totals = isomir_counts + non_isomir_counts
+isomirs = isomir_counts / totals * 100
+non_isomirs = non_isomir_counts / totals * 100
+x = np.arange(len(x_labels))
+ax_a.bar(x, isomirs, width=0.62, color=ORANGE, label="isomiRs")
+ax_a.bar(x, non_isomirs, width=0.62, bottom=isomirs, color=BLUE, label="non-isomiRs")
+for i, total in enumerate(totals):
+    ax_a.text(i, isomirs[i] / 2, f"{isomirs[i]:.1f}%", ha="center", va="center", fontsize=10)
+ax_a.set_title("isomiR production by locus category", loc="left", fontsize=13, fontweight="bold", pad=9)
+ax_a.set_xticks(x, x_labels)
+ax_a.set_ylabel("Proportion of miRNA loci (%)")
+ax_a.tick_params(axis="x", labelsize=8.5)
+ax_a.set_ylim(0, 100)
+ax_a.set_yticks([0, 25, 50, 75, 100])
+style_axis(ax_a)
 add_panel_label(fig, ax_a, "A")
 
 # B. Top isomiR-rich families.
@@ -764,8 +634,8 @@ reported = np.array([int(r["Reported"]) for r in plot_rows])
 unreported = np.array([int(r["Unreported"]) for r in plot_rows])
 isomirs_b = np.array([int(r["isomiRs"]) for r in plot_rows])
 totals_b = reported + unreported + isomirs_b
-ax_b.barh(names, reported, color=BLUE, label="reference")
-ax_b.barh(names, unreported, left=reported, color=ORANGE, label="non-reference")
+ax_b.barh(names, reported, color=BLUE, label="Reported miRNAs")
+ax_b.barh(names, unreported, left=reported, color=ORANGE, label="Unreported miRNAs")
 ax_b.barh(names, isomirs_b, left=reported + unreported, color=ISOMIR_BAR, label="isomiRs")
 for i, row in enumerate(plot_rows):
     ax_b.text(reported[i] + unreported[i] + isomirs_b[i] / 2, i, str(row["isomiRs"]), va="center", ha="center", fontsize=10)

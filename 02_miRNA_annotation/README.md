@@ -60,31 +60,31 @@ Input records: 2814
 
 annotation_category counts:
 reference_matched: 515
-reference_locus_variant: 550
-known_family_new_locus: 313
-known_family_new_locus_variant: 79
-novel_family_new_locus: 1040
-novel_family_new_locus_variant: 80
+reference_locus_variant: 473
+known_family_new_locus: 371
+known_family_new_locus_variant: 109
+novel_family_new_locus: 1036
+novel_family_new_locus_variant: 73
 unannotated_opposite_arm_product: 179
 unannotated_opposite_arm_variant: 58
 
 locus_class counts:
-reference: 1280
-known-family-new: 408
-novel-family-new: 1126
+reference: 1198
+known-family-new: 501
+novel-family-new: 1115
 
 variant_status counts:
-anchor: 2047
-variant: 767
+anchor: 2101
+variant: 713
 
 arm_status counts:
 anchor: 2577
 opposite: 237
 
 Source counts:
-miRbase: 1177
-pmiren: 511
-soymir: 1126
+miRbase: 1178
+pmiren: 521
+soymir: 1115
 ```
 
 The input filename keeps the project spelling `precusor`.

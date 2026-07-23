@@ -82,7 +82,7 @@ Lower-priority evidence does not overwrite higher-priority annotations. miRBase 
 After each evidence class, two shared checks are performed:
 
 ```text
-1. Position-variant propagation: unannotated records in the same position-variant cluster with highly overlapping mature intervals inherit the current anchor as .v variants.
+1. Position-variant propagation: unannotated records in the same position-variant cluster with highly overlapping mature intervals inherit the current anchor as .v variants. If a later step promotes the cluster anchor from a SoymiR novel-family assignment to a miRBase/pmiREN known-family assignment, remaining low-priority variants in the same position cluster inherit the promoted source, family, and name. This synchronized propagation is not applied when the propagated database member would lack precursor overlap with the corresponding database precursor.
 2. Same-precursor arm search: a second mature region is annotated as an unannotated opposite-arm product only when it has a clear anchor on the same or highly overlapping predicted precursor, the two mature regions do not overlap, each mature region falls within the other predicted precursor interval, the two mature regions occupy opposite precursor ends, and family, arm, or CD-HIT evidence supports the relationship.
 ```
 
@@ -98,7 +98,9 @@ The final tables keep `annotation_category_original` for traceability and use th
 
 `reference_matched`: the mature sequence is a full-length 100% match to a soybean database mature miRNA, and the predicted precursor overlaps the corresponding database precursor on the same ZH13 chromosome and strand.
 
-`reference_locus_variant`: the query mature sequence belongs to the same mature region or arm as a reference member and can be explained by an overlapping same-family database precursor.
+`reference_locus_variant`: the query mature sequence belongs to the same mature region or arm as a reference member and can be explained by an overlapping same-family database precursor. Assignment to a specific reference mature-arm `.v` variant requires not only precursor overlap but also high mature-sequence similarity to that reference arm, or membership in the same mature-region interval. A same-family mature hit on an overlapping precursor is not sufficient when the query sequence is clearly dissimilar to the named reference arm.
+
+The same restriction is applied during later local tandem-order mapping and unused database-precursor anchor rescue. These rescue steps may create `reference_locus_variant` records only when mature sequences are similar; otherwise the records are withdrawn to same-family `known_family_new_locus` or its variant category.
 
 `unannotated_opposite_arm_product`: a non-overlapping mature product from the opposite arm of the same or highly overlapping predicted precursor where an anchor mature product already exists; both mature regions must fall within the paired predicted precursor intervals and occupy opposite precursor ends.
 
@@ -188,7 +190,7 @@ CDHIT_Cluster_ID
 
 ```text
 Input records: 2814
-Family count after case-insensitive mature-family normalization: 928
+Family count after case-insensitive mature-family normalization: 925
 miRBase ZH13 hairpin anchors loaded: 682
 pmiREN ZH13 hairpin anchors loaded: 1347
 ```
@@ -196,35 +198,35 @@ pmiREN ZH13 hairpin anchors loaded: 1347
 Source counts:
 
 ```text
-miRbase: 1177
-pmiren: 511
-soymir: 1126
+miRbase: 1178
+pmiren: 521
+soymir: 1115
 ```
 
 annotation_category counts:
 
 ```text
 reference_matched: 515
-reference_locus_variant: 550
-known_family_new_locus: 313
-known_family_new_locus_variant: 79
+reference_locus_variant: 473
+known_family_new_locus: 371
+known_family_new_locus_variant: 109
 unannotated_opposite_arm_product: 179
 unannotated_opposite_arm_variant: 58
-novel_family_new_locus: 1040
-novel_family_new_locus_variant: 80
+novel_family_new_locus: 1036
+novel_family_new_locus_variant: 73
 ```
 
 Derived attribute counts:
 
 ```text
 locus_class:
-reference: 1280
-known-family-new: 408
-novel-family-new: 1126
+reference: 1198
+known-family-new: 501
+novel-family-new: 1115
 
 variant_status:
-anchor: 2047
-variant: 767
+anchor: 2101
+variant: 713
 
 arm_status:
 anchor: 2577

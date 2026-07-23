@@ -549,7 +549,13 @@ def row_sort_key(rows: list[Row], i: int):
     return (c, r.strand, r.m_start, r.m_end, r.file_line)
 
 
-def propagate_clusters(rows: list[Row], variant_members: dict[str, list[int]], just_indices: set[int] | None = None):
+def propagate_clusters(
+    rows: list[Row],
+    variant_members: dict[str, list[int]],
+    just_indices: set[int] | None = None,
+    precursors_by_source: dict[str, list[Precursor]] | None = None,
+    only_statuses: set[str] | None = None,
+):
     for cid, members in variant_members.items():
         annotated = [i for i in members if rows[i].status]
         if not annotated:
@@ -582,12 +588,23 @@ def propagate_clusters(rows: list[Row], variant_members: dict[str, list[int]], j
         others = [i for i in members if i != rep_i]
         others.sort(key=lambda i: (-read_count(rows[i].seq_id), -len(rows[i].seq), row_sort_key(rows, i)))
         for rank, i in enumerate(others, 1):
+            if only_statuses is not None and rows[i].status not in only_statuses:
+                continue
+            target_precursor = None
+            if precursors_by_source is not None and rep.source in precursors_by_source and rep.matched_precursor:
+                for p in precursors_by_source[rep.source]:
+                    if p.name == rep.matched_precursor:
+                        target_precursor = p
+                        break
+                if target_precursor is not None and precursor_overlap_bp(rows[i], target_precursor) < MIN_PRECURSOR_OVERLAP_BP:
+                    continue
             assign(
                 rows[i],
                 target_status,
                 variant_name(b, rank),
                 rep.source,
                 f"Propagated from {rep.seq_id} through position variant cluster {cid}",
+                p=target_precursor,
             )
 
 
@@ -649,13 +666,26 @@ def annotate_with_hits(
             target_similar = mature_region_similar(row.seq, mature_seqs.get(ann, ""))
             if arm_match:
                 arm_ann = f"{ann}-{arm_match.group(1).lower()}"
-                if arm_ann in mature_ids:
+                arm_seq = mature_seqs.get(arm_ann, "")
+                arm_similar = mature_region_similar(row.seq, arm_seq)
+                if arm_ann in mature_ids and arm_similar:
                     ann = arm_ann
                     assign(row, "known_member_variant", variant_name(ann, 1), source, f"{layer} mature evidence; anchored by overlapping same-family precursor on ZH13", hit, p)
                 elif target_similar:
                     assign(row, "known_member_variant", variant_name(ann, 1), source, f"{layer} arm-named hit but query is similar to target mature; anchored by overlapping same-family precursor on ZH13", hit, p)
-                else:
+                elif arm_ann not in mature_ids:
                     assign(row, "unreported_mature_arm", arm_ann, source, f"{layer} arm-specific mature evidence; anchored by overlapping same-family precursor on ZH13", hit, p)
+                else:
+                    ann = next_family_name(prefix, fam, counters)
+                    assign(
+                        row,
+                        "known_family_new_member",
+                        ann,
+                        source,
+                        f"{layer} arm-specific mature evidence but query is dissimilar to the overlapping reference arm; not assigned as a .v variant",
+                        hit,
+                        p,
+                    )
             else:
                 if target_similar:
                     assign(row, "known_member_variant", variant_name(ann, 1), source, f"{layer} mature evidence; anchored by overlapping same-family precursor on ZH13", hit, p)
@@ -1071,7 +1101,14 @@ def split_reported_precursors_across_loci(rows: list[Row], variant_by_row: dict[
                 r.evidence += f"; split from reported {precursor} because that database precursor is already occupied by a higher-overlap non-overlapping locus"
 
 
-def rescue_tandem_ordered_known_members(rows: list[Row], variant_by_row: dict[int, str], precursors: list[Precursor], mature_seqs: dict[str, str], source: str):
+def rescue_tandem_ordered_known_members(
+    rows: list[Row],
+    variant_by_row: dict[int, str],
+    precursors: list[Precursor],
+    mature_seqs: dict[str, str],
+    source: str,
+    counters: dict[str, int],
+):
     """Map local tandem query loci to local tandem database precursors by order.
 
     This handles conserved mature families where many members have equivalent
@@ -1187,14 +1224,18 @@ def rescue_tandem_ordered_known_members(rows: list[Row], variant_by_row: dict[in
                 variant_base = arm_base
                 break
         variant_rank = 1
+        dissimilar = []
         for r in variants:
             if r.idx in exact_ids:
                 r.status = "reported"
                 r.annotation = variant_base
-            else:
+            elif mature_region_similar(r.seq, mature_seqs.get(variant_base, "")):
                 r.status = "known_member_variant"
                 r.annotation = variant_name(variant_base, variant_rank)
                 variant_rank += 1
+            else:
+                dissimilar.append(r)
+                continue
             r.source = source
             r.matched_mature = variant_base if variant_base in mature_seqs else r.matched_mature
             r.matched_precursor = precursor.name
@@ -1204,6 +1245,27 @@ def rescue_tandem_ordered_known_members(rows: list[Row], variant_by_row: dict[in
             r.matched_strand = precursor.strand
             r.distance = str(precursor_overlap_bp(r, precursor))
             r.evidence += f"; tandem-order rescue mapped this predicted precursor locus to {precursor.name}"
+
+        if dissimilar:
+            fam = family_of_name(variant_base)
+            prefix = "Gma" if source == "pmiren" else "gma"
+            new_base = next_family_name(prefix, fam, counters)
+            dissimilar.sort(key=lambda r: (-read_count(r.seq_id), -len(r.seq), r.file_line))
+            for n, r in enumerate(dissimilar):
+                r.status = "known_family_new_member" if n == 0 else "known_family_new_member_variant"
+                r.annotation = new_base if n == 0 else variant_name(new_base, n)
+                r.source = source
+                r.matched_mature = ""
+                r.matched_precursor = precursor.name
+                r.matched_chr = precursor.chr
+                r.matched_start = str(precursor.start)
+                r.matched_end = str(precursor.end)
+                r.matched_strand = precursor.strand
+                r.distance = str(precursor_overlap_bp(r, precursor))
+                r.evidence += (
+                    f"; tandem-order rescue found overlapping precursor {precursor.name}, "
+                    "but mature sequence is dissimilar to the mapped reference member; kept as same-family new locus"
+                )
 
         for arm, arm_members in arm_groups.items():
             arm_base = with_arm(base, arm)
@@ -1442,6 +1504,7 @@ def rescue_new_family_loci_to_free_precursor_anchors(
     precursors: list[Precursor],
     mature_seqs: dict[str, str],
     source: str,
+    counters: dict[str, int],
 ):
     """Map remaining family-new loci to unused same-family database precursor anchors when possible."""
     candidate_status = {"known_family_new_member", "known_family_new_member_variant"}
@@ -1556,14 +1619,18 @@ def rescue_new_family_loci_to_free_precursor_anchors(
                 known_seq = mature_seqs.get(known_ann, "")
                 exact_ids = {r.idx for r in ordered if known_seq and r.seq == known_seq}
                 variant_rank = 1
+                dissimilar = []
                 for n, r in enumerate(ordered, 1):
                     if r.idx in exact_ids:
                         r.status = "reported"
                         r.annotation = known_ann
-                    else:
+                    elif mature_region_similar(r.seq, known_seq):
                         r.status = "known_member_variant"
                         r.annotation = variant_name(known_ann, variant_rank)
                         variant_rank += 1
+                    else:
+                        dissimilar.append(r)
+                        continue
                     r.matched_mature = known_ann if known_ann in mature_seqs else r.matched_mature
                     r.matched_precursor = anchor.name
                     r.matched_chr = anchor.chr
@@ -1572,6 +1639,25 @@ def rescue_new_family_loci_to_free_precursor_anchors(
                     r.matched_strand = anchor.strand
                     r.distance = str(precursor_overlap_bp(r, anchor))
                     r.evidence += f"; rescued to unused overlapping same-family precursor anchor {anchor.name}"
+                if dissimilar:
+                    fam = family_of_name(anchor_base)
+                    prefix = "Gma" if source == "pmiren" else "gma"
+                    new_base = next_family_name(prefix, fam, counters)
+                    dissimilar.sort(key=lambda r: (-read_count(r.seq_id), -len(r.seq), r.file_line))
+                    for n, r in enumerate(dissimilar):
+                        r.status = "known_family_new_member" if n == 0 else "known_family_new_member_variant"
+                        r.annotation = new_base if n == 0 else variant_name(new_base, n)
+                        r.matched_mature = ""
+                        r.matched_precursor = anchor.name
+                        r.matched_chr = anchor.chr
+                        r.matched_start = str(anchor.start)
+                        r.matched_end = str(anchor.end)
+                        r.matched_strand = anchor.strand
+                        r.distance = str(precursor_overlap_bp(r, anchor))
+                        r.evidence += (
+                            f"; unused precursor rescue found overlapping anchor {anchor.name}, "
+                            "but mature sequence is dissimilar to the mapped reference member; kept as same-family new locus"
+                        )
             else:
                 fivep_is_item = item["m_start"] < known_item["m_start"] if group["strand"] == "+" else item["m_start"] > known_item["m_start"]
                 arm_base = with_arm(anchor_base, "5p" if fivep_is_item else "3p")
@@ -2638,19 +2724,19 @@ def main():
     attach_non_mirbase_arms_to_mirbase_precursors_by_overlap(rows, variant_by_row)
     attach_unannotated_arms_to_pmiren_precursors_by_overlap(rows, variant_by_row)
     assign_soymir(rows, variant_by_row, variant_members, cdhit)
-    propagate_clusters(rows, variant_members, None)
+    propagate_clusters(rows, variant_members, None, {"miRbase": mirbase_prec, "pmiren": pmiren_prec})
     split_reported_precursors_across_loci(rows, variant_by_row, gma_counters)
     split_reported_precursors_across_loci(rows, variant_by_row, pmiren_counters)
     split_known_member_variants_across_loci(rows, variant_by_row, gma_counters)
     split_known_member_variants_across_loci(rows, variant_by_row, pmiren_counters)
     split_unreported_arms_across_loci(rows, variant_by_row, gma_counters)
     split_unreported_arms_across_loci(rows, variant_by_row, pmiren_counters)
-    rescue_tandem_ordered_known_members(rows, variant_by_row, mirbase_prec, mirbase_seqs, "miRbase")
-    rescue_tandem_ordered_known_members(rows, variant_by_row, pmiren_prec, pmiren_seqs, "pmiren")
+    rescue_tandem_ordered_known_members(rows, variant_by_row, mirbase_prec, mirbase_seqs, "miRbase", gma_counters)
+    rescue_tandem_ordered_known_members(rows, variant_by_row, pmiren_prec, pmiren_seqs, "pmiren", pmiren_counters)
     merge_new_member_precursor_arms(rows, variant_by_row)
     merge_new_arm_with_known_precursor(rows, variant_by_row, cdhit)
-    rescue_new_family_loci_to_free_precursor_anchors(rows, variant_by_row, mirbase_prec, mirbase_seqs, "miRbase")
-    rescue_new_family_loci_to_free_precursor_anchors(rows, variant_by_row, pmiren_prec, pmiren_seqs, "pmiren")
+    rescue_new_family_loci_to_free_precursor_anchors(rows, variant_by_row, mirbase_prec, mirbase_seqs, "miRbase", gma_counters)
+    rescue_new_family_loci_to_free_precursor_anchors(rows, variant_by_row, pmiren_prec, pmiren_seqs, "pmiren", pmiren_counters)
     demote_nonoverlapping_database_member_annotations(
         rows,
         variant_by_row,
@@ -2675,6 +2761,15 @@ def main():
     }
     promote_soymir_loci_by_cdhit_known_family(rows, cdhit, known_families_by_source)
     promote_soymir_loci_by_identical_mature_known_family(rows, variant_by_row, known_families_by_source)
+    # If an anchor is promoted after initial variant propagation, all members of the same
+    # mature-position variant cluster must inherit the promoted anchor's source/name.
+    propagate_clusters(
+        rows,
+        variant_members,
+        None,
+        {"miRbase": mirbase_prec, "pmiren": pmiren_prec},
+        {"new_family_member", "new_family_member_variant", "new_family_new_member", "new_family_new_member_variant"},
+    )
     merge_new_member_precursor_arms(rows, variant_by_row)
     merge_new_arm_with_known_precursor(rows, variant_by_row, cdhit)
     renumber_family_new_members(rows, list(mirbase_seqs), [p.name for p in mirbase_prec], "gma", "miRbase")
@@ -2684,6 +2779,12 @@ def main():
     renumber_duplicate_unreported_arm_loci(rows, variant_by_row, cdhit)
     renumber_variants_within_position_loci(rows, variant_by_row)
     renumber_soymir_families_by_size(rows)
+    demote_nonoverlapping_database_member_annotations(
+        rows,
+        variant_by_row,
+        {"miRbase": mirbase_prec, "pmiren": pmiren_prec},
+        {"miRbase": gma_counters, "pmiren": pmiren_counters},
+    )
     fill_overlapping_database_anchor_fields(rows, {"miRbase": mirbase_prec, "pmiren": pmiren_prec})
     assert_database_precursor_overlaps(rows, {"miRbase": mirbase_prec, "pmiren": pmiren_prec})
 

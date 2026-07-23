@@ -3,22 +3,22 @@ Total records: 2814
 
 annotation_category counts:
 reference_matched: 515
-reference_locus_variant: 550
-known_family_new_locus: 313
-known_family_new_locus_variant: 79
-novel_family_new_locus: 1040
-novel_family_new_locus_variant: 80
+reference_locus_variant: 473
+known_family_new_locus: 371
+known_family_new_locus_variant: 109
+novel_family_new_locus: 1036
+novel_family_new_locus_variant: 73
 unannotated_opposite_arm_product: 179
 unannotated_opposite_arm_variant: 58
 
 locus_class counts:
-reference: 1280
-novel-family-new: 1126
-known-family-new: 408
+reference: 1198
+novel-family-new: 1115
+known-family-new: 501
 
 variant_status counts:
-anchor: 2047
-variant: 767
+anchor: 2101
+variant: 713
 
 arm_status counts:
 anchor: 2577

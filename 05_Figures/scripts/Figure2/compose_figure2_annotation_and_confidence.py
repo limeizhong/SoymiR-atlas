@@ -81,6 +81,9 @@ def main() -> None:
     env.setdefault("MPLCONFIGDIR", str(FIGURE_MODULE / ".matplotlib_cache"))
     Path(env["MPLCONFIGDIR"]).mkdir(parents=True, exist_ok=True)
 
+    # Sync Panel B data with latest annotation workflow before plotting
+    UPDATE_SCRIPT = FIGURE_MODULE / "scripts/Figure2/update_confidence_star_data.py"
+    subprocess.run(["python3", str(UPDATE_SCRIPT)], check=True, env=env)
     subprocess.run(["python3", str(PANEL_A_SCRIPT)], check=True, env=env)
     subprocess.run(["python3", str(PANEL_B_SCRIPT)], check=True, env=env)
 

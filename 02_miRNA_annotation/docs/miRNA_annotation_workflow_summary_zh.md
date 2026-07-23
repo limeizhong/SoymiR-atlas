@@ -94,7 +94,7 @@ miRBase 和 pmiREN 的其它物种 mature 命中不作为 family 注释层级使
 每类数据库证据完成后，立即执行共有检查：
 
 ```text
-1. 位置变体传播：同一位置变体簇内 mature 区间高度重叠的未注释记录，随当前 anchor 注释为 .v 变体。
+1. 位置变体传播：同一位置变体簇内 mature 区间高度重叠的未注释记录，随当前 anchor 注释为 .v 变体。若后续步骤将簇内 anchor 从 SoymiR 新家族提升为 miRBase/pmiREN 已知 family，仍未被更高优先级占用的同簇低优先级 variant 必须同步继承提升后的 source、family 和命名；同步后若不能与对应数据库 precursor 重叠，则不进行数据库成员级传播。
 2. 同前体 arm 查询：同一预测前体或高度重叠预测前体内，若已有明确 anchor，另一组 mature 区域只有同时满足“mature 区域不重叠、双方 mature 区域均落入对方预测前体范围内、相对前体位置分处两端”并有 family、arm 或 CD-HIT 证据支持时，才注释为未报道 opposite-arm 产物。
 ```
 
@@ -110,7 +110,9 @@ SoymiR no-hit 命名和 CD-HIT family 回收后，再执行一次共有检查。
 
 `reference_matched`：mature 序列与大豆数据库 mature 全长 100% 一致，且预测前体与对应数据库 precursor 在 ZH13 上满足同染色体、同链和前体区间重叠。
 
-`reference_locus_variant`：query mature 与参考 mature 属于同一 mature 区域或同一 arm，可解释为参考位点的 isomiR 或成熟序列位置变体；同时预测前体可由同 family、同染色体、同链、前体区间重叠的数据库 precursor 解释。
+`reference_locus_variant`：query mature 与参考 mature 属于同一 mature 区域或同一 arm，可解释为参考位点的 isomiR 或成熟序列位置变体；同时预测前体可由同 family、同染色体、同链、前体区间重叠的数据库 precursor 解释。若要命名为某个参考 mature arm 的 `.v`，除前体重叠外，query mature 还必须与该参考 arm 的 mature 序列高度相似或属于同一成熟区间；仅有同 family 或同 precursor 重叠但 mature 序列明显不相似时，不保留为该 arm 的 `.v`。
+
+该限制也适用于后续的局部 tandem 顺序映射和未占用数据库 precursor anchor 回收步骤；这些步骤只能在 mature 序列相似时产生 `reference_locus_variant`，否则应撤回为同 family 的 `known_family_new_locus` 或其 variant。
 
 `unannotated_opposite_arm_product`：同一预测前体或高度重叠预测前体中已有非 opposite-arm anchor，另一组 mature 与 anchor mature 区域不重叠，双方 mature 区域均落在对方预测前体范围内，且相对位置分处前体两端，并可由 family、arm 或 CD-HIT 证据解释为该 precursor 的另一条 5p/3p arm。
 
@@ -241,7 +243,7 @@ CDHIT_Cluster_ID
 
 ```text
 Input records: 2814
-Family count after case-insensitive mature-family normalization: 928
+Family count after case-insensitive mature-family normalization: 925
 miRBase ZH13 hairpin anchors loaded: 682
 pmiREN ZH13 hairpin anchors loaded: 1347
 ```
@@ -249,35 +251,35 @@ pmiREN ZH13 hairpin anchors loaded: 1347
 Source counts:
 
 ```text
-miRbase: 1177
-pmiren: 511
-soymir: 1126
+miRbase: 1178
+pmiren: 521
+soymir: 1115
 ```
 
 annotation_category counts:
 
 ```text
 reference_matched: 515
-reference_locus_variant: 550
-known_family_new_locus: 313
-known_family_new_locus_variant: 79
+reference_locus_variant: 473
+known_family_new_locus: 371
+known_family_new_locus_variant: 109
 unannotated_opposite_arm_product: 179
 unannotated_opposite_arm_variant: 58
-novel_family_new_locus: 1040
-novel_family_new_locus_variant: 80
+novel_family_new_locus: 1036
+novel_family_new_locus_variant: 73
 ```
 
 Derived attribute counts:
 
 ```text
 locus_class:
-reference: 1280
-known-family-new: 408
-novel-family-new: 1126
+reference: 1198
+known-family-new: 501
+novel-family-new: 1115
 
 variant_status:
-anchor: 2047
-variant: 767
+anchor: 2101
+variant: 713
 
 arm_status:
 anchor: 2577
