@@ -99,6 +99,17 @@ def read_sheet(workbook, sheet_name: str) -> list[dict]:
     return rows
 
 
+def read_interaction_sheet(workbook) -> list[dict]:
+    """Read miRNA-target interactions from the current supplementary workbook."""
+    for sheet_name in ("S7", "S6"):
+        if sheet_name not in workbook.sheetnames:
+            continue
+        rows = read_sheet(workbook, sheet_name)
+        if rows and {"miRNA_ID", "target_gene", "library_count"}.issubset(rows[0]):
+            return rows
+    raise KeyError("Could not find miRNA-target interaction columns in S7 or S6")
+
+
 def choose_detected_canonical(isomir: dict, candidates: list[dict]) -> dict | None:
     if not candidates:
         return None
@@ -209,7 +220,7 @@ def main() -> None:
 
     wb = load_workbook(WORKBOOK, read_only=True, data_only=True)
     s2_rows = read_sheet(wb, "S2")
-    s6_rows = read_sheet(wb, "S6")
+    target_rows = read_interaction_sheet(wb)
     wb.close()
 
     conservation_by_seqid = {
@@ -218,7 +229,7 @@ def main() -> None:
     }
 
     interactions = {}
-    for row in s6_rows:
+    for row in target_rows:
         seqid = clean(row["miRNA_ID"])
         target = clean(row["target_gene"])
         if not seqid or not target:

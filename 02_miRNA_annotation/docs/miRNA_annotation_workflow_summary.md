@@ -129,7 +129,7 @@ For `unannotated_opposite_arm_product` and `unannotated_opposite_arm_variant`, `
 2. During the miRBase stage, avoid soybean miRBase member names already occupied.
 3. During the pmiREN stage, avoid soybean pmiREN member names already occupied.
 4. miRBase and pmiREN member suffixes are not forced to correspond one-to-one.
-5. Family labels in output tables are normalized to case-insensitive mature-family form: Gma/gma is written as gma, and MIR/MIRN is written as miR/miRN. For example, Gma-MIR12410, gma-MIR12410, and Gma-miR12410 are all reported as gma-miR12410 in the Family column.
+5. Mature miRNA names in output tables are normalized to miR/miRN notation: Gma-MIR/Gma-MIRN is written as Gma-miR/Gma-miRN in `Annotation`, `miRNA_Locus`, and `Matched_mature`. The `Family` column uses a lowercase species prefix and mature-family notation; for example, Gma-MIR12410, gma-MIR12410, and Gma-miR12410 are all reported as gma-miR12410. `Matched_precursor` keeps the original database precursor ID.
 6. Within a position-variant cluster, the highest-read member keeps the base name; the others are named .v1, .v2, ...
 7. If two non-overlapping mature regions occur on the same or highly overlapping predicted precursors and satisfy the opposite-end arm rule, they are treated as one locus; the anchored arm keeps the base name and the other arm is named -5p or -3p.
 ```

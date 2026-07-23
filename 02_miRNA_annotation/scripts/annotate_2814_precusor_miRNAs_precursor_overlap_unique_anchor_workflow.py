@@ -158,8 +158,34 @@ def family_label(annotation: str) -> str:
     return m.group(1) if m else name
 
 
+def normalize_mature_annotation_name(name: str) -> str:
+    """Normalize mature miRNA-style output names without changing precursor IDs."""
+    if not name:
+        return name
+    name = re.sub(r"^Gma-MIRN", "Gma-miRN", name)
+    name = re.sub(r"^Gma-MIR", "Gma-miR", name)
+    name = re.sub(r"^Gma-miRN", "Gma-miRN", name)
+    name = re.sub(r"^Gma-miR", "Gma-miR", name)
+    name = re.sub(r"^gma-MIRN", "gma-miRN", name)
+    name = re.sub(r"^gma-MIR", "gma-miR", name)
+    name = re.sub(r"^gma-mirn", "gma-miRN", name, flags=re.I)
+    name = re.sub(r"^gma-mir", "gma-miR", name, flags=re.I)
+    return name
+
+
+def normalize_mature_annotation_text(text: str) -> str:
+    """Normalize mature miRNA-style names embedded in free-text evidence."""
+    if not text:
+        return text
+    text = re.sub(r"\bGma-MIRN", "Gma-miRN", text)
+    text = re.sub(r"\bGma-MIR", "Gma-miR", text)
+    text = re.sub(r"\bgma-MIRN", "gma-miRN", text)
+    text = re.sub(r"\bgma-MIR", "gma-miR", text)
+    return text
+
+
 def output_family_label(annotation: str) -> str:
-    label = family_label(annotation)
+    label = family_label(normalize_mature_annotation_name(annotation))
     if re.match(r"^gma_mirnc\d+$", label, flags=re.I):
         return re.sub(r"^gma_mirnc", "gma_miRNC", label, flags=re.I)
     label = re.sub(r"^Gma-", "gma-", label)
@@ -472,7 +498,7 @@ def base_annotation(annotation: str) -> str:
 
 def mirna_locus(annotation: str) -> str:
     """Annotation root without variant or mature-arm suffix."""
-    return re.sub(r"-(?:5p|3p)$", "", base_annotation(annotation), flags=re.I)
+    return normalize_mature_annotation_name(re.sub(r"-(?:5p|3p)$", "", base_annotation(annotation), flags=re.I))
 
 
 def output_status(status: str) -> str:
@@ -2804,24 +2830,28 @@ def main():
         f.write("\t".join(full_header) + "\n")
         for r in rows:
             status = output_status(r.status)
+            annotation = normalize_mature_annotation_name(r.annotation)
+            matched_mature = normalize_mature_annotation_name(r.matched_mature)
+            evidence = normalize_mature_annotation_text(r.evidence)
             f.write("\t".join([
                 str(r.file_line), r.seq_id, r.seq, r.chr, str(r.m_start), str(r.m_end), str(r.h_start), str(r.h_end), r.strand,
-                status, r.annotation, mirna_locus(r.annotation), "reported" if status == "reported" else "unreported",
+                status, annotation, mirna_locus(annotation), "reported" if status == "reported" else "unreported",
                 "conserved" if r.seq_id in conserved_queries else "specific", str(len(conserved_species_counts.get(r.seq_id, set()))),
-                r.source, output_family_label(r.annotation),
+                r.source, output_family_label(annotation),
                 variant_by_row.get(r.idx, ""), cdhit.get(r.seq_id, ""),
-                r.evidence, r.matched_mature, r.matched_precursor, r.matched_chr, r.matched_start, r.matched_end,
+                evidence, matched_mature, r.matched_precursor, r.matched_chr, r.matched_start, r.matched_end,
                 r.matched_strand, r.distance,
             ]) + "\n")
 
     short_rows = []
     for r in rows:
         status = output_status(r.status)
+        annotation = normalize_mature_annotation_name(r.annotation)
         short_rows.append([
             r.seq_id, r.seq, r.chr, str(r.m_start), str(r.m_end), str(r.h_start), str(r.h_end), r.strand,
-            status, r.annotation, mirna_locus(r.annotation), "reported" if status == "reported" else "unreported",
+            status, annotation, mirna_locus(annotation), "reported" if status == "reported" else "unreported",
             "conserved" if r.seq_id in conserved_queries else "specific", str(len(conserved_species_counts.get(r.seq_id, set()))),
-            r.source, output_family_label(r.annotation),
+            r.source, output_family_label(annotation),
             variant_by_row.get(r.idx, ""), cdhit.get(r.seq_id, ""),
         ])
     short_rows.sort(key=lambda x: (x[15].lower(), x[9].lower(), int(x[2]) if x[2].isdigit() else 999, int(x[5]), int(x[6]), x[0]))

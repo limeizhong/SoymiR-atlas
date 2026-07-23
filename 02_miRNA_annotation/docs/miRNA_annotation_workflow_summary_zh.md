@@ -152,7 +152,7 @@ arm_status: anchor / opposite
 3. pmiREN 阶段只避开大豆 pmiREN 已占用成员名。
 4. miRBase 与 pmiREN 的同名编号不强行一一对应；跨来源同名冲突只顺延自动生成的新成员名，reported 数据库名称保持不变。
 5. 成员名比较时忽略大小写差异，避免 Gma-MIRxxx 与 Gma-miRxxx 被当作两个独立编号。
-6. 输出表中的 Family 列统一为 mature-family 形式并忽略大小写差异：Gma/gma 统一写为 gma，MIR/MIRN 统一写为 miR/miRN；例如 Gma-MIR12410、gma-MIR12410 和 Gma-miR12410 均写为 gma-miR12410。
+6. 输出表中的 mature miRNA 名称统一为 miR/miRN 写法：`Annotation`、`miRNA_Locus` 和 `Matched_mature` 中的 Gma-MIR/Gma-MIRN 统一写为 Gma-miR/Gma-miRN；`Family` 列统一为小写物种前缀的 mature-family 形式，例如 Gma-MIR12410、gma-MIR12410 和 Gma-miR12410 均写为 gma-miR12410。`Matched_precursor` 保留数据库 precursor 原始 ID。
 7. 同一位置变体簇内，reads 最高者保留基础名，其余按 reads 降序写 .v1、.v2 ...
 8. 同一 predicted precursor 或高度重叠 predicted precursors 上若有两个符合 5p/3p 两端位置的不重叠 mature arms，二者属于同一 locus；已有 anchor 保留原名，另一端写为 -5p 或 -3p。
 ```
